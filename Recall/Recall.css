@@ -1,0 +1,329 @@
+.Recall_filter .form-label{
+    font-weight: 500;
+    font-size: 14px;
+    color: var( --dark-color);
+}
+.Recall_filter .filter_completDate,.Recall_filter .form-select{
+    font-weight: 400;
+    font-size: 13px;
+    color: var(--text-color);
+    height: 40px;
+}
+
+.filter{
+    background-color:var(--bg-color);
+   
+    height: 40px;
+}
+.filter button{
+all: unset;
+width: 84px;
+height: 34px;
+font-weight: 500;
+font-size: 14px;
+color: var(--gry_color);
+cursor: pointer;
+}
+.Recall_filter .filters_inputs{
+    width: 150px;
+}
+.Recall_filter .filters_inputs select,.Recall_filter .filters_inputs select option{
+    width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.filter button.active{
+background-color: var(--bg_white);
+color: var(--blace-color);
+}
+.Recall_btn{
+  
+    background-color: var( --primary-color);
+    font-weight: 500;
+font-size: 12px;
+   
+}
+.recall_print{
+    background-color: var(--bg_appintment);
+}
+#add_recallLabel,#Edit_recallLabel{
+   color:var(--blace-color);
+    font-weight: 500;
+font-size: 16px;
+}
+.add_recall_body label,.Edit_recall_body label{
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--dark-color);
+}
+.add_recall_body input::placeholder,.add_recall_body input,.add_recall_body select,.add_recall_body textarea::placeholder,
+.Edit_recall_body select,.Edit_recall_body textarea::placeholder{
+    font-weight: 400;
+    font-size: 13px;
+    color: var( --text-color);
+}
+.Edit_recall_body select,.Edit_recall_body textarea::placeholder{
+    color: var(--dark-color);
+}
+#Edit_recall .Recall_btn{
+    font-size: 13px !important;
+}
+#Edit_recall .Recall_btn:first-child{
+    background-color: transparent;
+    color: var(--delete-color) !important;
+}
+.clear_btn{
+    border:none;
+    background-color: transparent;
+    color: var(--text-color);
+    font-size: 13px;
+    font-weight: 500;
+}
+.Recall_wrapper{
+    /* border: 1px solid  var(--light_gray); */
+    padding: 0 .7rem;
+    background-color: var(--bg_white);
+    border-top-left-radius: 1.4rem !important;
+    border-top-right-radius: 1.4rem !important;
+}
+.head_row{
+    background-color: var( --bg-color);
+    border: 1px solid  var(--light_gray); 
+    border-top: 1px solid  var(--light_gray); 
+}
+
+.head_table,.title_table{
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--gray-color);
+    border-right: 1px solid var(--light_gray) !important;
+    border-left: 1px solid var(--light_gray) !important;
+   height: 100%;
+}
+.head_table:first-child,.head_table:last-child{
+    border-right: none !important;
+    border-left: none !important;
+}
+.Recall_data:last-child{
+border-bottom-right-radius: .5rem;
+border-bottom-left-radius: .5rem;
+}
+
+.state{
+    background-color: var(--bg-green-color);
+    color: var( --green-color);
+    height: 22px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: 500;
+    gap: .4rem;
+    
+}
+.state_bolut{
+    background-color: var(--bullet-color);
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    display: block;
+    
+
+}
+.title_table{
+color: var(--blace-color);
+}
+.recall_names{
+    border-right:  1px solid var(--light_gray) !important;
+}
+.recall_names img{
+width: 24px;
+height: 24px;
+border-radius: 50%;
+object-fit: cover;
+}
+
+.recall_names h2{
+font-weight: 500;
+font-size: 14px;
+color: var(--blace-color);
+}
+
+.action .dropdown-item{
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--blace-color);
+}
+.action .dropdown-item:hover{
+    color: var(--blace-color);
+}
+.action .dropdown-item:focus{
+    color: var(--blace-color);
+    background-color: var(--text-color);
+}
+.cancel_btn,.delete_btn{
+    border: 1px solid var(--light_color);
+    font-weight: 500;
+    font-size: 16px;
+}
+.delete_btn{
+    background-color: var( --delete-color);
+    color: var(--bg_white);
+}
+.delete_btn:hover{
+    color: var(--bg_white);
+}
+.confurm_delete_recall h2{
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--blace-color);
+}
+.confurm_delete_recall p{
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--secondary-color);
+}
+.fade-in-right {
+    animation: fadeInRight 1s forwards;
+  }
+
+  @keyframes fadeInRight {
+    0% {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  .modal.fade-in-right .modal-dialog {
+    position:absolute;
+    top:1rem;
+    right:10px;
+    margin:0;
+  }
+  .Recall_contain .modal-dialog{
+    width: 45%;
+}
+select{
+    background-image: url(../images/selected.svg) !important;
+    color: var( --text-color);
+}
+select,input{
+    color: var( --text-color) !important;
+}
+input.selected{
+    color: var(--blace-color) !important;
+}
+select.selected{
+    color: var(--blace-color) !important;
+    background-image: url(../images/defual_selected.svg) !important;
+}
+
+
+#filters_recall .recall_btn,
+#Edit_recall .recall_btn:last-child,
+#add_recall .recall_btn{
+    background-color: var(--disables-button-color) !important;
+}
+.clear_btn.selected{
+    color: var(--delete-color) !important;
+}
+#filters_recall .recall_btn.selected,
+#Edit_recall .recall_btn.selected:last-child,
+#add_recall .recall_btn.selected{
+    background-color: var(--primary-color) !important;
+}
+  
+@media (max-width:1199.98px){
+
+    .Recall_data{
+        height: auto !important;
+        border:  1px solid var(--light_gray) !important;
+        margin-bottom: 1rem;
+        border-radius: .5rem;
+    }
+    .title_table,.recall_names,.table_state{
+        border:none !important;
+     
+    }
+   
+    .table_state{
+        padding-top: 0 !important;
+    }
+    .recall_names .creat_info h2,.recall_names .creat_info p{
+        font-size: 12px;
+        margin: 0;
+    }
+    .title_table{
+        font-size: 14px;
+      align-items: end !important;
+    }
+    .title_text{
+        font-size: 13px;
+        font-weight: 500;
+    }
+    .title_text p:first-child,.recall_names:not(:first-child) h2:first-child{
+       color: var(--text-color);
+    }
+    .state{
+        font-size: 10px;
+    }
+    .date_complete{
+        font-size: 12px;
+    }
+    .Recall_contain .modal-dialog{
+        width: 98%;
+    }
+    .filters_inputs{
+        display: none;
+    }
+   
+}
+@media (min-width:769px) and (max-width: 1199.98px) {
+    .Recall_data{
+        padding: 0 .5rem !important;
+    }
+    .Recall_filter .form-label{
+        font-size: 12px;
+    }
+    .title_text{
+        font-size: 12px;
+    }
+    .Recall_filter .filter_completDate, .Recall_filter .form-select{
+        font-size: 11px;
+        padding: .5rem !important;
+    }
+    .date_complete{
+        font-size: 11px;
+    }
+    .recall_names .creat_info h2{
+        font-size: 12px;
+    }
+    .head_table, .title_table {
+        padding-left: .3rem !important;
+        font-size: 10px;
+    }
+  
+}
+@media (max-width: 1368px){
+    .Recall_filter .filters_inputs{
+        width: 110px;
+    }
+}
+@media (min-width:769px){
+    .Recall_filter{
+        border-bottom-right-radius: 0 !important;
+        border-bottom-left-radius: 0 !important;
+        
+    }
+   .Recall{
+        border-top-right-radius: 0 !important;
+        border-top-left-radius: 0 !important;
+
+    }
+}

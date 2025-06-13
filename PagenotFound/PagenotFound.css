@@ -1,0 +1,43 @@
+.NotFound{
+    min-height: calc(100vh - 64px);;
+}
+.NotFound img{
+    width: 60%;
+}
+.NotFound h2{
+font-size: 32px;
+font-weight: 600;
+color: var(--blace-color);
+}
+.NotFound p{
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--secondary-color);
+    text-align: center;
+}
+.NotFound button a{
+    font-size: 16px;
+    font-weight: 600;
+    color: var( --bg_white);
+    background-color: var(--primary-color);
+}
+a:hover{
+    
+    color: var( --bg_white);
+}
+@media (max-width:768px){
+    .NotFound img{
+        width: 100%;
+    }
+}
+@media (min-width:769px)and (max-width:1300px) { 
+.NotFound img{
+    width: 50%;
+}
+.NotFound h2{
+    font-size: 27px;
+}
+.NotFound button{
+    font-size: 14px;
+}
+}

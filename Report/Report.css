@@ -1,0 +1,396 @@
+/* show and hide */
+.report_content {
+    display: none;
+  }
+  
+  .report_content.active {
+    display: block;
+  }
+  .report_nav .navigate_items a{
+    all: unset;
+  }
+  .report_nav .navigate_items a:hover{
+    all: unset;
+  }
+  .nav_content .nav-item{
+    all: unset;
+    font-weight: 500;
+    font-size: 15px;
+    cursor: pointer;
+color: var(--secondary-color);
+position: relative;
+}
+  .nav_content .nav-item.active::before{
+    content: "";
+    position: absolute;
+    background-color: var(--primary-color);
+    width: calc(100% + 20px);
+    height: 2px;
+    bottom: -2px;
+    left: -10px;
+    box-shadow: 0 3px 1px -2px var(--primary-color) ;
+  }
+/* show and hide */
+.report_Treatments_contain .nav.border-bottom{
+    border-bottom: 1.5px solid var(--light_gray) !important;
+   
+}
+
+
+.report_Treatments_btn{
+    background-color: var( --bg_appintment) !important;
+    font-weight: 500;
+font-size: 12px;
+   
+}
+.report_filter label{
+    font-weight: 500;
+    font-size: 14px;
+}
+.report_filter input ,.report_filter select{
+    font-weight: 400;
+    font-size: 13px;
+    color: var( --text-color);
+}
+.price{
+    color: var(--blue-text-color);
+    font-weight: 500;
+    font-size: 13px;
+    display: none;
+}
+.price.selected{
+display: block;
+}
+select{
+    background-image: url(../images/selected.svg) !important;
+    color: var( --text-color);
+}
+select,input{
+    color: var( --text-color) !important;
+}
+input.selected{
+    color: var(--blace-color) !important;
+}
+select.selected{
+    color: var(--blace-color) !important;
+    background-image: url(../images/defual_selected.svg) !important;
+}
+
+.clear_btn{
+    border:none;
+    font-weight: 500;
+    background-color: transparent;
+    color: var(--text-color);
+    font-size: 13px;
+}
+.clear_btn.selected{
+    color: var(--delete-color) !important;
+}
+
+.filter{
+    background-color:var(--bg-color);
+   width: 140px;
+    height: 40px;
+}
+.filter button{
+all: unset;
+width: 84px;
+height: 34px;
+font-weight: 500;
+font-size: 14px;
+color: var(--gry_color);
+cursor: pointer;
+}
+.filter button.active{
+background-color: var(--bg_white);
+color: var(--blace-color);
+}
+.report_Treatments_wrapper{
+    /* border: 1px solid  var(--light_gray); */
+ 
+    background-color: var(--bg_white);
+    border-top-left-radius: 1.4rem !important;
+    border-top-right-radius: 1.4rem !important;
+}
+.head_row{
+    background-color: var( --bg-color);
+    border: 1px solid  var(--light_gray); 
+    border-top: 1px solid  var(--light_gray); 
+}
+
+.head_table,.title_table{
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--gray-color);
+    border-right: 1px solid var(--light_gray) !important;
+    border-left: 1px solid var(--light_gray) !important;
+   height: 100%;
+}
+.head_table:first-child,.head_table:last-child{
+    border-right: none !important;
+    border-left: none !important;
+}
+.report_Treatments_data:last-child{
+border-bottom-right-radius: .5rem;
+border-bottom-left-radius: .5rem;
+}
+
+.title_table{
+color: var(--blace-color);
+}
+.report_Treatments_names{
+    border-right:  1px solid var(--light_gray) !important;
+}
+.report_Treatments_names img{
+width: 24px;
+height: 24px;
+border-radius: 50%;
+object-fit: cover;
+}
+
+.report_Treatments_names h2{
+font-weight: 500;
+font-size: 14px;
+color: var(--blace-color);
+}
+/* .table_state{
+    width: 45%;
+    height: 100%;
+ 
+
+} */
+.state{
+    background-color: var(--bg-green-color);
+    color: var( --green-color);
+    height: 22px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: 500;
+    gap: .4rem;
+    
+}
+.state_bolut{
+    background-color: var(--bullet-color);
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    display: block;
+    
+
+}
+.action .dropdown-item{
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--blace-color);
+}
+.action .dropdown-item:hover{
+    color: var(--blace-color);
+}
+.action .dropdown-item:focus{
+    color: var(--blace-color);
+    background-color: var(--text-color);
+}
+.cancel_btn,.delete_btn{
+    border: 1px solid var(--light_color);
+    font-weight: 500;
+    font-size: 16px;
+}
+.delete_btn{
+    background-color: var( --delete-color);
+    color: var(--bg_white);
+}
+.delete_btn:hover{
+    color: var(--bg_white);
+}
+.confurm_delete_report_Treatments h2{
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--blace-color);
+}
+.confurm_delete_report_Treatments p{
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--secondary-color);
+}
+.fade-in-right {
+    animation: fadeInRight 1s forwards;
+  }
+
+  @keyframes fadeInRight {
+    0% {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  .modal.fade-in-right .modal-dialog {
+    position:absolute;
+    top:1rem;
+    right:10px;
+    margin:0;
+  }
+  .report_Treatments_contain .modal-dialog{
+    width: 45%;
+}
+/* editing popup */
+#add_reportLabel,.Edit_reportLabel{
+    color:var(--blace-color);
+     font-weight: 500;
+ font-size: 16px;
+ }
+
+
+.report_btn{
+  
+    background-color: var( --primary-color);
+    font-weight: 500;
+font-size: 12px;
+   
+}
+
+.add_report_body label,.Edit_report_body label{
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--dark-color);
+}
+.add_report_body input::placeholder,
+.add_report_body input,
+.add_report_body select,
+.Edit_report_body input,
+.Edit_report_body select,.Edit_report_body textarea::placeholder,
+.Edit_report_body select,.Edit_report_body textarea::placeholder{
+    font-weight: 400;
+    font-size: 13px;
+    color: var( --text-color);
+}
+.add_other_payment{
+    all: unset;
+    color: var( --blue-text-color);
+    font-size: 13px;
+    font-weight: 500;
+}
+.Edit_report .report_btn,.mobile_filters .report_btn{
+    font-size: 13px !important;
+    background: var( --disables-button-color) !important;
+}
+.Edit_report .report_btn:first-child{
+    background-color: transparent !important;
+    color: var( --text-color) !important;
+}
+.Edit_report .report_btn:last-child.selected,.mobile_filters .report_btn.selected{
+    background-color: var( --primary-color) !important;
+}
+.Edit_report .report_btn.selected:first-child{
+    background-color: transparent;
+    color: var(--delete-color) !important;
+}
+
+
+/* editing  popup*/
+@media (max-width: 1199.98px){
+
+    .report_Treatments_wrapper{
+        padding: 0 .7rem;
+    }
+    .report_Treatments_data{
+        height: auto !important;
+        border:  1px solid var(--light_gray) !important;
+        margin-bottom: 1rem;
+        border-radius: .5rem;
+    }
+    .title_table,.report_Treatments_names,.table_state{
+        border:none !important;
+     
+    }
+   
+    .title_table p:first-child,.report_Treatments_names:not(:nth-child(1)) h2:first-child{
+        color: var(--text-color);
+        font-weight: 500;
+        font-size: 12px;
+       
+     }
+     .report_Treatments_names .name_head{
+        color: var(--blace-color) !important;
+        font-weight: 500;
+        font-size: 13px !important;
+    }
+    .table_state{
+        padding-top: 0 !important;
+    }
+    #mobileNav:focus{
+        outline: none !important;
+        border:none !important;
+        box-shadow: none !important;
+        }
+    .report_Treatments_names:nth-child(1) h2:first-child{
+      
+        font-weight: 500;
+        font-size: 13px;
+    }
+    .title_table{
+        font-size: 14px;
+      /* align-items: end !important; */
+    }
+    .title_text{
+        font-size: 13px;
+        font-weight: 500;
+    }
+    .state{
+        font-size: 10px;
+    }
+    .date_complete{
+        font-size: 12px;
+    }
+    .report_Treatments_contain .modal-dialog{
+        width: 98%;
+    }
+   
+}
+@media (min-width:769px) and (max-width: 1199.98px) {
+    .report_filter .form-label{
+        font-size: 12px;
+      
+    }
+    .title_text{
+        font-size: 12px;
+    }
+    .report_filter .filter_completDate, .report_filter .form-select{
+        font-size: 11px;
+        padding: .5rem !important;
+    }
+    .date_complete{
+        font-size: 11px;
+    }
+    .report_Treatments_names h2{
+        font-size: 12px;
+    }
+    .head_table, .title_table {
+        padding-left: .3rem !important;
+        font-size: 10px;
+    }
+  
+}
+@media  (max-width: 1350px){
+  #debts .head_table,#debts .title_table,#debts .report_Treatments_names h2{
+        font-size: 12px;
+    }
+}
+@media (min-width:769px){
+    .report_nav {
+        border-bottom-right-radius: 0 !important;
+        border-bottom-left-radius: 0 !important;
+        
+    }
+   .report_Treatments_contain{
+        border-top-right-radius: 0 !important;
+        border-top-left-radius: 0 !important;
+
+    }
+}

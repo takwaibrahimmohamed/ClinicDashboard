@@ -1,0 +1,10 @@
+<svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="22.3333" cy="22.4053" r="22.2222" fill="#DEF4FF"/>
+<mask id="mask0_3644_71629" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="45" height="45">
+<circle cx="22.3333" cy="22.4053" r="22.2222" fill="#C4C4C4"/>
+</mask>
+<g mask="url(#mask0_3644_71629)">
+<ellipse cx="22.3331" cy="39.2941" rx="16.8889" ry="9.77778" fill="#00A4E5"/>
+</g>
+<circle cx="22.3331" cy="19.0723" r="8" fill="#00A4E5"/>
+</svg>

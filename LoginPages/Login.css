@@ -1,0 +1,190 @@
+@import url(../globel_color.css);
+.Login{
+  
+}
+.Change_data{
+    background-color:var(--bg-logins);
+    background-image: linear-gradient(to right, var(--bg_white) , var(--bg-logins));
+ min-height: 100vh;
+}
+.Change_data .info h2{
+    font-size: 42px;
+    font-weight: 600;
+    color: var(--blace-color);
+}
+.Change_data .info p{
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--text-logins);
+}
+.form-label,.format_text{
+    font-weight: 500;
+    font-size: 14px;
+
+    color: var( --dark-color);
+}
+input{
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--text-logins);
+    height: 48px;
+}
+.form-check-input{
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--text-logins);
+}
+.change_modal{
+    color: var( --green_color);
+    font-size: 14;
+    font-weight:500 ;
+    cursor: pointer;
+}
+.format_info{
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--text-logins);
+}
+.forget_password a
+{
+    color: var( --green_color);
+    font-size: 14;
+    font-weight:500 ;
+    text-decoration: none;
+}
+.forget_password a:hover{   color: var( --green_color);}
+.sumbit_changes{
+    color: var( --bg_white);
+    background-color: var(--primary-color);
+    font-size: 16px;
+    font-weight: 500;
+
+}
+.sumbit_changes:hover{
+    color: var( --bg_white);
+}
+.sumbit_changes a{
+    color: var( --bg_white);
+    text-decoration: none;
+}
+.back_home{
+    
+    font-size: 18px;
+    text-align: center;
+    font-weight: 500;
+}
+.back_home a{
+    color: var(--primary-color);
+}
+.back_home span{
+    color: var(--text-logins);
+}
+.back_home:hover{
+    color: var(--primary-color);
+}
+.reserve{
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--text-logins);
+}
+.Change_right_side{
+    background-color: var(--aque-color);
+    background-image: linear-gradient(to right, var(--bg_white), #E4F3FE );
+min-height: 100vh;
+}
+.Change_right_side h2{
+  font-size: 33px;
+  font-weight: 600;
+  color: var(--blace-color);
+}
+.Change_right_side p{
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--text-logins);
+}
+.Change_right_side img{
+    height: 80%;
+}
+._verify{
+    font-weight: 500;
+}
+.model-delete h2{
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--blace-color);
+}
+.model-delete p{
+    font-size: 14px;
+    font-weight: 400;
+    color: var( --secondary-color);
+}
+@media (max-width:768px){
+    .Change_data .info h2{
+        font-size: 18px;
+      
+    }
+    .Change_data .info p{
+        font-size: 16px;
+    }
+    input{
+        width: 100% !important;
+        font-size: 16px !important;
+    }
+    .change_modal{
+        font-size: 14px;
+    }
+    .sumbit_changes{
+        font-size: 16px;
+    }
+    .reserve{
+        font-size: 14px;
+    }
+
+}
+@media (min-width:769px)and (max-width:1300px) { 
+    .Change_data{
+     padding-bottom: .5rem !important;   
+    }
+    .Change_data_content{
+        gap: 1.5rem !important;
+    }
+    .Change_data_content input.form-control{
+        height: 35px;
+        font-size: 14px;
+    }
+    .Change_data .info h2{
+        font-size: 22px;
+      
+    }
+    .Change_data .info p{
+        font-size: 14px;
+    }
+   .forget_password a{
+    font-size: 13px; 
+   }
+    .Change_right_side h2{
+        font-size: 20px;
+      }
+      .Change_right_side p{
+          font-size: 14px;
+      }
+      .Change_right_side img{
+        height: 70%;
+    }
+    .format_text{
+        margin-bottom: .5rem;
+    }
+    .sumbit_changes{
+        font-size: 13px !important;
+    }
+    .change_modal{
+        font-size: 13px;
+    }
+    .back_home{
+        font-size: 16px;
+    }
+    .reserve{
+        font-size: 16px;
+        margin-top: 3rem !important;
+    }
+}

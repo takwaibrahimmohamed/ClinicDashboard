@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./Login.css">
+  
+    <title>Document</title>
+</head>
+<body>
+    <div class="Login">
+        <div class="container-fluid">
+            <div class="row h-100">
+                <div class=" col-12 col-lg-6 Change_data p-3 p-lg-4 pb-3 pt-5 d-flex flex-column justify-content-between">
+                    <div class="Change_data_content d-flex flex-column gap-5">
+                        <div class="logo">
+                            <img src="../images/Logo (2).svg" alt="logo1">
+                        </div>
+                      <div class="d-flex flex-column gap-3">
+                        <div class="info d-flex flex-column gap-2">
+                            <h2 class="m-0 p-0">Reset Password?</h2>
+                              <p class="m-0 p-0">Enter your new password to secure your account.</p>
+                        
+                        </div>
+                        <form>
+                            <div class="row gap-1">
+                                <div class="col-12">
+                                    <label   class="form-label">New Password</label>
+                                  <div class="passowrd_wrapper d-flex align-items-center position-relative">
+                                    <input type="password"  class=" form-control py-2 px-3" 
+                                    value="12345234" style="color: var(--gry_color);font-size:30px;">
+                                    <span class="position-absolute" style="right: 2%;">
+                                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                         <path d="M6.57943 11.5704C5.44335 11.086 4.45814 10.4139 3.65023 9.73424L2.10996 11.2745C1.9883 11.3962 1.82831 11.4579 1.66831 11.4579H1.66742C1.50742 11.4579 1.34743 11.397 1.22577 11.2745C0.981602 11.0303 0.981602 10.6346 1.22577 10.3904L2.7285 8.88767C1.75823 7.91761 1.20211 7.09708 1.14624 7.01295C0.954573 6.72545 1.032 6.33792 1.3195 6.14625C1.607 5.95458 1.99453 6.03209 2.1862 6.31959C2.21786 6.36626 5.40118 11.0413 9.99951 11.0413C14.5978 11.0413 17.7812 6.36628 17.8129 6.31878C18.0046 6.03211 18.3929 5.95458 18.6795 6.14625C18.9662 6.33792 19.0437 6.72547 18.8529 7.01214C18.797 7.09623 18.2413 7.91609 17.2718 8.88561L18.7766 10.3904C19.0208 10.6346 19.0208 11.0303 18.7766 11.2745C18.655 11.3962 18.495 11.4579 18.335 11.4579H18.3341C18.1741 11.4579 18.0141 11.397 17.8924 11.2745L16.3502 9.73228C15.5425 10.4119 14.5574 11.0841 13.4215 11.5688L14.2868 13.0109C14.4643 13.3068 14.3684 13.691 14.0726 13.8685C13.9718 13.9285 13.861 13.9576 13.7518 13.9576C13.5393 13.9576 13.3326 13.8493 13.2151 13.6543L12.2164 11.9897C11.5208 12.1795 10.7803 12.2905 9.99951 12.2905C9.21947 12.2905 8.47965 12.1805 7.78474 11.9911L6.78681 13.6543C6.66931 13.8493 6.4626 13.9576 6.2501 13.9576C6.14094 13.9576 6.03014 13.9293 5.9293 13.8685C5.63347 13.691 5.53761 13.3068 5.71511 13.0109L6.57943 11.5704Z" fill="#A4A4A4"/>
+                                         </svg>
+                                    </span>
+                                  </div>
+                                </div>
+                                <div class="col-12">
+                                    <label   class="form-label">Re-type New Password</label>
+                                  <div class="passowrd_wrapper d-flex align-items-center position-relative">
+                                    <input type="password"  class=" form-control py-2 px-3" 
+                                    value="12345234" style="color: var(--gry_color);font-size:30px;">
+                                    <span class="position-absolute" style="right: 2%;">
+                                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                         <path d="M6.57943 11.5704C5.44335 11.086 4.45814 10.4139 3.65023 9.73424L2.10996 11.2745C1.9883 11.3962 1.82831 11.4579 1.66831 11.4579H1.66742C1.50742 11.4579 1.34743 11.397 1.22577 11.2745C0.981602 11.0303 0.981602 10.6346 1.22577 10.3904L2.7285 8.88767C1.75823 7.91761 1.20211 7.09708 1.14624 7.01295C0.954573 6.72545 1.032 6.33792 1.3195 6.14625C1.607 5.95458 1.99453 6.03209 2.1862 6.31959C2.21786 6.36626 5.40118 11.0413 9.99951 11.0413C14.5978 11.0413 17.7812 6.36628 17.8129 6.31878C18.0046 6.03211 18.3929 5.95458 18.6795 6.14625C18.9662 6.33792 19.0437 6.72547 18.8529 7.01214C18.797 7.09623 18.2413 7.91609 17.2718 8.88561L18.7766 10.3904C19.0208 10.6346 19.0208 11.0303 18.7766 11.2745C18.655 11.3962 18.495 11.4579 18.335 11.4579H18.3341C18.1741 11.4579 18.0141 11.397 17.8924 11.2745L16.3502 9.73228C15.5425 10.4119 14.5574 11.0841 13.4215 11.5688L14.2868 13.0109C14.4643 13.3068 14.3684 13.691 14.0726 13.8685C13.9718 13.9285 13.861 13.9576 13.7518 13.9576C13.5393 13.9576 13.3326 13.8493 13.2151 13.6543L12.2164 11.9897C11.5208 12.1795 10.7803 12.2905 9.99951 12.2905C9.21947 12.2905 8.47965 12.1805 7.78474 11.9911L6.78681 13.6543C6.66931 13.8493 6.4626 13.9576 6.2501 13.9576C6.14094 13.9576 6.03014 13.9293 5.9293 13.8685C5.63347 13.691 5.53761 13.3068 5.71511 13.0109L6.57943 11.5704Z" fill="#A4A4A4"/>
+                                         </svg>
+                                    </span>
+                                  </div>
+                                </div>
+                              
+                                <div class="col-12 mt-3">
+                                    <button class="btn sumbit_changes w-100 rounded py-2" data-bs-toggle="modal" data-bs-target="#deleteModal">
+                                        <a href="#">Reset Password</a>
+                                    </button>
+                                </div>
+                                
+                            </div>
+                        </form>
+                      </div>
+                    </div>
+                    <p class="reserve m-0 p-0 text-center">
+                        All rights reserved © 2025 DMS. Designed by @Ahmeduxui
+                    </p>
+                </div>
+                <div class="d-none d-lg-flex col-6 Change_right_side pb-0 p-4 pt-5 d-flex flex-column justify-content-around">
+                   <div>
+                    <h2 class="">
+                        Your Clinic Appointment Management System
+                    </h2>
+                    <p class="">Organize patient appointments, track bookings, and follow up on work progress efficiently</p>
+                    
+                   </div>
+                   <img src="../images/bg_password.svg" alt="bg_password">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade model-delete"  id="deleteModal" tabindex="-1" aria-labelledby="deleteModalModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header border border-0">
+              <h5 class="modal-title" id="exampleModalLabel">
+                <svg width="56" height="57" viewBox="0 0 56 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="4" y="4.5" width="48" height="48" rx="24" fill="#DEFFEC"/>
+                    <rect x="4" y="4.5" width="48" height="48" rx="24" stroke="#F3FFF8" stroke-width="8"/>
+                    <path d="M30.707 26.7496C30.8453 27.14 30.6408 27.5686 30.2504 27.7069C30.0266 27.7862 29.7463 27.9663 29.4302 28.2435C29.1219 28.5139 28.8184 28.8419 28.5465 29.1679C28.276 29.4922 28.0458 29.8034 27.8829 30.034C27.8018 30.149 27.7381 30.243 27.6952 30.3073C27.6738 30.3395 27.6576 30.3642 27.6471 30.3804L27.6356 30.3981L27.6332 30.4019C27.4882 30.6299 27.2315 30.7628 26.9616 30.749C26.6917 30.7352 26.4501 30.5771 26.3292 30.3354C26.1237 29.9243 25.9522 29.7861 25.8965 29.749C25.8917 29.7458 25.8875 29.7432 25.8839 29.741C25.5248 29.6852 25.25 29.3747 25.25 29C25.25 28.5857 25.5858 28.25 26 28.25V29C26 28.25 26.0007 28.25 26.0015 28.25L26.003 28.25L26.006 28.25L26.0122 28.2501L26.0252 28.2504C26.0343 28.2507 26.0439 28.2511 26.054 28.2518C26.0744 28.2531 26.0969 28.2552 26.1216 28.2585C26.171 28.2651 26.2282 28.2762 26.292 28.2944C26.4205 28.3312 26.5696 28.395 26.7285 28.5009C26.8162 28.5594 26.9046 28.6291 26.9928 28.7117C27.1135 28.5532 27.2485 28.3822 27.3947 28.207C27.6963 27.8455 28.0546 27.4548 28.4411 27.1158C28.8199 26.7836 29.2675 26.4637 29.7496 26.293C30.1401 26.1547 30.5687 26.3591 30.707 26.7496Z" fill="#1FC16B"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M28 22.75C24.8244 22.75 22.25 25.3244 22.25 28.5C22.25 31.6756 24.8244 34.25 28 34.25C31.1756 34.25 33.75 31.6756 33.75 28.5C33.75 25.3244 31.1756 22.75 28 22.75ZM23.75 28.5C23.75 26.1528 25.6528 24.25 28 24.25C30.3472 24.25 32.25 26.1528 32.25 28.5C32.25 30.8472 30.3472 32.75 28 32.75C25.6528 32.75 23.75 30.8472 23.75 28.5Z" fill="#1FC16B"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M23.7578 18.9355C24.95 18.3179 26.3168 17.75 27.9981 17.75C29.6794 17.75 31.0467 18.318 32.2395 18.9355C32.5998 19.1221 32.9346 19.3067 33.2546 19.4831C34.0376 19.9148 34.7317 20.2974 35.4937 20.5404L35.5191 20.5486C35.9663 20.6912 36.3371 20.8094 36.618 20.9195C36.8825 21.023 37.1967 21.165 37.4197 21.4128C37.6201 21.6354 37.723 21.8853 37.7912 22.1243C37.8532 22.3413 37.9006 22.6045 37.9514 22.8863L37.9569 22.917C39.1952 29.7824 36.4909 36.2869 29.8807 38.8179L29.8478 38.8305C29.198 39.0793 28.7524 39.25 28.0014 39.25C27.2503 39.25 26.8047 39.0793 26.1549 38.8305L26.122 38.8179C19.5115 36.287 16.8046 29.7827 18.0425 22.917L18.048 22.8864C18.0988 22.6046 18.1462 22.3415 18.2081 22.1245C18.2764 21.8855 18.3793 21.6356 18.5795 21.413C18.8025 21.1652 19.1167 21.0232 19.3812 20.9196C19.6621 20.8095 20.0329 20.6912 20.4802 20.5485L20.5056 20.5404C21.2672 20.2974 21.9606 19.9149 22.7431 19.4832C23.0629 19.3068 23.3976 19.1222 23.7578 18.9355ZM23.5921 20.7302C22.7618 21.1883 21.8734 21.6785 20.9616 21.9694C20.4824 22.1223 20.1586 22.226 19.9284 22.3162C19.7769 22.3756 19.7111 22.4131 19.6899 22.4255C19.6819 22.4415 19.6682 22.4744 19.6505 22.5362C19.6117 22.6723 19.5769 22.8602 19.5187 23.1832C18.3781 29.5093 20.87 35.2009 26.6583 37.4171C27.3227 37.6714 27.5409 37.75 28.0013 37.75C28.4618 37.75 28.6799 37.6714 29.3443 37.417C35.132 35.201 37.6218 29.5095 36.4807 23.1832C36.4225 22.8602 36.3877 22.6722 36.3488 22.5361C36.3312 22.4743 36.3174 22.4414 36.3095 22.4254C36.2883 22.413 36.2224 22.3755 36.0709 22.3161C35.8408 22.226 35.517 22.1223 35.0379 21.9695C34.1257 21.6786 33.2368 21.1885 32.406 20.7304C32.1129 20.5687 31.8269 20.4111 31.5498 20.2676C30.4375 19.6916 29.3247 19.25 27.9981 19.25C26.6716 19.25 25.5594 19.6916 24.4478 20.2674C24.1709 20.4109 23.8851 20.5686 23.5921 20.7302Z" fill="#1FC16B"/>
+                    </svg>
+                    
+                  
+              </h5>
+            
+            </div>
+            <div class="modal-body py-0 ">
+              <h2 >Password Changed Successfully!</h2>
+              <p>Your password has been updated. You can now log in using your new password.</p>
+            </div>
+            <div class="modal-footer d-flex justify-content-between border-0">
+                <button class="btn sumbit_changes w-100 rounded py-2" data-bs-toggle="modal" data-bs-target="#deleteModal">
+                    <a href="#">Login</a>
+                </button>
+             </div>
+          </div>
+        </div>
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+   
+</body>
+</html>

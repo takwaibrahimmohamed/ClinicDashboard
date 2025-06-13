@@ -1,0 +1,823 @@
+.patient_info{
+    background-color: var(--baby_blue_bg);
+}
+.patient_info .info h2{
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--blace-color);
+}
+.patient_info .info p{
+    font-weight: 400;
+    font-size: 12px;
+    color: var(--neutral-color);
+}
+/* filter_medical */
+.medical_content,.Recordscontent{
+    display: none;
+}
+.medical_content.active,.Recordscontent.active{
+    display: block;
+}
+.filter_treatment .nav-item{
+    width: calc((100% / 3) - .5rem);
+}
+.filter_treatment button{
+font-size: 14px;
+font-weight: 500;
+width: 100%;
+background-color: var(--bg-color);
+color: var(--secondary-color);
+}
+.filter_treatment li.active button{
+    background-color: var(--aque-color);
+    color: var( --blue_color);
+}
+.dropdownToggle{
+    font-size: 12px;
+    font-weight: 500;
+    background-color: var(--bg-color);
+    color: var(--blace-color);
+    
+}
+.drop_chart a.dropdown-item{
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--blace-color);
+}
+.dropdownToggle::after{
+    display: inline-block;
+    margin-left: .255em;
+    vertical-align: .255em;
+    content: "";
+    background-image: url(../images/darkSelect.svg) !important;
+    background-color: var(--bg-color);
+width: 18px;
+height:18px;
+background-repeat: no-repeat;
+}
+.form-switch .form-check-input:checked{
+background-color: var(--disables-button-color) !important;
+border-color: var(--disables-button-color) !important;
+}
+.charbtn{
+    font-size: 12px;
+    font-weight: 500;
+    background-color: var(--aque-color);
+    color: var( --blue_color); 
+    border-color: none !important;
+}
+.nav_content .nav-item{
+    all: unset;
+    font-weight: 500;
+    font-size: 15px;
+    cursor: pointer;
+color: var(--secondary-color);
+position: relative;
+}
+.nav_content .nav-item a{
+    all: unset;
+}
+  .nav_content .nav-item.active::before{
+    content: "";
+    position: absolute;
+    background-color: var(--primary-color);
+    width: calc(100% + 20px);
+    height: 2px;
+    bottom: -2px;
+    left: -10px;
+    box-shadow: 0 3px 1px -2px var(--primary-color) ;
+  }
+  .nav_content .nav-item.active{
+    color: var(--primary-color);
+  }
+/* show and hide */
+.Financial_nav .nav.border-bottom{
+    border-bottom: 1.5px solid var(--light_gray) !important;
+   
+}
+.record h2{
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--blace-color);
+}
+.record_btn{
+    background-color: var(--primary-color);
+    font-weight: 500;
+    font-size: 12px;
+}
+.veiw_btn{
+background-color: var( --aque-color) !important;
+color: var(--primary-color) !important;
+font-size: 12px;
+font-weight: 500;
+}
+.fade-in-right {
+    animation: fadeInRight 1s forwards;
+  }
+
+  @keyframes fadeInRight {
+    0% {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  .modal.fade-in-right .modal-dialog {
+    position:absolute;
+    top:1rem;
+    right:10px;
+    margin:0;
+  }
+  .modal label{
+    font-size: 14px;
+    font-weight: 500;
+    color: var( --dark-color);
+  }
+  .modal select::placeholder ,.modal input::placeholder,.modal textarea::placeholder,
+  .modal select ,.modal input,.modal textarea
+  {
+    font-size: 13px;
+    font-weight: 400;
+    color: var( --text-color)
+  }
+  select{
+    background-image: url(../images/selected.svg) !important;
+    color: var( --text-color);
+}
+
+input.selected,textarea.selected{
+    color: var(--blace-color) !important;
+}
+select.selected{
+    color: var(--blace-color) !important;
+    background-image: url(../images/defual_selected.svg) !important;
+}
+.AddMedicine{
+    color: var( --blue-text-color);
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.modal .delete{
+    color:var(--text-color);
+    border: none;
+    background-color: transparent;
+    font-size: 14px;
+    font-weight: 500;
+   }
+   .modal .delete.selected{
+    color:var(--danger-color);
+   }
+.save_record{
+    background-color: var(--disables-button-color);
+}
+.save_record.selected{
+    background-color: var(--primary-color);
+  }
+  .clear_btn{
+    border:none;
+    font-weight: 500;
+    background-color: transparent;
+    color: var(--text-color);
+    font-size: 13px;
+}
+.clear_btn.selected{
+    color: var(--delete-color) !important;
+}
+  .import_btn{
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+    font-size: 12px;
+    font-weight: 500;
+  }
+  .import_btn:hover{
+    color: var(--primary-color);
+  }
+  .confurm_delete h2{
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--blace-color);
+}
+.confurm_delete p{
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--secondary-color);
+}
+
+
+.cancel_btn, .delete_btn {
+border: 1px solid var(--light_color);
+font-weight: 500;
+font-size: 16px;}
+
+.model-delete .delete_btn {
+    background-color: var(--delete-color);
+color: var(--bg_white);
+}
+.duscription{
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x)* .5);
+    padding-left: calc(var(--bs-gutter-x)* .5);
+    margin-top: var(--bs-gutter-y);
+
+    border-radius: .25rem;
+}
+.duscription label{
+    background-color: var(--bg-color);
+    color: var(--gray-color);
+    width: 100%;
+}
+.duscription .editing_btns{
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.05);
+}
+.duscription .editor{
+    min-height: 300px;
+    display: block;
+    font-weight: 400;
+    font-size: 13px;
+    color: var(--text-color);
+}
+.duscription .editor.selected{
+    color: var(--dark-color);
+}
+
+.duscription .editor.seen{
+   display: none;
+}
+.duscription .editor:focus{
+border: none;
+outline: none;
+}
+
+.custom-file-input-wrapper {
+    display: flex;
+    align-items: center;
+    border: 1px solid var( --light_gray);
+    border-radius: 5px;
+    overflow: hidden;
+  
+}
+.custom-file-input {
+    flex-grow: 1;
+    border: none;
+    background: transparent;
+ 
+}
+.custom-file-input:focus{
+    border: none !important;
+    outline: none !important;
+}
+.custom-file-button {
+    background-color: var(--aque-color);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    white-space: nowrap;
+    font-size: 12px;
+    font-weight: 500;
+}
+.filter{
+    background-color:var(--bg-color);
+   
+    height: 40px;
+}
+.filter button{
+all: unset;
+width: 94px;
+height: 34px;
+font-weight: 500;
+font-size: 14px;
+color: var(--gry_color);
+cursor: pointer;
+}
+.filter button.active{
+background-color: var(--bg_white);
+color: var(--blace-color);
+}
+.state{
+    background-color: var(--bg-green-color);
+    color: var( --green-color);
+    height: 22px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: 500;
+    gap: .4rem;
+    
+}
+.state_bolut{
+    background-color: var(--bullet-color);
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    display: block;
+    
+
+}
+.confurm , .canseling{
+    font-size: 12px;
+    font-weight: 500;
+}
+.confurm {
+    background-color: var(--action_cofurming);
+    color: var(--confirm_color);
+}
+.canseling {
+    background-color: var(--action_canceling);
+    color: var(--action_cancelingtext);
+}
+
+.history_table td{
+color: var(--gray-color) !important;
+
+}
+.history_head{
+    color: var(--blace-color) !important;
+}
+.first_ques{
+    background-color:#f6f6f6;
+}
+.first_ques input.form-control,.first_ques input::placeholder{
+    border: none;
+    background-color: transparent;
+    font-size: 14px;
+    font-weight: 500;
+    color: #BBBBBB;
+}
+.first_ques input:focus{
+    background-color: transparent;
+    
+}
+.sec_ques{
+    background-color: #fde1e3;
+}
+.sec_ques td,.first_ques td{
+    border-bottom-right-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+}
+.first_ques .check,
+.sec_ques .check{
+    width: 15px;
+    height: 15px;
+    display: block;
+    border-radius: 4px;
+    background-color: var(--bg_white);
+}
+.first_ques .form-check-input,.first_ques .check{
+    background-color:white;
+    border:1.5px solid  var(--primary-color) !important;
+}
+.first_ques .form-check-input:checked{
+    background-color:  #96d5ee;
+    border: none !important;
+}
+.sec_ques .form-check-input,.sec_ques .check{
+    background-color:white;
+    border:1.5px solid  var(--danger-color) !important;
+}
+.sec_ques .form-check-input:checked{
+    background-color:  #fc919a;
+    border: none !important;
+}
+.updated_date{
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--confirm_color);
+    text-align: end;
+}
+.totl_balance{
+
+    color: var(--confirm_color) !important;
+}
+.Financial tr td:nth-child(2){
+ text-align: center;
+}
+.maincharts .teeth{
+    background-color: var(--teath);
+    border-width: 0px 1.5px 1.5px 0px;
+    border-style: solid;
+    border-color: var(--light_color);
+    border-bottom-right-radius: 5px;
+ overflow-x: auto;
+ overflow-y: hidden;
+ white-space: nowrap;
+ scrollbar-color: #D4D4DF, #D4D4DF
+}
+.maincharts .right_chart{
+    border-bottom-left-radius: 5px;
+    border-width: 0px 0px 1.5px 1.5px;
+}
+.sec_chart .teeth{
+    border-width: 1.5px 1.5px 0px 0px;
+    border-top-right-radius: 5px;
+}
+
+.sec_chart .teeth:last-child{
+    border-top-left-radius: 5px;
+    border-width: 1.5px 0px 0px 1.5px;
+}
+/* Webkit (Chrome, Safari) */
+.maincharts::-webkit-scrollbar ,
+.teeth::-webkit-scrollbar 
+
+{
+    height: 5px; 
+    border-radius: 10px;
+}
+
+.maincharts::-webkit-scrollbar-track 
+.teeth::-webkit-scrollbar-track{
+    background: #EDEDED; 
+    border-radius: 10px; 
+}
+
+.maincharts::-webkit-scrollbar-thumb,
+.teeth::-webkit-scrollbar-thumb
+
+{
+    background: linear-gradient(45deg, #D4D4DF, #B0B0B0);
+    border-radius: 10px; 
+}
+
+.teeth::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(45deg, #B0B0B0, #8A8A9E);
+}
+.maincharts::-webkit-scrollbar-thumb ,
+.teeth::-webkit-scrollbar-thumb 
+
+{
+    border-radius: 20px !important;
+}
+.teethInfo{
+    min-height: 140px;
+    justify-content: end !important;
+    padding-top: .5rem !important;
+    cursor: pointer;
+}
+.sec_chart .teethInfo{
+    justify-content: start !important;
+    
+}
+.teethInfo h3{
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--blace-color);
+    margin: 0;
+}
+.jaw{
+    background-color: var(--teath);
+    border: 1.5px solid  var(--light_gray);
+    height: 40px;
+    display: flex;
+}
+.jaw span{
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 500;
+}
+.jaw span:first-child{
+    border-right: 1.5px solid var(--light_gray);
+    padding-right: 1rem;
+
+}
+.chart_table td{
+    color: var(--gray-color) !important;
+}
+
+.check_state .form-check-input{
+    background-color: transparent !important;
+    border-color: var(--primary-color) !important;
+    }
+.check_state .form-check-input:checked{
+    background-color: var(--blue-text-color) !important;
+    border-color: var(--disables-button-color) !important;
+    }
+.veiw_state{
+    position: relative;
+    font-size: 10px !important;
+    color: var(--primary-color) !important;
+    font-weight: 500;
+    padding-left: 1rem !important;
+    margin: 1px;
+}
+.veiw_state::before{
+    position: absolute;
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    bottom: 30%;
+    left: 0px;
+}
+.SelectionMood.show {
+display: flex;
+}
+.actionButtons{
+    background-color: var(--bg-color);
+}
+.actionButtons .custom-btn{
+font-size: 12px;
+font-weight: 500;
+}
+.actionButtons .custom-btn:first-child{
+background-color: var(--action_cofurming);
+color: var( --confirm_color);
+
+}
+.actionButtons .custom-btn:nth-child(2){
+background-color: #FFACAC;
+color: var( --delete-color);
+}
+.add_fasttreetment .modal-dialog{
+    max-width:90%;
+    right:0% !important;
+    left:0% !important;
+    transform: translateX(0);
+    margin: 1% auto !important;
+}
+.AddTreatmentPlan{
+    all: unset;
+    color: var( --blue-text-color);
+    font-size: 13px;
+    font-weight: 500;
+}
+.deleteplan{
+   color: var(--delete-color);
+    font-weight: 500;
+    font-size: 13px;
+}
+.hiddenChart{
+    display: none;
+}
+.treat_Price{
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--blace-color);
+}
+.add_other_payment{
+    all: unset;
+    color: var( --blue-text-color);
+    font-size: 13px;
+    font-weight: 500;
+}
+.modal .price
+{
+    color: var(--blue-text-color);
+    font-weight: 500;
+    font-size: 13px;
+    display: none;
+}
+.modal .price.selected{
+display: block;
+}
+.line{
+    width: 1.5px;
+    height: 13px;
+    background-color: var(--blace-color);
+}
+.touth_state {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--blace-color);
+    position: relative;
+}
+.touth_state::before{
+    position: absolute;
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    bottom: 30%;
+    left: 0px;
+}
+.attention{
+    font-weight: 500;
+    font-size: 14px;
+    color: var( --delete-color);
+}
+.curstom_head{
+    font-weight: 500 !important;
+    font-size: 14px !important;
+    color: var(--gray-color) !important;
+    background-color: var(--bg-color) !important;
+}
+.curstom_footer{
+    font-weight: 500 !important;
+    font-size: 16px !important;
+    color: var(-gray-color) !important;
+    background-color: var(--light_gray) !important;
+}
+.curstom_footer td{
+   border-top-right-radius: 0 !important;
+    background-color: var(--light_gray) !important;
+}
+@media (max-width:332px){
+    .dropdownToggle{
+        gap:  0 !important;
+        padding: .25rem 1px !important
+    }
+  
+}
+@media (max-width:400px){
+    .filter_treatment{
+        /* justify-content: start !important; */
+    }
+    .filter_treatment button {
+        font-size: 11px !important;
+    }
+    .filter_treatment .nav-item{
+        width: auto;
+    }
+    .record_title_table{
+        font-size: 11px !important;
+    }
+    .head_history{
+        font-size: 10px !important;
+    }
+    .updated_date{
+        font-size: 12px !important;
+    }
+    .Financial table td,.Financial table th{ font-size: 12px !important}
+    .dropdownToggle{
+        gap:  0 !important;
+    
+    }
+    .PriceQuotes .dropdownToggle{
+        gap:  0 !important;
+        overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  
+    }
+    .PriceQuotes .dropdownToggle span{
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 60px;
+    }
+    .dropdownToggle, .drop_chart a.dropdown-item{
+        font-size: 11px;
+       font-weight: 400;
+    }
+  
+    .table_wrabber td{
+        font-size: 10px !important;
+    }
+    .chart_text{
+        font-size: 11px !important;
+    }
+    .treat_Price{
+        font-size: 9px !important;
+    }
+}
+
+
+
+@media (max-width:768px){
+    .save_record{
+        width: 100%;
+    }
+    .first_ques .delete_svg{
+width: 15px;
+    }
+    .signiture
+    {font-size: 12px !important;}
+    .first_ques .check,
+.sec_ques .check{
+    width: 12px;
+    height: 12px;
+  border-radius: 2px;
+}
+.maincharts{
+    width: 100%;
+    overflow-x: auto;
+}
+.maincharts .teeth{
+    overflow: visible;
+    width: fit-content !important;
+}
+.SelectionMood{
+    display: none !important;
+}
+.add_fasttreetment .modal-dialog{
+    max-width: 100%;
+}
+.treat_Price{
+    font-size: 10px;
+}
+}
+@media (max-width:1199.98px){
+    .patient_info .info h2{
+        font-size: 12px;
+     
+    }
+    .patient_info .info p{
+
+        font-size: 10px;
+      
+    }
+    
+    .filter_treatment button{
+        font-size: 12px;
+    }
+    .nav_content .nav-item{
+        font-size: 12px;
+    }
+    .record h2{
+        font-size: 13px;
+    }
+    .record_btn, .import_btn{
+        font-size: 10px;
+    }
+    .record_wrapper{
+        padding: 0 .7rem;}
+    .record_data{
+        height: auto !important;
+        border:  1px solid var(--light_gray) !important;
+        margin-bottom: 1rem;
+        border-radius: .5rem;
+    }
+    .record_title_table,.records_Name,.table_state{
+        border:none !important;
+     
+    }
+    .records_Name{
+        padding-top: 0 !important;
+    }
+    .table_state{
+        padding-top: 0 !important;
+    }
+    .records_Name .creat_info h2,.records_Name .creat_info p{
+        font-size: 12px;
+        margin: 0;
+    }
+   
+    .record_purch_date{
+        align-items: start !important; 
+    }
+    .record_title_table{
+        font-size: 13px;
+        font-weight: 500;
+    }
+    .record_title_table p:first-child,.record_names:not(:first-child) h2:first-child{
+       color: var(--text-color);
+      
+    }
+   
+    .date_complete{
+        font-size: 12px;
+    }
+   .Appointment_btn{
+    background-color: transparent
+   }
+   .record_purch_date_text{
+    font-size: 14px !important;
+    font-weight: 500 !important;
+}
+.custom-file-input-wrapper input{
+    width: 90%
+}
+.head_history{
+    font-size: 12px !important;
+}
+.first_ques td,.sec_ques td{
+    font-size: 10px !important;
+}
+.first_ques input.form-control,.first_ques input::placeholder{
+    font-size: 10px;
+}
+.updated_date{
+    font-size: 13px;
+}
+.Financial table td,.Financial table th{ font-size: 13px;}
+.medicine{
+    background-color: var(--bg-color);
+}
+.table_wrabber{
+    overflow-x: auto;
+}
+/* Webkit (Chrome, Safari) */
+.table_wrabber::-webkit-scrollbar 
+
+{
+    height: 5px; 
+    border-radius: 10px;
+}
+
+.deleting_icon{
+    width: 20% !important;
+}
+.discount .save_record{
+    width: fit-content;
+}
+}

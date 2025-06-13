@@ -1,0 +1,271 @@
+.cards{
+  max-height: calc(45vh);
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.filter{
+  background-color:var(--bg-color);
+ 
+  height: 35px;
+}
+.filter button{
+all: unset;
+width: fit-content;
+height: 30px;
+font-weight: 500;
+font-size: 14px;
+color: var(--gry_color);
+cursor: pointer;
+}
+.filter button.active{
+background-color: var(--bg_white);
+color: var(--blace-color);
+}
+.dashboard .table_wrabber h3, .table_wrabber td, .table_wrabber h2, .table_wrabber td{
+font-size: 12px;
+}
+.table_wrabber.todo_section h3, .table_wrabber.todo_section td, .table_wrabber.todo_section h2, .table_wrabber.todo_section td{
+  font-size: 11px;
+}
+
+.dashboard .card {
+    /* background-color: #e9ecef;
+    border-radius: 8px; */
+    overflow-y: auto;
+    min-height:calc(40vh / 2 - 1.7rem);
+   
+
+  }
+ .dashboard .card.larg-card{
+    min-height:40vh;
+ }
+  .dashboard .section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .dashboard .section-header h5 {
+    margin: 0;
+   font-weight: 600;
+   font-size: 18px;
+  
+   color: var(--blue_color);
+  }
+
+  .dashboard .btn-custom {
+    background-color: var(--aque-color);
+    color: var(--primary-color);
+    border: none;
+    font-size: 12px;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border-radius: 4px;
+    font-weight: 500;
+  }
+
+  .dashboard .btn-custom:hover {
+    color: var(--primary-color);
+  }
+  .dashboard .fade-in-right {
+    animation: fadeInRight 1s forwards;
+  }
+
+  @keyframes fadeInRight {
+    0% {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  .dashboard .modal.fade-in-right .modal-dialog {
+    position:absolute;
+    top:1rem;
+    right:10px;
+    margin:0;
+  }
+  
+  #add_patientLabel{
+color: var(--blace-color);
+font-weight: 500;
+font-size: 16px;
+  }
+  .dashboard .info_uploadImg button{
+    all: unset;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .dashboard .info_uploadImg button:first-child{
+   color:var(--primary-color);
+
+   
+  }
+ .dashboard .info_uploadImg button:nth-child(2){
+  color: var( --deleted_disabled);
+   
+  }
+ .dashboard .info_uploadImg button.selected:nth-child(2){
+   color:var(--danger-color);
+   
+  }
+  .dashboard .info_uploadImg p{
+    font-weight: 400;
+    font-size: 14px;
+   color:var(--gry_color);
+   
+  }
+  #add_patient .modal-footer{
+   border-top: 0 !important;
+  }
+  .dashboard .modal-footer .add_patient{
+    background-color: var(--disables-button-color);
+    font-size: 13px;
+    font-weight: 500;
+  }
+  .dashboard .modal-footer .add_patient.selected{
+    background-color: var(--primary-color);
+  }
+  #add_patient .modal-dialog input::placeholder, #add_patient select, #add_patient input[type = "date"], .doctor textarea::placeholder{
+    font-size: 13px;
+    font-weight: 400;
+    color: var( --blace-color);
+  }
+  .dashboard_info p {
+    color: var( --neutral-color);
+    font-size: 9px;
+    font-weight: 400;
+}
+.veiw_profile{
+  color: var(--blue-text-color);
+  border:1px solid var(--blue-text-color);
+  font-size: 12px;
+  font-weight:500 ;
+}
+
+.state-btn,.delete{
+  font-size: 12px !important;
+  font-weight: 500 !important;
+}
+.delete{
+  all: unset;
+  background-color: var(--danger-color);
+
+}
+.state-btn.undo{
+  background-color: var(--undo-color);
+
+}
+.state-btn.done{
+  background-color: var( --confirm_color);
+
+}
+.status_column.undo{
+ background-color: var(--bg-green-color)
+}
+.status_column.done{
+ /* background-color: var(--light_gray) */
+}
+.inf_text{
+  color: var(--blace-color);
+  font-size: 13px;
+  font-weight: 600;
+}
+select{
+  background-image: url(../images/selected.svg) !important;
+  color: var( --text-color);
+}
+select,input{
+  color: var( --text-color) !important;
+}
+input.selected{
+  color: var(--blace-color) !important;
+}
+select.selected{
+  color: var(--blace-color) !important;
+  background-image: url(../images/defual_selected.svg) !important;
+}
+
+.notification_info h2{
+  font-size: 14px;
+  columns: var(--blace-color);
+  font-weight: 500;
+}
+.notification_info p{
+font-size: 12px;
+font-weight: 400;
+color: var(--text-color);
+}
+.notication ::-webkit-scrollbar-thumb {
+  background: var( --green_color); 
+
+}
+  @media (max-width:1199.98px) { 
+    #carouselExampleControls .carousel-item {
+height: 130px;
+
+    }
+   
+    #carouselExampleControls .carousel-item img{
+height:100%;
+
+    }
+    .dashboard .cusum_card{
+      gap: 1rem;
+    }
+    .dashboard .btn-custom{
+      width: fit-content !important;
+    }
+   .dashboard .section-header h5 {
+      font-size: 14px !important;
+    }
+  .cards{
+    display: flex;
+    flex-direction: column;
+    grid-area: 1rem;
+    min-height: auto !important;
+  }
+.title_table h2{
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--blace-color);
+}
+.title_table p,.title_text{
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--blace-color);
+}
+.title_table p:first-child{
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--gry_color);
+}
+.modal-backdrop,
+.modal-backdrop.show{
+  margin-top: 0;
+}
+    
+  }
+  @media (min-width: 768px) {
+    body:has(#Open_profile.show) .offcanvas-backdrop {
+        display: none !important;
+    }
+}
+  @media (max-width: 991.98px){
+   .dashboard .card{
+      min-height: 40vh;
+    }
+  }
+  @media (max-width: 1350px){
+    .dashboard .section-header h5{
+      font-size: 16px;
+    }
+    .inf_text{
+      font-size: 12px;
+    }
+  }

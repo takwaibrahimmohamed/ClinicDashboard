@@ -1,0 +1,87 @@
+
+.info_acc img{
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+}
+.info_acc .info h2{
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--dark-color);
+}
+.info_acc .info p{
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--blace-color);
+}
+.profile_setting h3{
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--blace-color);
+}
+.profile_setting li a{
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--secondary-color);
+}
+.profile_info label{
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--dark-color);
+}
+.profile_info input{
+    font-size: 13px;
+    font-weight: 400;
+    background-color: var( --light_gray);
+    color: var(--blace-color);
+}
+
+.state{
+    background-color: var(--bg-green-color);
+    color: var( --green-color);
+    height: 22px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: 500;
+    gap: .4rem;
+    
+}
+.state_bolut{
+    background-color: var(--bullet-color);
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    display: block;
+    
+
+}
+.logout{
+    background-color: var(--blur-dager);
+    color: var(--danger-color);
+    font-size: 12px;
+    font-weight: 500;
+}
+
+@media (max-width:1199.98px) { 
+
+
+.title_table h2{
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--blace-color);
+  }
+  .title_table p,.title_text{
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--blace-color);
+  }
+  .title_table p:first-child{
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--gry_color);
+  }
+}

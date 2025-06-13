@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+ 
+    <link rel="stylesheet" href="../Report/Report.css">
+    <link rel="stylesheet" href="../style.css">
+ 
+    <title>Document</title>
+</head>
+<body>
+  <!--  -->
+  <div class="main_header">
+   
+  </div>
+  <div class="row gx-0">
+  <div class="sidebar_parent"></div>
+
+  <div class="container-fluid" id="main-content">
+    <div class="report_nav nav_content d-block d-lg-flex justify-content-between align-items-center
+    bg-white rounded p-2 pb-lg-3 p-lg-3 pt-lg-3 pb-lg-0 mb-3 mb-lg-0">
+      <!-- Dropdown for large screen -->
+      <ul class="nav d-none d-lg-flex navigate_items gap-3 border-bottom">
+        <li class="nav-item pb-2 active"  data-target="Treatments">
+          <a class="p-0">Treatments</a>
+        </li>
+        <li class="nav-item  pb-2" data-target="Appointments">
+          <a class="p-0">Appointments</a>
+        </li>
+        <li class="nav-item  pb-2" data-target="Patients">
+          <a class="p-0">Patients</a>
+        </li>
+      </ul>
+      <div class="d-flex justify-content-between align-items-center">
+        <div class="d-flex flex-column">
+          <p class="d-flex align-items-center gap-0 d-lg-none mobile_name_page p-1 m-0">
+            <span style="color: var(--primary-color);">Peport »</span>
+             <!-- Dropdown for mobile -->
+       
+            <select 
+            style="
+            border: none;
+            padding-left: 2px !important;
+            font-size:13px;
+            font-weight: 600;
+            color: black !important;
+            
+          width: 65% !important;
+            "
+            
+            id="mobileNav" class="py-0 form-select d-lg-none navigate_items">
+              <option value="Treatments" class="active" data-target="Treatments">Treatments</option>
+              <option value="Appointments" class="" data-target="Appointments">Appointments</option>
+              <option value="Patients" data-target="Patients">Patients</option>
+              
+            </select>
+          </p>
+          <div class="price p-0 m-0">Total: 122.0 ₪</div>
+        </div>
+        <div class="d-flex align-items-center gap-1">
+          <button type="button" class="mobile_filters_btn d-block d-lg-none btn rounded  h-50 py-0 py-lg-2 text-white px-0"
+          data-bs-toggle="modal">
+        <svg width="26" height="27" viewBox="0 0 26 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="0.5" y="1" width="25" height="25" rx="3.5" fill="white"/>
+          <rect x="0.5" y="1" width="25" height="25" rx="3.5" stroke="#F6F6F6"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M15.7708 8.52906C15.7708 8.40408 15.7708 8.28923 15.7643 8.19279C15.7572 8.08917 15.7411 7.97522 15.6931 7.85943C15.5895 7.60929 15.3908 7.41056 15.1407 7.30696C15.0249 7.25899 14.9109 7.24288 14.8073 7.23581C14.7109 7.22924 14.596 7.22924 14.471 7.22925H14.4456C14.3207 7.22924 14.2058 7.22924 14.1094 7.23581C14.0058 7.24288 13.8918 7.25899 13.776 7.30696C13.5259 7.41056 13.3271 7.60929 13.2235 7.85943C13.1756 7.97522 13.1595 8.08917 13.1524 8.19279C13.1482 8.25383 13.1467 8.32223 13.1461 8.39592H7.75C7.50838 8.39592 7.3125 8.59179 7.3125 8.83342C7.3125 9.07504 7.50838 9.27092 7.75 9.27092H13.1461C13.1467 9.3446 13.1482 9.413 13.1524 9.47404C13.1595 9.57766 13.1756 9.69161 13.2235 9.80741C13.3271 10.0575 13.5259 10.2563 13.776 10.3599C13.8918 10.4078 14.0058 10.4239 14.1094 10.431C14.2058 10.4376 14.3206 10.4376 14.4456 10.4376H14.471C14.596 10.4376 14.7108 10.4376 14.8073 10.431C14.9109 10.4239 15.0249 10.4078 15.1407 10.3599C15.3908 10.2563 15.5895 10.0575 15.6931 9.80741C15.7411 9.69161 15.7572 9.57766 15.7643 9.47404C15.7708 9.37761 15.7708 9.26279 15.7708 9.13781V8.52906ZM14.0208 8.83441V9.12508C14.0208 9.26697 14.0211 9.35147 14.0254 9.41448C14.028 9.45346 14.0316 9.47003 14.0327 9.47432C14.0474 9.50864 14.0748 9.53599 14.1091 9.55074C14.1134 9.55183 14.13 9.55539 14.1689 9.55805C14.2319 9.56235 14.3164 9.56258 14.4583 9.56258C14.6002 9.56258 14.6847 9.56235 14.7477 9.55805C14.7867 9.55539 14.8033 9.55183 14.8076 9.55074C14.8419 9.53599 14.8692 9.50864 14.884 9.47432C14.8851 9.47003 14.8886 9.45346 14.8913 9.41448C14.8956 9.35147 14.8958 9.26697 14.8958 9.12508V8.54175C14.8958 8.39986 14.8956 8.31536 14.8913 8.25236C14.8886 8.21337 14.8851 8.1968 14.884 8.19251C14.8692 8.15819 14.8419 8.13084 14.8076 8.11609C14.8033 8.115 14.7867 8.11144 14.7477 8.10879C14.6847 8.10449 14.6002 8.10425 14.4583 8.10425C14.3164 8.10425 14.2319 8.10449 14.1689 8.10879C14.13 8.11144 14.1134 8.115 14.1091 8.11609C14.0748 8.13084 14.0474 8.15819 14.0327 8.19251C14.0316 8.19681 14.028 8.21337 14.0254 8.25236C14.0211 8.31536 14.0208 8.39986 14.0208 8.54175V8.83242L14.0208 8.83342L14.0208 8.83441Z" fill="#606060"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9795 18.0209H7.75C7.50838 18.0209 7.3125 17.825 7.3125 17.5834C7.3125 17.3418 7.50838 17.1459 7.75 17.1459H11.9795C11.98 17.0722 11.9816 17.0038 11.9857 16.9428C11.9928 16.8392 12.0089 16.7252 12.0569 16.6094C12.1605 16.3593 12.3592 16.1606 12.6093 16.057C12.7251 16.009 12.8391 15.9929 12.9427 15.9858C13.0392 15.9792 13.154 15.9792 13.279 15.9792H13.3044C13.4294 15.9792 13.5442 15.9792 13.6406 15.9858C13.7442 15.9929 13.8582 16.009 13.974 16.057C14.2241 16.1606 14.4229 16.3593 14.5265 16.6094C14.5744 16.7252 14.5905 16.8392 14.5976 16.9428C14.6042 17.0392 14.6042 17.154 14.6042 17.279V17.8878C14.6042 18.0128 14.6042 18.1276 14.5976 18.224C14.5905 18.3277 14.5744 18.4416 14.5265 18.5574C14.4229 18.8075 14.2241 19.0063 13.974 19.1099C13.8582 19.1578 13.7442 19.1739 13.6406 19.181C13.5442 19.1876 13.4294 19.1876 13.3044 19.1876H13.279C13.154 19.1876 13.0391 19.1876 12.9427 19.181C12.8391 19.1739 12.7251 19.1578 12.6093 19.1099C12.3592 19.0063 12.1605 18.8075 12.0569 18.5574C12.0089 18.4416 11.9928 18.3277 11.9857 18.224C11.9816 18.163 11.98 18.0946 11.9795 18.0209ZM12.8542 17.8751V17.5844L12.8542 17.5834L12.8542 17.5824V17.2917C12.8542 17.1499 12.8544 17.0654 12.8587 17.0024C12.8614 16.9634 12.8649 16.9468 12.866 16.9425C12.8808 16.9082 12.9081 16.8808 12.9424 16.8661C12.9467 16.865 12.9633 16.8614 13.0023 16.8588C13.0653 16.8545 13.1498 16.8542 13.2917 16.8542C13.4336 16.8542 13.5181 16.8545 13.5811 16.8588C13.62 16.8614 13.6366 16.865 13.6409 16.8661C13.6752 16.8808 13.7026 16.9082 13.7173 16.9425C13.7184 16.9468 13.722 16.9634 13.7246 17.0024C13.7289 17.0654 13.7292 17.1499 13.7292 17.2917V17.8751C13.7292 18.017 13.7289 18.1015 13.7246 18.1645C13.722 18.2035 13.7184 18.22 13.7173 18.2243C13.7026 18.2586 13.6752 18.286 13.6409 18.3007C13.6366 18.3018 13.62 18.3054 13.5811 18.308C13.5181 18.3123 13.4336 18.3126 13.2917 18.3126C13.1498 18.3126 13.0653 18.3123 13.0023 18.308C12.9633 18.3054 12.9467 18.3018 12.9424 18.3007C12.9081 18.286 12.8808 18.2586 12.866 18.2243C12.8649 18.22 12.8614 18.2035 12.8587 18.1645C12.8544 18.1015 12.8542 18.017 12.8542 17.8751Z" fill="#606060"/>
+          <path d="M18.25 18.0209C18.4916 18.0209 18.6875 17.825 18.6875 17.5834C18.6875 17.3418 18.4916 17.1459 18.25 17.1459H15.9167C15.675 17.1459 15.4792 17.3418 15.4792 17.5834C15.4792 17.825 15.675 18.0209 15.9167 18.0209H18.25Z" fill="#606060"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M18.6875 13.2084C18.6875 13.45 18.4916 13.6459 18.25 13.6459H12.8538C12.8533 13.7196 12.8518 13.788 12.8476 13.849C12.8405 13.9527 12.8244 14.0666 12.7765 14.1824C12.6729 14.4325 12.4741 14.6313 12.224 14.7349C12.1082 14.7828 11.9942 14.7989 11.8906 14.806C11.7942 14.8126 11.6794 14.8126 11.5544 14.8126H11.529C11.404 14.8126 11.2891 14.8126 11.1927 14.806C11.0891 14.7989 10.9751 14.7828 10.8593 14.7349C10.6092 14.6313 10.4105 14.4325 10.3069 14.1824C10.2589 14.0666 10.2428 13.9527 10.2357 13.849C10.2292 13.7526 10.2292 13.6378 10.2292 13.5128V12.9041C10.2292 12.7791 10.2292 12.6642 10.2357 12.5678C10.2428 12.4642 10.2589 12.3502 10.3069 12.2344C10.4105 11.9843 10.6092 11.7856 10.8593 11.682C10.9751 11.634 11.0891 11.6179 11.1927 11.6108C11.2891 11.6042 11.404 11.6042 11.529 11.6042H11.5544C11.6794 11.6042 11.7942 11.6042 11.8906 11.6108C11.9942 11.6179 12.1082 11.634 12.224 11.682C12.4741 11.7856 12.6729 11.9843 12.7765 12.2344C12.8244 12.3502 12.8405 12.4642 12.8476 12.5678C12.8518 12.6288 12.8533 12.6972 12.8538 12.7709H18.25C18.4916 12.7709 18.6875 12.9668 18.6875 13.2084ZM11.8909 12.4911C11.9252 12.5058 11.9526 12.5332 11.9673 12.5675C11.9684 12.5718 11.972 12.5884 11.9746 12.6274C11.9789 12.6904 11.9792 12.7749 11.9792 12.9167V13.5001C11.9792 13.642 11.9789 13.7265 11.9746 13.7895C11.972 13.8285 11.9684 13.845 11.9673 13.8493C11.9526 13.8836 11.9252 13.911 11.8909 13.9257C11.8866 13.9268 11.87 13.9304 11.8311 13.933C11.7681 13.9373 11.6836 13.9376 11.5417 13.9376C11.3998 13.9376 11.3153 13.9373 11.2523 13.933C11.2133 13.9304 11.1967 13.9268 11.1924 13.9257C11.1581 13.911 11.1308 13.8836 11.116 13.8493C11.1149 13.845 11.1114 13.8285 11.1087 13.7895C11.1044 13.7265 11.1042 13.642 11.1042 13.5001V12.9167C11.1042 12.7749 11.1044 12.6904 11.1087 12.6274C11.1114 12.5884 11.1149 12.5718 11.116 12.5675C11.1308 12.5332 11.1581 12.5058 11.1924 12.4911C11.1967 12.49 11.2133 12.4864 11.2523 12.4838C11.3153 12.4795 11.3998 12.4792 11.5417 12.4792C11.6836 12.4792 11.7681 12.4795 11.8311 12.4838C11.87 12.4864 11.8866 12.49 11.8909 12.4911Z" fill="#606060"/>
+          <path d="M18.25 9.27092C18.4916 9.27092 18.6875 9.07504 18.6875 8.83342C18.6875 8.59179 18.4916 8.39592 18.25 8.39592H17.0833C16.8417 8.39592 16.6458 8.59179 16.6458 8.83342C16.6458 9.07504 16.8417 9.27092 17.0833 9.27092H18.25Z" fill="#606060"/>
+          <path d="M9.35417 13.2084C9.35417 13.45 9.15829 13.6459 8.91667 13.6459H7.75C7.50838 13.6459 7.3125 13.45 7.3125 13.2084C7.3125 12.9668 7.50838 12.7709 7.75 12.7709H8.91667C9.15829 12.7709 9.35417 12.9668 9.35417 13.2084Z" fill="#606060"/>
+          </svg>
+       </button>
+          <button type="button" class="report_Treatments_btn btn rounded py-1 py-lg-2 text-white px-1 px-lg-2">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M13.5 8.25C13.0858 8.25 12.75 8.58579 12.75 9C12.75 9.41421 13.0858 9.75 13.5 9.75H13.5067C13.921 9.75 14.2567 9.41421 14.2567 9C14.2567 8.58579 13.921 8.25 13.5067 8.25H13.5Z" fill="#006289"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M9.789 0.937501H8.211C7.53715 0.93748 6.97522 0.937462 6.52914 0.997436C6.0583 1.06074 5.6332 1.19999 5.29159 1.54159C4.94999 1.8832 4.81074 2.3083 4.74744 2.77914C4.68746 3.22523 4.68748 3.78714 4.6875 4.46099L4.6875 5.4408C4.39588 5.44476 4.13782 5.45347 3.9088 5.4726C3.4758 5.50877 3.09863 5.58499 2.74875 5.76491C2.32988 5.9803 1.97028 6.29295 1.70327 6.67702C1.47868 7.00009 1.36033 7.36093 1.27892 7.77722C1.20033 8.1791 1.14855 8.67787 1.08471 9.29282L1.07899 9.3479C1.00233 10.0862 0.940552 10.6812 0.937613 11.1625C0.934587 11.6578 0.991815 12.096 1.19761 12.499C1.43918 12.972 1.81189 13.3673 2.27085 13.6425C2.65864 13.8751 3.09603 13.9718 3.60248 14.0177C3.94978 14.0492 4.35822 14.0585 4.83844 14.0613C4.79307 14.2666 4.7559 14.4483 4.73027 14.6091C4.68569 14.889 4.66701 15.155 4.71863 15.4191C4.83715 16.0255 5.21034 16.5576 5.75369 16.8452C5.99545 16.9732 6.25566 17.0202 6.52413 17.0417C6.78342 17.0625 7.10357 17.0625 7.48582 17.0625H10.5142C10.8964 17.0625 11.2166 17.0625 11.4758 17.0417C11.7443 17.0202 12.0045 16.9732 12.2463 16.8452C12.7896 16.5576 13.1628 16.0255 13.2813 15.4191C13.333 15.155 13.3143 14.889 13.2697 14.6091C13.2441 14.4483 13.2069 14.2666 13.1615 14.0613C13.6418 14.0585 14.0502 14.0492 14.3975 14.0177C14.904 13.9718 15.3414 13.8751 15.7292 13.6425C16.1881 13.3673 16.5608 12.972 16.8024 12.499C17.0082 12.096 17.0654 11.6578 17.0624 11.1625C17.0595 10.6812 16.9977 10.0862 16.921 9.34782L16.9153 9.29283C16.8515 8.67787 16.7997 8.1791 16.7211 7.77722C16.6397 7.36093 16.5213 7.00009 16.2967 6.67702C16.0297 6.29295 15.6701 5.9803 15.2513 5.76491C14.9014 5.58499 14.5242 5.50877 14.0912 5.4726C13.8622 5.45347 13.6041 5.44476 13.3125 5.4408L13.3125 4.46101C13.3125 3.78718 13.3125 3.22521 13.2526 2.77914C13.1893 2.3083 13.05 1.8832 12.7084 1.54159C12.3668 1.19999 11.9417 1.06074 11.4709 0.997436C11.0248 0.937462 10.4629 0.93748 9.789 0.937501ZM5.32712 12.3933C5.23179 12.5524 5.16432 12.7315 5.10525 12.9372C4.5102 12.9361 4.0634 12.9299 3.70399 12.8973C3.27255 12.8582 3.02844 12.7851 2.84939 12.6777C2.56741 12.5086 2.3432 12.2686 2.19952 11.9873C2.1106 11.8132 2.06008 11.5813 2.06259 11.1693C2.06516 10.7495 2.12062 10.2092 2.201 9.43495C2.26818 8.78787 2.31526 8.33955 2.383 7.99313C2.44903 7.65548 2.52636 7.46393 2.62698 7.31919C2.78702 7.08899 3.00501 6.89816 3.26321 6.76539C3.42896 6.68016 3.64192 6.62381 4.00245 6.59369C4.37037 6.56296 4.8414 6.5625 5.51547 6.5625H12.4845C13.1586 6.5625 13.6296 6.56296 13.9976 6.59369C14.3581 6.62381 14.571 6.68016 14.7368 6.76539C14.995 6.89816 15.213 7.08899 15.373 7.31919C15.4736 7.46393 15.551 7.65548 15.617 7.99313C15.6847 8.33955 15.7318 8.78787 15.799 9.43495C15.8794 10.2092 15.9348 10.7495 15.9374 11.1693C15.9399 11.5813 15.8894 11.8132 15.8005 11.9873C15.6568 12.2686 15.4326 12.5086 15.1506 12.6777C14.9716 12.7851 14.7275 12.8582 14.296 12.8973C13.9366 12.9299 13.4898 12.9361 12.8947 12.9372C12.8357 12.7315 12.7682 12.5524 12.6729 12.3933C12.4428 12.0094 12.0952 11.7105 11.6779 11.5547C11.3615 11.4365 11.0059 11.4369 10.5762 11.4374H7.42374C6.99411 11.4369 6.63849 11.4365 6.32209 11.5547C5.90474 11.7105 5.55713 12.0094 5.32712 12.3933ZM12.1875 5.4375V4.5C12.1875 3.77699 12.1863 3.29132 12.1376 2.92905C12.0911 2.58295 12.0107 2.43483 11.9129 2.33709C11.8152 2.23935 11.6671 2.15894 11.321 2.1124C10.9587 2.0637 10.473 2.0625 9.75 2.0625H8.25C7.52699 2.0625 7.04132 2.0637 6.67905 2.1124C6.33295 2.15894 6.18483 2.23935 6.08709 2.33709C5.98935 2.43483 5.90894 2.58295 5.8624 2.92905C5.8137 3.29132 5.8125 3.77699 5.8125 4.5V5.4375H12.1875ZM7.50848 12.5625C6.94849 12.5625 6.81597 12.5711 6.71562 12.6086C6.5499 12.6705 6.39824 12.7945 6.29215 12.9715C6.22306 13.0869 6.17873 13.2491 6.04475 13.8306C5.94559 14.261 5.87793 14.556 5.84126 14.7861C5.80501 15.0137 5.80812 15.1285 5.82274 15.2033C5.88085 15.5006 6.05819 15.7335 6.28005 15.8509C6.32525 15.8749 6.40929 15.9039 6.61411 15.9203C6.823 15.9371 7.09765 15.9375 7.50848 15.9375H10.4915C10.9023 15.9375 11.177 15.9371 11.3859 15.9203C11.5907 15.9039 11.6747 15.8749 11.7199 15.8509C11.9418 15.7335 12.1191 15.5006 12.1772 15.2033C12.1919 15.1285 12.195 15.0137 12.1587 14.7861C12.122 14.556 12.0544 14.261 11.9552 13.8306C11.8212 13.2491 11.7769 13.0869 11.7078 12.9715C11.6017 12.7945 11.4501 12.6705 11.2843 12.6086C11.184 12.5711 11.0515 12.5625 10.4915 12.5625H7.50848Z" fill="#006289"/>
+              </svg>
+              
+          </button>
+        </div>
+      </div>
+      
+     
+    </div>
+    <div class="bg-white rounded p-3 pt-lg-1 report_Treatments_contain">
+    
+      <div id="Treatments" class="Treatments active report_content">
+       <div class="d-none d-lg-flex align-items-center justify-content-between">
+        <form style="width: 85%;"  class="d-none d-lg-flex report_filter row justify-content-lg-end justify-content-xxl-between align-items-center gx-1 gx-xl-3  gy-3 mb-3">
+          <div class="col-lg-2 pe-0">
+            <label for="From_Date" class="form-label">From Date</label>
+            <input type="date" class="form-control filter_completDate py-2 px-3" id="From_Date">
+          </div>
+          <div class="col-lg-2 pe-0">
+            <label for="To_Date" class="form-label">To Date</label>
+            <input type="date" class="form-control filter_completDate py-2 px-3" id="To_Date">
+          </div>
+         
+          <div class="col-lg-2 pe-0">
+            <label for="Patient" class="form-label ">Patient</label>
+            <select id="Patient" class="form-select py-2 px-3">
+              <option selected>Select Patient</option>
+              <option>Patient11</option>
+            </select>
+          </div>
+          <div class="col-lg-2 pe-0">
+            <label for="Doctor" class="form-label ">Doctor</label>
+            <select id="Doctor" class="form-select py-2 px-3">
+              <option selected>Select Doctor</option>
+              <option>Doctor11</option>
+            </select>
+          </div>
+          
+          <div class="col-lg-3 col-xxl-2 pe-0">
+            <label for="report_TreatmentsType" class="form-label ">Treatment Name</label>
+            <select id="report_TreatmentsType" class="form-select py-2 px-3">
+              <option selected>Select Treatment Name</option>
+              <option>name </option>
+            </select>
+          </div>
+          <div class="col-lg-1 col-xxl-2 px-0 m-0">
+            <button class="clear_btn px-3 pt-5">
+     
+              Clear
+         </button>
+          </div>
+        
+        
+        </form>
+        <div class="price p-0 pt-3 m-0">Total: 122.0 ₪</div>
+       </div>
+        
+          <div class="report_Treatments_wrapper rounded mb-3">
+            <!-- web  -->
+            <div class="d-none d-lg-block table_wrabber my-2">
+              <table class="table table-bordered ">
+                <thead class="">
+                  <tr>
+                    <th scope="col">Treatment Name</th>
+                    <th scope="col">Patient</th>
+                    <th scope="col">Doctor</th>
+                    <th scope="col">Date Completed</th>
+                    <th scope="col">Price</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td >
+                      Treatment Name
+                    </td>
+                    <td>
+                      <h2 class="name_head">Ahmed Zourob</h2>
+                    </td>
+                    <td >
+                      <h2 class="p-0 m-0">Dr. Rafat ND</h2>
+                    </td>
+                    <td>10/08/1987</td>
+                    <td>₪ 22</td>
+                   
+                  
+                  </tr>
+                
+                </tbody>
+              </table>
+            </div>
+            <div class="d-lg-none row border bd-highlight border-bottom report_Treatments_data" style="height: 52px;">
+              <div class="col-12 col-lg-3 order-1 order-lg-0 bd-highlight title_table title_text py-2 
+              align-items-start d-flex justify-content-between justify-content-lg-start align-items-lg-center
+              " >
+              <p class="m-0 p-0 d-block d-lg-none">  Treatment Name</p>
+              <p class="p-0 m-0">  Treatment Name</p>
+            
+            </div>
+              <div class="col-12 col-lg-2 order-0 order-lg-1 bd-highlight d-flex align-items-center title_table report_Treatments_names py-2 gap-1">
+     
+                <h2 class="name_head">Ahmed Zourob</h2>
+            </div> 
+            <div class="col-12 col-lg-2 order-3 order-lg-4 bd-highlight title_table d-flex align-items-center 
+            report_Treatments_names py-2 gap-1 justify-content-between">
+              <h2 class="m-0 p-0 d-block d-lg-none">Doctor's Name</h2>
+              <h2 class="p-0 m-0">Dr. Rafat ND</h2>
+          </div> 
+            <div class="col-12 col-lg-3 order-5 order-lg-4 bd-highlight title_table title_text py-2 
+            d-flex align-items-center 
+            justify-content-between
+            " >
+            <p class="m-0 p-0 d-block d-lg-none">Date Completed</p>
+            
+            <p class="p-0 m-0"> 10/08/1987</p>
+           
+            </div>
+            <div class="col-12 col-lg-2 order-2 order-lg-4 bd-highlight title_table title_text py-2 
+            d-flex align-items-center justify-content-between
+            " >
+            <p class="m-0 p-0 d-block d-lg-none">Price</p>
+            
+            <p class="p-0 m-0"> ₪ 22</p>
+           
+            </div>
+          
+           
+              </div> 
+          </div> 
+      </div>
+     
+        <div id="Appointments" class="Appointments report_content">
+            <div class="d-none d-lg-flex  align-items-center justify-content-between">
+                <form style="width: 85%;"  class="d-none d-lg-flex  report_filter row justify-content-lg-start align-items-center gx-1 gx-xl-3  gy-3 mb-3">
+                    <div class="col-lg-2 pe-0">
+                      <label for="From_Date" class="form-label">From Date</label>
+                      <input type="date" class="form-control filter_completDate py-2 px-3" id="From_Date">
+                    </div>
+                    <div class="col-lg-2 pe-0">
+                      <label for="To_Date" class="form-label">To Date</label>
+                      <input type="date" class="form-control filter_completDate py-2 px-3" id="To_Date">
+                    </div>
+                    <div class="col-lg-2 pe-0">
+                        <label for="Appointments_Doctor" class="form-label ">Doctor</label>
+                        <select id="Appointments_Doctor" class="form-select py-2 px-3">
+                          <option selected>Select Doctor</option>
+                          <option>Doctor11</option>
+                        </select>
+                      </div>
+                    <div class="col-lg-2 pe-0">
+                        <label for="Appointments_Patient" class="form-label ">Patient</label>
+                        <select id="Appointments_Patient" class="form-select py-2 px-3">
+                          <option selected>Select Patient</option>
+                          <option>Patient11</option>
+                        </select>
+                      </div>
+                      <div class="col-2 pe-0">
+                        <label for="Appointments_Status" class="form-label ">Status</label>
+                        <select id="Appointments_Status" class="form-select py-2 px-3">
+                          <option selected>Select Status</option>
+                          <option>activ</option>
+                        </select>
+                      </div>
+                    <div class="col-lg-1 col-xxl-2 px-0 m-0">
+                      <button class="clear_btn px-3 pt-5">
+               
+                        Clear
+                   </button>
+                    </div>
+                  
+                  
+                  </form>
+                <div class="price p-0 pt-3 m-0">Total: 122.0 ₪</div>
+               </div>
+       
+            
+              <div class="report_Treatments_wrapper rounded mb-3">
+              
+               <!-- web  -->
+            <div class="d-none d-lg-block table_wrabber my-2">
+              <table class="table table-bordered ">
+                <thead class="">
+                  <tr>
+                    <th scope="col">Patient</th>
+                    <th scope="col">Doctor</th>
+                    <th scope="col">Date Completed</th>
+                    <th scope="col">Note</th>
+                    <th scope="col">Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td >
+                      <h2>Ahmed Zourob</h2>
+                    </td>
+                    <td>
+                      <h2 class="p-0 m-0">Dr. Rafat ND</h2>
+                    </td>
+                    <td >
+                      10/08/1987
+                    </td>
+                    <td>Patient reports pain and sensitivity in tooth #36.</td>
+                    <td>
+                      <div class="bd-highlight table_state  p-2 px-0 d-flex align-items-center pe-lg-2 " style="height: 100%;">
+                        <span class="state">
+                          <span class="state_bolut"></span>
+                          Done</span>
+                      </div>
+                    </td>
+                   
+                  
+                  </tr>
+                
+                </tbody>
+              </table>
+            </div>
+               
+               <div class="d-lg-none row border bd-highlight border-bottom report_Treatments_data" style="height: 72px;">
+               
+                <div class="col-12 col-lg-2 order-2 order-lg-1 bd-highlight
+                 d-flex align-items-center title_table report_Treatments_names py-2 gap-1">
+       
+                  <h2>Ahmed Zourob</h2>
+              </div> 
+              <div class="col-12 col-lg-2 order-2 order-lg-4 bd-highlight justify-content-between
+               title_table d-flex align-items-center report_Treatments_names py-2 gap-1">
+               
+                <h2 class="m-0 p-0 d-block d-lg-none">Doctor's Name</h2>
+            <h2 class="p-0 m-0">Dr. Rafat ND</h2>
+            </div> 
+              <div class="col-12 col-lg-3 order-3 order-lg-4 bd-highlight title_table title_text py-2 
+              d-flex align-items-center justify-content-between
+              " >
+              <p class="m-0 p-0 d-block d-lg-none">Date Completed</p>
+          
+              <p class="p-0 m-0"> 10/08/1987</p>
+              </div>
+              <div class="col-12 col-lg-3 order-3 order-lg-4 bd-highlight title_table title_text py-2 d-flex align-items-start 
+              align-items-lg-center justify-content-between" 
+            style="overflow-y: auto;"
+            >
+            <p class="m-0 p-0 d-block d-lg-none">Note</p>
+          
+            <p class="p-0 m-0 text-end text-lg-start">Patient reports pain and sensitivity in tooth #36.</p>
+           
+          </div>
+            <div class="col-12 col-lg-2 order-5 order-lg-4 d-flex align-items-center align-lg-items-start title_table 
+            gap-1
+            gap-lg-2 justify-content-between">
+            <p class="m-0 p-0 d-block d-lg-none">Status</p>
+          
+                <div class="bd-highlight table_state  p-2 px-0 d-flex align-items-center pe-lg-2 " style="height: 100%;">
+                  <span class="state">
+                    <span class="state_bolut"></span>
+                    Done</span>
+                </div>
+              
+            </div>
+                </div> 
+            
+            
+              </div> 
+        </div>
+        <div id="Patients" class="Patients report_content">
+          <div class="d-none d-lg-flex align-items-center justify-content-between">
+           <form style="width: 85%;" class="d-none d-lg-flex report_filter row justify-content-lg-end justify-content-xxl-between 
+           align-items-center gx-1 gx-xl-3  gy-3 mb-3" style="width: 80%;">
+             <div class="col-2 pe-0">
+               <label for="From_Date" class="form-label">From Date</label>
+               <input type="date" class="form-control filter_completDate py-2 px-3" id="From_Date">
+             </div>
+             <div class="col-2 pe-0">
+               <label for="To_Date" class="form-label">To Date</label>
+               <input type="date" class="form-control filter_completDate py-2 px-3" id="To_Date">
+             </div>
+            
+             <div class="col-3 pe-0">
+               <label for="_Patient" class="form-label ">Patient</label>
+               <select id="_Patient" class="form-select py-2 px-3">
+                 <option selected>Select Patient</option>
+                 <option>Patient11</option>
+               </select>
+             </div>
+          
+             
+             <div class="col-3 pe-0">
+              <label for="To_Date" class="form-label">Referral Source</label>
+              <input type="text" class="form-control filter_completDate py-2 px-3" placeholder="Select Referral Source">
+             </div>
+             <div class="col-lg-2 px-0 m-0">
+               <button class="clear_btn px-3 pt-5">
+        
+                 Clear
+            </button>
+             </div>
+           
+           
+           </form>
+           <div class="price p-0 pt-3 m-0">Total: 122.0 ₪</div>
+          </div>
+           
+             <div class="report_Treatments_wrapper rounded mb-3">
+             
+              <!-- web  -->
+              <div class="d-none d-lg-block table_wrabber my-2">
+                <table class="table table-bordered ">
+                  <thead class="">
+                    <tr>
+                      <th scope="col">Patient</th>
+                      <th scope="col">Gender</th>
+                      <th scope="col">Age</th>
+                      <th scope="col">How did you heard about us?</th>
+                      <th scope="col">Joined Date</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td >
+                        <h2>Ahmed Zourob</h2>
+                      </td>
+                      <td>
+                        Male
+                      </td>
+                      <td >
+                       28
+                      </td>
+                      <td>Instagram</td>
+                      <td>
+                        01/12/2024
+                      </td>
+                     
+                    
+                    </tr>
+                  
+                  </tbody>
+                </table>
+              </div>
+              
+             
+              <div class="d-lg-none row border bd-highlight border-bottom report_Treatments_data" style="height: 52px;">
+             
+               <div class="col-12 col-lg-3 order-0 order-lg-0 bd-highlight d-flex align-items-center
+                title_table report_Treatments_names py-2 gap-1">
+      
+                 <h2>Ahmed Zourob</h2>
+             </div> 
+             <div class="col-12 col-lg-2 order-2 order-lg-1 bd-highlight title_table title_text py-2 
+             align-items-start d-flex justify-content-between justify-content-lg-start align-items-lg-center
+             " >
+             <p class="m-0 p-0 d-block d-lg-none">Gender</p>
+          
+             <p class="p-0 m-0"> Male</p>
+            
+           </div>
+             <div class="col-12 col-lg-2 order-2 order-lg-4 bd-highlight title_table d-flex justify-content-between lign-items-center report_Treatments_names py-2 gap-1">
+       
+          <p class="m-0 p-0 d-block d-lg-none">Age</p>
+          
+          <p class="p-0 m-0">28</p>
+           </div> 
+             <div class="col-12 col-lg-3 order-3 order-lg-4 bd-highlight title_table title_text py-2 
+             d-flex align-items-center justify-content-between
+             " >
+             <p class="m-0 p-0 d-block d-lg-none">How did you heard about us?</p>
+          
+          <p class="p-0 m-0">  Instagram</p>
+           
+             </div>
+             <div class="col-12 col-lg-2 order-5 order-lg-5 bd-highlight title_table title_text py-2 
+             d-flex align-items-center justify-content-between
+             " > 
+             <p class="m-0 p-0 d-block d-lg-none">Joined Date</p>
+          
+             <p class="p-0 m-0">  01/12/2024</p>
+            
+             </div>
+           
+            
+               </div> 
+           
+           
+             </div> 
+         </div>
+       
+       
+        <nav aria-label="Page navigation example ">
+          <ul class="pagination justify-content-end gap-1">
+            <li class="page-item ">
+              <a class="page-link rounded text-dark" style="font-size: 14px;font-weight: 600;" href="#" aria-label="Previous">
+                <span aria-hidden="true">&lt;</span>
+              </a>
+            </li>
+            <li class="page-item "><a class="page-link rounded text-dark" href="#" style="font-size: 14px;font-weight: 600;">1</a></li>
+            <li class="page-item "><a class="page-link rounded text-dark" href="#" style="font-size: 14px;font-weight: 600;">2</a></li>
+            <li class="page-item "><a class="page-link rounded text-dark" href="#" style="font-size: 14px;font-weight: 600;">...</a></li>
+            <li class="page-item"><a class="page-link rounded text-dark" href="#" style="font-size: 14px;font-weight: 600;">9</a></li>
+            <li class="page-item"><a class="page-link rounded text-dark" href="#" style="font-size: 14px;font-weight: 600;">10</a></li>
+            <li class="page-item ">
+              <a class="page-link rounded text-dark" style="font-size: 14px;font-weight: 600;" href="#" aria-label="Next">
+                <span aria-hidden="true">&gt;</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+     
+     
+  
+        
+    </div>
+  </div>
+  </div>
+<!-- 1- Treatments  -->
+<div class="modal fade-in-right mobile_filters" id="filters_Treatments" tabindex="-1" role="dialog" 
+aria-labelledby="filtersLabel" aria-hidden="true">
+ <div class="modal-dialog" role="document">
+   <div class="modal-content" style="height: 95vh; overflow-y: auto;">
+     <div class="modal-header">
+       <h5 class="modal-title" id="filtersLabel">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M13.9583 2.8985C13.9583 2.71995 13.9584 2.55588 13.949 2.41812C13.9389 2.27008 13.9158 2.1073 13.8473 1.94188C13.6993 1.58455 13.4154 1.30065 13.0581 1.15264C12.8927 1.08412 12.7299 1.06111 12.5818 1.05101C12.4441 1.04161 12.28 1.04162 12.1015 1.04163H12.0652C11.8866 1.04162 11.7226 1.04161 11.5848 1.05101C11.4368 1.06111 11.274 1.08412 11.1086 1.15264C10.7513 1.30065 10.4674 1.58455 10.3193 1.94188C10.2508 2.1073 10.2278 2.27008 10.2177 2.41812C10.2118 2.50532 10.2096 2.60303 10.2088 2.70829H2.5C2.15482 2.70829 1.875 2.98812 1.875 3.33329C1.875 3.67847 2.15482 3.95829 2.5 3.95829H10.2088C10.2096 4.06356 10.2118 4.16127 10.2177 4.24847C10.2278 4.3965 10.2508 4.55929 10.3193 4.72471C10.4674 5.08204 10.7513 5.36594 11.1086 5.51395C11.274 5.58247 11.4368 5.60548 11.5848 5.61558C11.7226 5.62498 11.8866 5.62497 12.0652 5.62496H12.1015C12.28 5.62497 12.4441 5.62498 12.5818 5.61558C12.7299 5.60548 12.8927 5.58247 13.0581 5.51395C13.4154 5.36594 13.6993 5.08204 13.8473 4.72471C13.9158 4.55929 13.9389 4.39651 13.949 4.24847C13.9584 4.11071 13.9583 3.94669 13.9583 3.76814V2.8985ZM11.4583 3.33472V3.74996C11.4583 3.95265 11.4587 4.07337 11.4648 4.16338C11.4686 4.21907 11.4737 4.24274 11.4753 4.24887C11.4963 4.2979 11.5354 4.33698 11.5844 4.35804C11.5906 4.3596 11.6142 4.36468 11.6699 4.36848C11.7599 4.37462 11.8806 4.37496 12.0833 4.37496C12.286 4.37496 12.4067 4.37462 12.4967 4.36848C12.5524 4.36468 12.5761 4.3596 12.5822 4.35804C12.6313 4.33698 12.6703 4.2979 12.6914 4.24887C12.693 4.24274 12.6981 4.21907 12.7019 4.16338C12.708 4.07337 12.7083 3.95266 12.7083 3.74996V2.91663C12.7083 2.71393 12.708 2.59321 12.7019 2.50321C12.6981 2.44752 12.693 2.42385 12.6914 2.41772C12.6703 2.36869 12.6313 2.32961 12.5822 2.30855C12.5761 2.30699 12.5524 2.30191 12.4967 2.29811C12.4067 2.29197 12.286 2.29163 12.0833 2.29163C11.8806 2.29163 11.7599 2.29197 11.6699 2.29811C11.6142 2.30191 11.5906 2.30699 11.5844 2.30855C11.5354 2.32961 11.4963 2.36869 11.4753 2.41772C11.4737 2.42385 11.4686 2.44752 11.4648 2.50321C11.4587 2.59321 11.4583 2.71393 11.4583 2.91663V3.33187L11.4583 3.33329L11.4583 3.33472Z" fill="#00212E"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M8.54212 16.4583H2.5C2.15482 16.4583 1.875 16.1785 1.875 15.8333C1.875 15.4881 2.15482 15.2083 2.5 15.2083H8.54212C8.54291 15.103 8.54509 15.0053 8.55104 14.9181C8.56114 14.7701 8.58415 14.6073 8.65267 14.4419C8.80069 14.0845 9.08458 13.8006 9.44192 13.6526C9.60734 13.5841 9.77012 13.5611 9.91816 13.551C10.0559 13.5416 10.22 13.5416 10.3985 13.5416H10.4348C10.6134 13.5416 10.7774 13.5416 10.9152 13.551C11.0632 13.5611 11.226 13.5841 11.3914 13.6526C11.7487 13.8006 12.0326 14.0845 12.1807 14.4419C12.2492 14.6073 12.2722 14.7701 12.2823 14.9181C12.2917 15.0559 12.2917 15.2199 12.2917 15.3984V16.2681C12.2917 16.4466 12.2917 16.6107 12.2823 16.7485C12.2722 16.8965 12.2492 17.0593 12.1807 17.2247C12.0326 17.582 11.7487 17.8659 11.3914 18.014C11.226 18.0825 11.0632 18.1055 10.9152 18.1156C10.7774 18.125 10.6134 18.125 10.4348 18.125H10.3985C10.22 18.125 10.0559 18.125 9.91816 18.1156C9.77012 18.1055 9.60734 18.0825 9.44192 18.014C9.08458 17.8659 8.80069 17.582 8.65267 17.2247C8.58415 17.0593 8.56114 16.8965 8.55104 16.7485C8.54509 16.6613 8.54291 16.5636 8.54212 16.4583ZM9.79166 16.25V15.8347L9.79167 15.8333L9.79166 15.8319V15.4166C9.79166 15.2139 9.792 15.0932 9.79814 15.0032C9.80194 14.9475 9.80703 14.9238 9.80858 14.9177C9.82965 14.8687 9.86873 14.8296 9.91776 14.8085C9.92389 14.807 9.94755 14.8019 10.0032 14.7981C10.0933 14.792 10.214 14.7916 10.4167 14.7916C10.6194 14.7916 10.7401 14.792 10.8301 14.7981C10.8858 14.8019 10.9094 14.807 10.9156 14.8085C10.9646 14.8296 11.0037 14.8687 11.0247 14.9177C11.0263 14.9238 11.0314 14.9475 11.0352 15.0032C11.0413 15.0932 11.0417 15.2139 11.0417 15.4166V16.25C11.0417 16.4527 11.0413 16.5734 11.0352 16.6634C11.0314 16.7191 11.0263 16.7427 11.0247 16.7489C11.0037 16.7979 10.9646 16.837 10.9156 16.858C10.9094 16.8596 10.8858 16.8647 10.8301 16.8685C10.7401 16.8746 10.6194 16.875 10.4167 16.875C10.214 16.875 10.0933 16.8746 10.0032 16.8685C9.94756 16.8647 9.92389 16.8596 9.91776 16.858C9.86873 16.837 9.82965 16.7979 9.80858 16.7489C9.80703 16.7427 9.80194 16.7191 9.79814 16.6634C9.792 16.5734 9.79166 16.4527 9.79166 16.25Z" fill="#00212E"/>
+          <path d="M17.5 16.4583C17.8452 16.4583 18.125 16.1785 18.125 15.8333C18.125 15.4881 17.8452 15.2083 17.5 15.2083H14.1667C13.8215 15.2083 13.5417 15.4881 13.5417 15.8333C13.5417 16.1785 13.8215 16.4583 14.1667 16.4583H17.5Z" fill="#00212E"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M18.125 9.58329C18.125 9.92847 17.8452 10.2083 17.5 10.2083H9.79121C9.79041 10.3136 9.78824 10.4113 9.78229 10.4985C9.77218 10.6465 9.74917 10.8093 9.68066 10.9747C9.53264 11.332 9.24874 11.6159 8.89141 11.764C8.72599 11.8325 8.56321 11.8555 8.41517 11.8656C8.2774 11.875 8.11336 11.875 7.9348 11.875H7.89853C7.71997 11.875 7.55593 11.875 7.41816 11.8656C7.27012 11.8555 7.10734 11.8325 6.94192 11.764C6.58459 11.6159 6.30069 11.332 6.15267 10.9747C6.08415 10.8093 6.06114 10.6465 6.05104 10.4985C6.04164 10.3607 6.04165 10.1967 6.04166 10.0181V9.14849C6.04165 8.96993 6.04164 8.80589 6.05104 8.66812C6.06114 8.52008 6.08415 8.3573 6.15267 8.19188C6.30069 7.83455 6.58459 7.55065 6.94192 7.40264C7.10734 7.33412 7.27012 7.31111 7.41816 7.30101C7.55593 7.29161 7.71997 7.29162 7.89853 7.29163H7.93479C8.11336 7.29162 8.2774 7.29161 8.41517 7.30101C8.56321 7.31111 8.72599 7.33412 8.89141 7.40264C9.24874 7.55065 9.53264 7.83455 9.68066 8.19188C9.74917 8.3573 9.77218 8.52008 9.78229 8.66812C9.78824 8.75532 9.79041 8.85303 9.79121 8.95829H17.5C17.8452 8.95829 18.125 9.23812 18.125 9.58329ZM8.41557 8.55855C8.4646 8.57961 8.50368 8.61869 8.52474 8.66772C8.5263 8.67385 8.53139 8.69752 8.53518 8.75321C8.54133 8.84321 8.54166 8.96393 8.54166 9.16663V9.99996C8.54166 10.2027 8.54133 10.3234 8.53518 10.4134C8.53138 10.4691 8.5263 10.4927 8.52474 10.4989C8.50368 10.5479 8.4646 10.587 8.41557 10.608C8.40944 10.6096 8.38578 10.6147 8.33008 10.6185C8.24008 10.6246 8.11936 10.625 7.91666 10.625C7.71397 10.625 7.59325 10.6246 7.50325 10.6185C7.44756 10.6147 7.42389 10.6096 7.41776 10.608C7.36873 10.587 7.32965 10.5479 7.30858 10.4989C7.30703 10.4927 7.30194 10.4691 7.29814 10.4134C7.292 10.3234 7.29166 10.2027 7.29166 9.99996V9.16663C7.29166 8.96393 7.292 8.84321 7.29814 8.75321C7.30194 8.69752 7.30703 8.67385 7.30858 8.66772C7.32965 8.61869 7.36873 8.57961 7.41776 8.55855C7.42388 8.55699 7.44755 8.55191 7.50325 8.54811C7.59325 8.54197 7.71397 8.54163 7.91666 8.54163C8.11936 8.54163 8.24008 8.54197 8.33008 8.54811C8.38578 8.55191 8.40944 8.55699 8.41557 8.55855Z" fill="#00212E"/>
+          <path d="M17.5 3.95829C17.8452 3.95829 18.125 3.67847 18.125 3.33329C18.125 2.98812 17.8452 2.70829 17.5 2.70829H15.8333C15.4882 2.70829 15.2083 2.98812 15.2083 3.33329C15.2083 3.67847 15.4882 3.95829 15.8333 3.95829H17.5Z" fill="#00212E"/>
+          <path d="M4.79167 9.58329C4.79167 9.92847 4.51184 10.2083 4.16667 10.2083H2.5C2.15482 10.2083 1.875 9.92847 1.875 9.58329C1.875 9.23812 2.15482 8.95829 2.5 8.95829H4.16667C4.51184 8.95829 4.79167 9.23812 4.79167 9.58329Z" fill="#00212E"/>
+          </svg>
+          
+             Filter with
+       </h5>
+       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+     </div>
+     <div class="modal-body Treatments_body">
+     
+      <form class="row g-3">
+
+        <div class="col-12">
+        <label for="" class="form-label">From Date</label>
+        <input type="date" class="form-control filter_completDate py-2 px-3" id="">
+      </div>
+        <div class="col-12">
+        <label for="" class="form-label">To Date</label>
+        <input type="date" class="form-control filter_completDate py-2 px-3" id="">
+      </div>
+      <div class="col-12">
+        <label for="" class="form-label ">Patient</label>
+        <select id="" class="form-select py-2 px-3">
+          <option selected>Dr. Ahmed Zourob</option>
+          <option>Dr. Ahmed Zourob</option>
+        </select>
+      </div>
+      
+    <div class="col-12">
+      <label for="" class="form-label ">Doctor</label>
+      <select id="" class="form-select py-2 px-3">
+        <option selected>Dr. Ahmed Zourob</option>
+        <option>Dr. Ahmed Zourob</option>
+      </select>
+    </div>
+    <div class="col-12">
+      <label for="" class="form-label">Treatment Name</label>
+      <select id="" class="form-select py-2 px-3">
+        <option selected>Select Treatment Name</option>
+        <option>cash</option>
+      </select>
+    </div>
+     
+     </form>
+     </div>
+     <div class="border-0 modal-footer d-flex justify-content-between align-items-center">
+      <button class="clear_btn delete px-2">
+  
+        Clear
+     </button>
+       <button type="button" class="save_report report_btn  btn text-white px-5 py-2">Save </button>
+     </div>
+   </div>
+ </div>
+</div>
+<!-- 1- Appointments  -->
+<div class="modal fade-in-right mobile_filters" id="filters_Appointments" tabindex="-1" role="dialog" 
+aria-labelledby="filtersLabel" aria-hidden="true">
+ <div class="modal-dialog" role="document">
+   <div class="modal-content" style="height: 95vh; overflow-y: auto;">
+     <div class="modal-header">
+       <h5 class="modal-title" id="filtersLabel">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M13.9583 2.8985C13.9583 2.71995 13.9584 2.55588 13.949 2.41812C13.9389 2.27008 13.9158 2.1073 13.8473 1.94188C13.6993 1.58455 13.4154 1.30065 13.0581 1.15264C12.8927 1.08412 12.7299 1.06111 12.5818 1.05101C12.4441 1.04161 12.28 1.04162 12.1015 1.04163H12.0652C11.8866 1.04162 11.7226 1.04161 11.5848 1.05101C11.4368 1.06111 11.274 1.08412 11.1086 1.15264C10.7513 1.30065 10.4674 1.58455 10.3193 1.94188C10.2508 2.1073 10.2278 2.27008 10.2177 2.41812C10.2118 2.50532 10.2096 2.60303 10.2088 2.70829H2.5C2.15482 2.70829 1.875 2.98812 1.875 3.33329C1.875 3.67847 2.15482 3.95829 2.5 3.95829H10.2088C10.2096 4.06356 10.2118 4.16127 10.2177 4.24847C10.2278 4.3965 10.2508 4.55929 10.3193 4.72471C10.4674 5.08204 10.7513 5.36594 11.1086 5.51395C11.274 5.58247 11.4368 5.60548 11.5848 5.61558C11.7226 5.62498 11.8866 5.62497 12.0652 5.62496H12.1015C12.28 5.62497 12.4441 5.62498 12.5818 5.61558C12.7299 5.60548 12.8927 5.58247 13.0581 5.51395C13.4154 5.36594 13.6993 5.08204 13.8473 4.72471C13.9158 4.55929 13.9389 4.39651 13.949 4.24847C13.9584 4.11071 13.9583 3.94669 13.9583 3.76814V2.8985ZM11.4583 3.33472V3.74996C11.4583 3.95265 11.4587 4.07337 11.4648 4.16338C11.4686 4.21907 11.4737 4.24274 11.4753 4.24887C11.4963 4.2979 11.5354 4.33698 11.5844 4.35804C11.5906 4.3596 11.6142 4.36468 11.6699 4.36848C11.7599 4.37462 11.8806 4.37496 12.0833 4.37496C12.286 4.37496 12.4067 4.37462 12.4967 4.36848C12.5524 4.36468 12.5761 4.3596 12.5822 4.35804C12.6313 4.33698 12.6703 4.2979 12.6914 4.24887C12.693 4.24274 12.6981 4.21907 12.7019 4.16338C12.708 4.07337 12.7083 3.95266 12.7083 3.74996V2.91663C12.7083 2.71393 12.708 2.59321 12.7019 2.50321C12.6981 2.44752 12.693 2.42385 12.6914 2.41772C12.6703 2.36869 12.6313 2.32961 12.5822 2.30855C12.5761 2.30699 12.5524 2.30191 12.4967 2.29811C12.4067 2.29197 12.286 2.29163 12.0833 2.29163C11.8806 2.29163 11.7599 2.29197 11.6699 2.29811C11.6142 2.30191 11.5906 2.30699 11.5844 2.30855C11.5354 2.32961 11.4963 2.36869 11.4753 2.41772C11.4737 2.42385 11.4686 2.44752 11.4648 2.50321C11.4587 2.59321 11.4583 2.71393 11.4583 2.91663V3.33187L11.4583 3.33329L11.4583 3.33472Z" fill="#00212E"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M8.54212 16.4583H2.5C2.15482 16.4583 1.875 16.1785 1.875 15.8333C1.875 15.4881 2.15482 15.2083 2.5 15.2083H8.54212C8.54291 15.103 8.54509 15.0053 8.55104 14.9181C8.56114 14.7701 8.58415 14.6073 8.65267 14.4419C8.80069 14.0845 9.08458 13.8006 9.44192 13.6526C9.60734 13.5841 9.77012 13.5611 9.91816 13.551C10.0559 13.5416 10.22 13.5416 10.3985 13.5416H10.4348C10.6134 13.5416 10.7774 13.5416 10.9152 13.551C11.0632 13.5611 11.226 13.5841 11.3914 13.6526C11.7487 13.8006 12.0326 14.0845 12.1807 14.4419C12.2492 14.6073 12.2722 14.7701 12.2823 14.9181C12.2917 15.0559 12.2917 15.2199 12.2917 15.3984V16.2681C12.2917 16.4466 12.2917 16.6107 12.2823 16.7485C12.2722 16.8965 12.2492 17.0593 12.1807 17.2247C12.0326 17.582 11.7487 17.8659 11.3914 18.014C11.226 18.0825 11.0632 18.1055 10.9152 18.1156C10.7774 18.125 10.6134 18.125 10.4348 18.125H10.3985C10.22 18.125 10.0559 18.125 9.91816 18.1156C9.77012 18.1055 9.60734 18.0825 9.44192 18.014C9.08458 17.8659 8.80069 17.582 8.65267 17.2247C8.58415 17.0593 8.56114 16.8965 8.55104 16.7485C8.54509 16.6613 8.54291 16.5636 8.54212 16.4583ZM9.79166 16.25V15.8347L9.79167 15.8333L9.79166 15.8319V15.4166C9.79166 15.2139 9.792 15.0932 9.79814 15.0032C9.80194 14.9475 9.80703 14.9238 9.80858 14.9177C9.82965 14.8687 9.86873 14.8296 9.91776 14.8085C9.92389 14.807 9.94755 14.8019 10.0032 14.7981C10.0933 14.792 10.214 14.7916 10.4167 14.7916C10.6194 14.7916 10.7401 14.792 10.8301 14.7981C10.8858 14.8019 10.9094 14.807 10.9156 14.8085C10.9646 14.8296 11.0037 14.8687 11.0247 14.9177C11.0263 14.9238 11.0314 14.9475 11.0352 15.0032C11.0413 15.0932 11.0417 15.2139 11.0417 15.4166V16.25C11.0417 16.4527 11.0413 16.5734 11.0352 16.6634C11.0314 16.7191 11.0263 16.7427 11.0247 16.7489C11.0037 16.7979 10.9646 16.837 10.9156 16.858C10.9094 16.8596 10.8858 16.8647 10.8301 16.8685C10.7401 16.8746 10.6194 16.875 10.4167 16.875C10.214 16.875 10.0933 16.8746 10.0032 16.8685C9.94756 16.8647 9.92389 16.8596 9.91776 16.858C9.86873 16.837 9.82965 16.7979 9.80858 16.7489C9.80703 16.7427 9.80194 16.7191 9.79814 16.6634C9.792 16.5734 9.79166 16.4527 9.79166 16.25Z" fill="#00212E"/>
+          <path d="M17.5 16.4583C17.8452 16.4583 18.125 16.1785 18.125 15.8333C18.125 15.4881 17.8452 15.2083 17.5 15.2083H14.1667C13.8215 15.2083 13.5417 15.4881 13.5417 15.8333C13.5417 16.1785 13.8215 16.4583 14.1667 16.4583H17.5Z" fill="#00212E"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M18.125 9.58329C18.125 9.92847 17.8452 10.2083 17.5 10.2083H9.79121C9.79041 10.3136 9.78824 10.4113 9.78229 10.4985C9.77218 10.6465 9.74917 10.8093 9.68066 10.9747C9.53264 11.332 9.24874 11.6159 8.89141 11.764C8.72599 11.8325 8.56321 11.8555 8.41517 11.8656C8.2774 11.875 8.11336 11.875 7.9348 11.875H7.89853C7.71997 11.875 7.55593 11.875 7.41816 11.8656C7.27012 11.8555 7.10734 11.8325 6.94192 11.764C6.58459 11.6159 6.30069 11.332 6.15267 10.9747C6.08415 10.8093 6.06114 10.6465 6.05104 10.4985C6.04164 10.3607 6.04165 10.1967 6.04166 10.0181V9.14849C6.04165 8.96993 6.04164 8.80589 6.05104 8.66812C6.06114 8.52008 6.08415 8.3573 6.15267 8.19188C6.30069 7.83455 6.58459 7.55065 6.94192 7.40264C7.10734 7.33412 7.27012 7.31111 7.41816 7.30101C7.55593 7.29161 7.71997 7.29162 7.89853 7.29163H7.93479C8.11336 7.29162 8.2774 7.29161 8.41517 7.30101C8.56321 7.31111 8.72599 7.33412 8.89141 7.40264C9.24874 7.55065 9.53264 7.83455 9.68066 8.19188C9.74917 8.3573 9.77218 8.52008 9.78229 8.66812C9.78824 8.75532 9.79041 8.85303 9.79121 8.95829H17.5C17.8452 8.95829 18.125 9.23812 18.125 9.58329ZM8.41557 8.55855C8.4646 8.57961 8.50368 8.61869 8.52474 8.66772C8.5263 8.67385 8.53139 8.69752 8.53518 8.75321C8.54133 8.84321 8.54166 8.96393 8.54166 9.16663V9.99996C8.54166 10.2027 8.54133 10.3234 8.53518 10.4134C8.53138 10.4691 8.5263 10.4927 8.52474 10.4989C8.50368 10.5479 8.4646 10.587 8.41557 10.608C8.40944 10.6096 8.38578 10.6147 8.33008 10.6185C8.24008 10.6246 8.11936 10.625 7.91666 10.625C7.71397 10.625 7.59325 10.6246 7.50325 10.6185C7.44756 10.6147 7.42389 10.6096 7.41776 10.608C7.36873 10.587 7.32965 10.5479 7.30858 10.4989C7.30703 10.4927 7.30194 10.4691 7.29814 10.4134C7.292 10.3234 7.29166 10.2027 7.29166 9.99996V9.16663C7.29166 8.96393 7.292 8.84321 7.29814 8.75321C7.30194 8.69752 7.30703 8.67385 7.30858 8.66772C7.32965 8.61869 7.36873 8.57961 7.41776 8.55855C7.42388 8.55699 7.44755 8.55191 7.50325 8.54811C7.59325 8.54197 7.71397 8.54163 7.91666 8.54163C8.11936 8.54163 8.24008 8.54197 8.33008 8.54811C8.38578 8.55191 8.40944 8.55699 8.41557 8.55855Z" fill="#00212E"/>
+          <path d="M17.5 3.95829C17.8452 3.95829 18.125 3.67847 18.125 3.33329C18.125 2.98812 17.8452 2.70829 17.5 2.70829H15.8333C15.4882 2.70829 15.2083 2.98812 15.2083 3.33329C15.2083 3.67847 15.4882 3.95829 15.8333 3.95829H17.5Z" fill="#00212E"/>
+          <path d="M4.79167 9.58329C4.79167 9.92847 4.51184 10.2083 4.16667 10.2083H2.5C2.15482 10.2083 1.875 9.92847 1.875 9.58329C1.875 9.23812 2.15482 8.95829 2.5 8.95829H4.16667C4.51184 8.95829 4.79167 9.23812 4.79167 9.58329Z" fill="#00212E"/>
+          </svg>
+          
+             Filter with
+       </h5>
+       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+     </div>
+     <div class="modal-body Treatments_body">
+     
+      <form class="row g-3">
+
+        <div class="col-12">
+        <label for="" class="form-label">From Date</label>
+        <input type="date" class="form-control filter_completDate py-2 px-3" id="">
+      </div>
+        <div class="col-12">
+        <label for="" class="form-label">To Date</label>
+        <input type="date" class="form-control filter_completDate py-2 px-3" id="">
+      </div>
+      <div class="col-12">
+        <label for="" class="form-label ">Patient</label>
+        <select id="" class="form-select py-2 px-3">
+          <option selected>Dr. Ahmed Zourob</option>
+          <option>Dr. Ahmed Zourob</option>
+        </select>
+      </div>
+      
+    <div class="col-12">
+      <label for="" class="form-label ">Doctor</label>
+      <select id="" class="form-select py-2 px-3">
+        <option selected>Dr. Ahmed Zourob</option>
+        <option>Dr. Ahmed Zourob</option>
+      </select>
+    </div>
+    <div class="col-12">
+      <label for="To_Date" class="form-label">Source</label>
+      <input type="text" class="form-control filter_completDate py-2 px-3" placeholder="Expense">
+     </div>
+    <div class="col-12">
+      <label for="" class="form-label">Status</label>
+      <select id="" class="form-select py-2 px-3">
+        <option selected>Select Status</option>
+        <option>activ</option>
+      </select>
+    </div>
+     
+     </form>
+     </div>
+     <div class="border-0 modal-footer d-flex justify-content-between align-items-center">
+      <button class="clear_btn delete px-2">
+  
+        Clear
+     </button>
+       <button type="button" class="save_report report_btn  btn text-white px-5 py-2">Save </button>
+     </div>
+   </div>
+ </div>
+</div>
+<!-- 1- Patients  -->
+<div class="modal fade-in-right mobile_filters" id="filters_Patients" tabindex="-1" role="dialog" 
+aria-labelledby="filtersLabel" aria-hidden="true">
+ <div class="modal-dialog" role="document">
+   <div class="modal-content" style="height: 95vh; overflow-y: auto;">
+     <div class="modal-header">
+       <h5 class="modal-title" id="filtersLabel">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M13.9583 2.8985C13.9583 2.71995 13.9584 2.55588 13.949 2.41812C13.9389 2.27008 13.9158 2.1073 13.8473 1.94188C13.6993 1.58455 13.4154 1.30065 13.0581 1.15264C12.8927 1.08412 12.7299 1.06111 12.5818 1.05101C12.4441 1.04161 12.28 1.04162 12.1015 1.04163H12.0652C11.8866 1.04162 11.7226 1.04161 11.5848 1.05101C11.4368 1.06111 11.274 1.08412 11.1086 1.15264C10.7513 1.30065 10.4674 1.58455 10.3193 1.94188C10.2508 2.1073 10.2278 2.27008 10.2177 2.41812C10.2118 2.50532 10.2096 2.60303 10.2088 2.70829H2.5C2.15482 2.70829 1.875 2.98812 1.875 3.33329C1.875 3.67847 2.15482 3.95829 2.5 3.95829H10.2088C10.2096 4.06356 10.2118 4.16127 10.2177 4.24847C10.2278 4.3965 10.2508 4.55929 10.3193 4.72471C10.4674 5.08204 10.7513 5.36594 11.1086 5.51395C11.274 5.58247 11.4368 5.60548 11.5848 5.61558C11.7226 5.62498 11.8866 5.62497 12.0652 5.62496H12.1015C12.28 5.62497 12.4441 5.62498 12.5818 5.61558C12.7299 5.60548 12.8927 5.58247 13.0581 5.51395C13.4154 5.36594 13.6993 5.08204 13.8473 4.72471C13.9158 4.55929 13.9389 4.39651 13.949 4.24847C13.9584 4.11071 13.9583 3.94669 13.9583 3.76814V2.8985ZM11.4583 3.33472V3.74996C11.4583 3.95265 11.4587 4.07337 11.4648 4.16338C11.4686 4.21907 11.4737 4.24274 11.4753 4.24887C11.4963 4.2979 11.5354 4.33698 11.5844 4.35804C11.5906 4.3596 11.6142 4.36468 11.6699 4.36848C11.7599 4.37462 11.8806 4.37496 12.0833 4.37496C12.286 4.37496 12.4067 4.37462 12.4967 4.36848C12.5524 4.36468 12.5761 4.3596 12.5822 4.35804C12.6313 4.33698 12.6703 4.2979 12.6914 4.24887C12.693 4.24274 12.6981 4.21907 12.7019 4.16338C12.708 4.07337 12.7083 3.95266 12.7083 3.74996V2.91663C12.7083 2.71393 12.708 2.59321 12.7019 2.50321C12.6981 2.44752 12.693 2.42385 12.6914 2.41772C12.6703 2.36869 12.6313 2.32961 12.5822 2.30855C12.5761 2.30699 12.5524 2.30191 12.4967 2.29811C12.4067 2.29197 12.286 2.29163 12.0833 2.29163C11.8806 2.29163 11.7599 2.29197 11.6699 2.29811C11.6142 2.30191 11.5906 2.30699 11.5844 2.30855C11.5354 2.32961 11.4963 2.36869 11.4753 2.41772C11.4737 2.42385 11.4686 2.44752 11.4648 2.50321C11.4587 2.59321 11.4583 2.71393 11.4583 2.91663V3.33187L11.4583 3.33329L11.4583 3.33472Z" fill="#00212E"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M8.54212 16.4583H2.5C2.15482 16.4583 1.875 16.1785 1.875 15.8333C1.875 15.4881 2.15482 15.2083 2.5 15.2083H8.54212C8.54291 15.103 8.54509 15.0053 8.55104 14.9181C8.56114 14.7701 8.58415 14.6073 8.65267 14.4419C8.80069 14.0845 9.08458 13.8006 9.44192 13.6526C9.60734 13.5841 9.77012 13.5611 9.91816 13.551C10.0559 13.5416 10.22 13.5416 10.3985 13.5416H10.4348C10.6134 13.5416 10.7774 13.5416 10.9152 13.551C11.0632 13.5611 11.226 13.5841 11.3914 13.6526C11.7487 13.8006 12.0326 14.0845 12.1807 14.4419C12.2492 14.6073 12.2722 14.7701 12.2823 14.9181C12.2917 15.0559 12.2917 15.2199 12.2917 15.3984V16.2681C12.2917 16.4466 12.2917 16.6107 12.2823 16.7485C12.2722 16.8965 12.2492 17.0593 12.1807 17.2247C12.0326 17.582 11.7487 17.8659 11.3914 18.014C11.226 18.0825 11.0632 18.1055 10.9152 18.1156C10.7774 18.125 10.6134 18.125 10.4348 18.125H10.3985C10.22 18.125 10.0559 18.125 9.91816 18.1156C9.77012 18.1055 9.60734 18.0825 9.44192 18.014C9.08458 17.8659 8.80069 17.582 8.65267 17.2247C8.58415 17.0593 8.56114 16.8965 8.55104 16.7485C8.54509 16.6613 8.54291 16.5636 8.54212 16.4583ZM9.79166 16.25V15.8347L9.79167 15.8333L9.79166 15.8319V15.4166C9.79166 15.2139 9.792 15.0932 9.79814 15.0032C9.80194 14.9475 9.80703 14.9238 9.80858 14.9177C9.82965 14.8687 9.86873 14.8296 9.91776 14.8085C9.92389 14.807 9.94755 14.8019 10.0032 14.7981C10.0933 14.792 10.214 14.7916 10.4167 14.7916C10.6194 14.7916 10.7401 14.792 10.8301 14.7981C10.8858 14.8019 10.9094 14.807 10.9156 14.8085C10.9646 14.8296 11.0037 14.8687 11.0247 14.9177C11.0263 14.9238 11.0314 14.9475 11.0352 15.0032C11.0413 15.0932 11.0417 15.2139 11.0417 15.4166V16.25C11.0417 16.4527 11.0413 16.5734 11.0352 16.6634C11.0314 16.7191 11.0263 16.7427 11.0247 16.7489C11.0037 16.7979 10.9646 16.837 10.9156 16.858C10.9094 16.8596 10.8858 16.8647 10.8301 16.8685C10.7401 16.8746 10.6194 16.875 10.4167 16.875C10.214 16.875 10.0933 16.8746 10.0032 16.8685C9.94756 16.8647 9.92389 16.8596 9.91776 16.858C9.86873 16.837 9.82965 16.7979 9.80858 16.7489C9.80703 16.7427 9.80194 16.7191 9.79814 16.6634C9.792 16.5734 9.79166 16.4527 9.79166 16.25Z" fill="#00212E"/>
+          <path d="M17.5 16.4583C17.8452 16.4583 18.125 16.1785 18.125 15.8333C18.125 15.4881 17.8452 15.2083 17.5 15.2083H14.1667C13.8215 15.2083 13.5417 15.4881 13.5417 15.8333C13.5417 16.1785 13.8215 16.4583 14.1667 16.4583H17.5Z" fill="#00212E"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M18.125 9.58329C18.125 9.92847 17.8452 10.2083 17.5 10.2083H9.79121C9.79041 10.3136 9.78824 10.4113 9.78229 10.4985C9.77218 10.6465 9.74917 10.8093 9.68066 10.9747C9.53264 11.332 9.24874 11.6159 8.89141 11.764C8.72599 11.8325 8.56321 11.8555 8.41517 11.8656C8.2774 11.875 8.11336 11.875 7.9348 11.875H7.89853C7.71997 11.875 7.55593 11.875 7.41816 11.8656C7.27012 11.8555 7.10734 11.8325 6.94192 11.764C6.58459 11.6159 6.30069 11.332 6.15267 10.9747C6.08415 10.8093 6.06114 10.6465 6.05104 10.4985C6.04164 10.3607 6.04165 10.1967 6.04166 10.0181V9.14849C6.04165 8.96993 6.04164 8.80589 6.05104 8.66812C6.06114 8.52008 6.08415 8.3573 6.15267 8.19188C6.30069 7.83455 6.58459 7.55065 6.94192 7.40264C7.10734 7.33412 7.27012 7.31111 7.41816 7.30101C7.55593 7.29161 7.71997 7.29162 7.89853 7.29163H7.93479C8.11336 7.29162 8.2774 7.29161 8.41517 7.30101C8.56321 7.31111 8.72599 7.33412 8.89141 7.40264C9.24874 7.55065 9.53264 7.83455 9.68066 8.19188C9.74917 8.3573 9.77218 8.52008 9.78229 8.66812C9.78824 8.75532 9.79041 8.85303 9.79121 8.95829H17.5C17.8452 8.95829 18.125 9.23812 18.125 9.58329ZM8.41557 8.55855C8.4646 8.57961 8.50368 8.61869 8.52474 8.66772C8.5263 8.67385 8.53139 8.69752 8.53518 8.75321C8.54133 8.84321 8.54166 8.96393 8.54166 9.16663V9.99996C8.54166 10.2027 8.54133 10.3234 8.53518 10.4134C8.53138 10.4691 8.5263 10.4927 8.52474 10.4989C8.50368 10.5479 8.4646 10.587 8.41557 10.608C8.40944 10.6096 8.38578 10.6147 8.33008 10.6185C8.24008 10.6246 8.11936 10.625 7.91666 10.625C7.71397 10.625 7.59325 10.6246 7.50325 10.6185C7.44756 10.6147 7.42389 10.6096 7.41776 10.608C7.36873 10.587 7.32965 10.5479 7.30858 10.4989C7.30703 10.4927 7.30194 10.4691 7.29814 10.4134C7.292 10.3234 7.29166 10.2027 7.29166 9.99996V9.16663C7.29166 8.96393 7.292 8.84321 7.29814 8.75321C7.30194 8.69752 7.30703 8.67385 7.30858 8.66772C7.32965 8.61869 7.36873 8.57961 7.41776 8.55855C7.42388 8.55699 7.44755 8.55191 7.50325 8.54811C7.59325 8.54197 7.71397 8.54163 7.91666 8.54163C8.11936 8.54163 8.24008 8.54197 8.33008 8.54811C8.38578 8.55191 8.40944 8.55699 8.41557 8.55855Z" fill="#00212E"/>
+          <path d="M17.5 3.95829C17.8452 3.95829 18.125 3.67847 18.125 3.33329C18.125 2.98812 17.8452 2.70829 17.5 2.70829H15.8333C15.4882 2.70829 15.2083 2.98812 15.2083 3.33329C15.2083 3.67847 15.4882 3.95829 15.8333 3.95829H17.5Z" fill="#00212E"/>
+          <path d="M4.79167 9.58329C4.79167 9.92847 4.51184 10.2083 4.16667 10.2083H2.5C2.15482 10.2083 1.875 9.92847 1.875 9.58329C1.875 9.23812 2.15482 8.95829 2.5 8.95829H4.16667C4.51184 8.95829 4.79167 9.23812 4.79167 9.58329Z" fill="#00212E"/>
+          </svg>
+          
+             Filter with
+       </h5>
+       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+     </div>
+     <div class="modal-body Treatments_body">
+     
+      <form class="row g-3">
+
+        <div class="col-12">
+        <label for="" class="form-label">From Date</label>
+        <input type="date" class="form-control filter_completDate py-2 px-3" id="">
+      </div>
+        <div class="col-12">
+        <label for="" class="form-label">To Date</label>
+        <input type="date" class="form-control filter_completDate py-2 px-3" id="">
+      </div>
+      <div class="col-12">
+        <label for="" class="form-label ">Patient</label>
+        <select id="" class="form-select py-2 px-3">
+          <option selected>Dr. Ahmed Zourob</option>
+          <option>Dr. Ahmed Zourob</option>
+        </select>
+      </div>
+      
+    <div class="col-12">
+      <label for="" class="form-label ">Referral Source</label>
+      <select id="" class="form-select py-2 px-3">
+        <option selected>Select Referral Source</option>
+        <option>----</option>
+      </select>
+    </div>
+   
+     
+     </form>
+     </div>
+     <div class="border-0 modal-footer d-flex justify-content-between align-items-center">
+      <button class="clear_btn delete px-2">
+  
+        Clear
+     </button>
+       <button type="button" class="save_report report_btn  btn text-white px-5 py-2">Save </button>
+     </div>
+   </div>
+ </div>
+</div>
+    <script src="../Report/Report.js"></script>
+    <script src="../main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+   
+</body>
+</html>

@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Home Page</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+        <div class="container mt-3 align-items-start flex-nowrap">
+         <div class="d-lg-flex align-items-center leftSide">
+            <div class="d-flex align-items-center gap-1">
+                <button class="navbar-toggler p-0 border-0 bg-transparent" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+           
+                     <img src="../images/toggleButton.svg" alt="">
+                  </button>
+               
+                <div>
+                    <a class="navbar-brand" href="#">
+                        <img src="../images/Logo.svg" alt="">
+                    </a>
+                </div>
+              </div>
+        
+           
+              <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav head">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Why DMS</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">How It Works</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">FAQ</a>
+                    </li>
+                  
+                  </ul>
+              
+              </div>
+         </div>
+          <div class="join d-flex align-items-center justify-content-end gap-2 rightSide">
+            <button>Login</button>
+            <button class="py-2 px-2 px-lg-3 rounded">Get Started for Free</button>
+        </div>
+        </div>
+        <div class="hero_section d-flex align-items-center justify-content-center flex-column gap-1">
+            <h1 >Manage your clinic with <span>DMS</span>!</h1>
+            <p>DMS streamlines clinic management, automating<br/> appointments and billing for better healthcare.</p>
+            
+            <button class="py-2 px-3 rounded">Try DMS Now
+                <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.4" fill-rule="evenodd" clip-rule="evenodd" d="M14.9555 5.24414C15.281 5.56958 15.281 6.09721 14.9555 6.42265L5.78886 15.5893C5.46342 15.9148 4.93579 15.9148 4.61035 15.5893C4.28491 15.2639 4.28491 14.7362 4.61035 14.4108L13.777 5.24414C14.1025 4.9187 14.6301 4.9187 14.9555 5.24414Z" fill="white"/>
+                    <path d="M14.57 4.40802C14.8039 4.47628 15.1217 4.59595 15.3626 4.83687C15.6036 5.0778 15.7233 5.39564 15.7915 5.62955C15.867 5.88816 15.9168 6.18068 15.9511 6.4749C16.0201 7.0655 16.0372 7.75873 16.0322 8.40334C16.0271 9.05296 15.9992 9.6767 15.9727 10.1364C15.9594 10.3668 15.9465 10.5571 15.9368 10.6905C15.932 10.7565 15.9235 10.8645 15.9205 10.9017L15.9205 10.9027C15.8818 11.3613 15.4786 11.7022 15.02 11.6636C14.5614 11.6249 14.221 11.2218 14.2596 10.7632C14.2622 10.7303 14.2699 10.6327 14.2745 10.5697C14.2837 10.4435 14.2961 10.2615 14.3088 10.0406C14.3343 9.59781 14.3608 9.00337 14.3656 8.39028C14.3704 7.77218 14.3529 7.15818 14.2957 6.66817C14.267 6.42209 14.2093 6.16397 14.1701 6.02947C14.0356 5.99022 13.7774 5.93254 13.5313 5.90381C13.0413 5.8466 12.4273 5.8291 11.8092 5.83394C11.1961 5.83874 10.6017 5.86522 10.1589 5.8907C9.938 5.90342 9.75605 5.91581 9.62985 5.92498C9.56678 5.92956 9.46963 5.93721 9.43666 5.93981C8.97808 5.97843 8.57461 5.63804 8.53595 5.17945C8.49729 4.72084 8.83773 4.31772 9.29634 4.27906L9.29824 4.27891C9.3362 4.27592 9.4435 4.26746 9.50905 4.2627C9.64238 4.25301 9.83276 4.24005 10.0631 4.22679C10.5228 4.20034 11.1466 4.17241 11.7962 4.16732C12.4408 4.16228 13.134 4.17943 13.7246 4.24839C14.0188 4.28274 14.3114 4.33255 14.57 4.40802Z" fill="white"/>
+                    </svg>
+                    
+            </button>
+            <img class="mt-5"  src="../images/heroImage.svg" alt="hero">
+        </div>
+      </nav>
+    <section class="partner my-3 mt-5">
+        <div class="">
+            <h2 class="section_head">Our trusted partners</h2>
+            <div class="image-carousel-wrapper my-4">
+                <div class="image-carousel gap-3">
+                  <!-- Repeat this block for as many images as you'd like -->
+                  <img src="../images/PartnerVision.svg" alt="">
+                  <img src="../images/PartnerVision.svg" alt="">
+                  <img src="../images/PartnerVision.svg" alt="">
+                  <img src="../images/PartnerVision.svg" alt="">
+                  <img src="../images/PartnerVision.svg" alt="">
+                  <img src="../images/PartnerVision.svg" alt="">
+                  <img src="../images/PartnerVision.svg" alt="">
+                  <img src="../images/PartnerVision.svg" alt="">
+                  <img src="../images/PartnerVision.svg" alt="">
+                  <img src="../images/PartnerVision.svg" alt="">
+                  <img src="../images/PartnerVision.svg" alt="">
+                  <img src="../images/PartnerVision.svg" alt="">
+                  <img src="../images/PartnerVision.svg" alt="">
+                  <img src="../images/PartnerVision.svg" alt="">
+                  <img src="../images/PartnerVision.svg" alt="">
+                  <img src="../images/PartnerVision.svg" alt="">
+                </div>
+              </div>
+        </div>
+    </section>
+    <section class="whyDMS py-5">
+        <div class="container">
+            <h2 class="section_head">Why DMS</h2>
+            <div class="content  d-flex  align-items-lg-start align-items-xl-center 
+            justify-content-between gap-4 mt-4 flex-column flex-lg-row">
+           <div class="image_wrapper rounded">
+            <img src="../images/ScreenDMSimage.svg" alt="DMS" >
+            <img src="../images/PalyVD.svg" alt="Palyvidio" class="PalyVD">
+           </div>
+                <div class="info gap-2 d-flex flex-column justify-content-center">
+                    <p class="p-0 m-0">DMS helps clinics streamline operations and enhance patient care by automating appointments, billing, and management, letting doctors concentrate on their patients.</p>
+                    <h3 class="p-0 m-0">
+                        What Makes Us Different?
+                    </h3>
+                    <ul class="px-0 d-flex flex-column gap-1">
+                        <li>
+                            <svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M20 35.9053C28.2843 35.9053 35 29.1895 35 20.9053C35 12.621 28.2843 5.90527 20 5.90527C11.7157 5.90527 5 12.621 5 20.9053C5 29.1895 11.7157 35.9053 20 35.9053ZM27.4349 16.5455C27.7885 16.1212 27.7311 15.4906 27.3069 15.1371C26.8826 14.7835 26.252 14.8408 25.8984 15.2651L18.9672 23.5826C18.6204 23.9987 18.4255 24.229 18.2699 24.3706L18.264 24.376L18.2576 24.3711C18.0898 24.2443 17.8748 24.0325 17.4918 23.6496L14.0404 20.1982C13.6499 19.8076 13.0167 19.8076 12.6262 20.1982C12.2357 20.5887 12.2357 21.2219 12.6262 21.6124L16.0776 25.0638L16.1185 25.1046L16.1185 25.1046C16.445 25.4312 16.759 25.7454 17.0513 25.9664C17.3786 26.214 17.8074 26.4467 18.3568 26.4218C18.9062 26.3969 19.3121 26.1263 19.6157 25.8501C19.8867 25.6036 20.1711 25.2622 20.4666 24.9074L20.5036 24.863L27.4349 16.5455Z" fill="#00A4E5"/>
+                                </svg>
+                                
+                            Custom-tailored solutions that adapt to clinics of all sizes and specialties.
+                        </li>
+                        <li>
+                            <svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M20 35.9053C28.2843 35.9053 35 29.1895 35 20.9053C35 12.621 28.2843 5.90527 20 5.90527C11.7157 5.90527 5 12.621 5 20.9053C5 29.1895 11.7157 35.9053 20 35.9053ZM27.4349 16.5455C27.7885 16.1212 27.7311 15.4906 27.3069 15.1371C26.8826 14.7835 26.252 14.8408 25.8984 15.2651L18.9672 23.5826C18.6204 23.9987 18.4255 24.229 18.2699 24.3706L18.264 24.376L18.2576 24.3711C18.0898 24.2443 17.8748 24.0325 17.4918 23.6496L14.0404 20.1982C13.6499 19.8076 13.0167 19.8076 12.6262 20.1982C12.2357 20.5887 12.2357 21.2219 12.6262 21.6124L16.0776 25.0638L16.1185 25.1046L16.1185 25.1046C16.445 25.4312 16.759 25.7454 17.0513 25.9664C17.3786 26.214 17.8074 26.4467 18.3568 26.4218C18.9062 26.3969 19.3121 26.1263 19.6157 25.8501C19.8867 25.6036 20.1711 25.2622 20.4666 24.9074L20.5036 24.863L27.4349 16.5455Z" fill="#00A4E5"/>
+                                </svg>
+                                Multi-branch and insurance integration for seamless operations.
+                        </li>
+                        <li>
+                            <svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M20 35.9053C28.2843 35.9053 35 29.1895 35 20.9053C35 12.621 28.2843 5.90527 20 5.90527C11.7157 5.90527 5 12.621 5 20.9053C5 29.1895 11.7157 35.9053 20 35.9053ZM27.4349 16.5455C27.7885 16.1212 27.7311 15.4906 27.3069 15.1371C26.8826 14.7835 26.252 14.8408 25.8984 15.2651L18.9672 23.5826C18.6204 23.9987 18.4255 24.229 18.2699 24.3706L18.264 24.376L18.2576 24.3711C18.0898 24.2443 17.8748 24.0325 17.4918 23.6496L14.0404 20.1982C13.6499 19.8076 13.0167 19.8076 12.6262 20.1982C12.2357 20.5887 12.2357 21.2219 12.6262 21.6124L16.0776 25.0638L16.1185 25.1046L16.1185 25.1046C16.445 25.4312 16.759 25.7454 17.0513 25.9664C17.3786 26.214 17.8074 26.4467 18.3568 26.4218C18.9062 26.3969 19.3121 26.1263 19.6157 25.8501C19.8867 25.6036 20.1711 25.2622 20.4666 24.9074L20.5036 24.863L27.4349 16.5455Z" fill="#00A4E5"/>
+                                </svg>
+                                Advanced reporting tools that help clinics improve their efficiency.
+                        </li>
+                  
+                        </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="whyDMS py-5 howItWord">
+        <div class="container">
+         
+            <div class="content  d-flex  align-items-lg-start align-items-xl-center 
+            justify-content-between gap-4 mt-4 flex-column flex-lg-row">
+         
+                <div class="info gap-2 d-flex flex-column justify-content-center">
+                    <h2 class="section_head text-start">How It Works</h2>
+                    <p class="p-0 m-0 text_howitwort">The doctor can log in, add a new patient, schedule an appointment, and create an invoice in just a few clicks.</p>
+                  
+                    <ul class="px-0 d-flex flex-column gap-1">
+                        <li>
+                            <svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M20 35.9053C28.2843 35.9053 35 29.1895 35 20.9053C35 12.621 28.2843 5.90527 20 5.90527C11.7157 5.90527 5 12.621 5 20.9053C5 29.1895 11.7157 35.9053 20 35.9053ZM27.4349 16.5455C27.7885 16.1212 27.7311 15.4906 27.3069 15.1371C26.8826 14.7835 26.252 14.8408 25.8984 15.2651L18.9672 23.5826C18.6204 23.9987 18.4255 24.229 18.2699 24.3706L18.264 24.376L18.2576 24.3711C18.0898 24.2443 17.8748 24.0325 17.4918 23.6496L14.0404 20.1982C13.6499 19.8076 13.0167 19.8076 12.6262 20.1982C12.2357 20.5887 12.2357 21.2219 12.6262 21.6124L16.0776 25.0638L16.1185 25.1046L16.1185 25.1046C16.445 25.4312 16.759 25.7454 17.0513 25.9664C17.3786 26.214 17.8074 26.4467 18.3568 26.4218C18.9062 26.3969 19.3121 26.1263 19.6157 25.8501C19.8867 25.6036 20.1711 25.2622 20.4666 24.9074L20.5036 24.863L27.4349 16.5455Z" fill="#00A4E5"/>
+                                </svg>
+                                Step 1: Log in and create a profile.
+                        </li>
+                        <li>
+                            <svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M20 35.9053C28.2843 35.9053 35 29.1895 35 20.9053C35 12.621 28.2843 5.90527 20 5.90527C11.7157 5.90527 5 12.621 5 20.9053C5 29.1895 11.7157 35.9053 20 35.9053ZM27.4349 16.5455C27.7885 16.1212 27.7311 15.4906 27.3069 15.1371C26.8826 14.7835 26.252 14.8408 25.8984 15.2651L18.9672 23.5826C18.6204 23.9987 18.4255 24.229 18.2699 24.3706L18.264 24.376L18.2576 24.3711C18.0898 24.2443 17.8748 24.0325 17.4918 23.6496L14.0404 20.1982C13.6499 19.8076 13.0167 19.8076 12.6262 20.1982C12.2357 20.5887 12.2357 21.2219 12.6262 21.6124L16.0776 25.0638L16.1185 25.1046L16.1185 25.1046C16.445 25.4312 16.759 25.7454 17.0513 25.9664C17.3786 26.214 17.8074 26.4467 18.3568 26.4218C18.9062 26.3969 19.3121 26.1263 19.6157 25.8501C19.8867 25.6036 20.1711 25.2622 20.4666 24.9074L20.5036 24.863L27.4349 16.5455Z" fill="#00A4E5"/>
+                                </svg>Step 2: Add patient data and treatments.
+                        </li>
+                        <li>
+                            <svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M20 35.9053C28.2843 35.9053 35 29.1895 35 20.9053C35 12.621 28.2843 5.90527 20 5.90527C11.7157 5.90527 5 12.621 5 20.9053C5 29.1895 11.7157 35.9053 20 35.9053ZM27.4349 16.5455C27.7885 16.1212 27.7311 15.4906 27.3069 15.1371C26.8826 14.7835 26.252 14.8408 25.8984 15.2651L18.9672 23.5826C18.6204 23.9987 18.4255 24.229 18.2699 24.3706L18.264 24.376L18.2576 24.3711C18.0898 24.2443 17.8748 24.0325 17.4918 23.6496L14.0404 20.1982C13.6499 19.8076 13.0167 19.8076 12.6262 20.1982C12.2357 20.5887 12.2357 21.2219 12.6262 21.6124L16.0776 25.0638L16.1185 25.1046L16.1185 25.1046C16.445 25.4312 16.759 25.7454 17.0513 25.9664C17.3786 26.214 17.8074 26.4467 18.3568 26.4218C18.9062 26.3969 19.3121 26.1263 19.6157 25.8501C19.8867 25.6036 20.1711 25.2622 20.4666 24.9074L20.5036 24.863L27.4349 16.5455Z" fill="#00A4E5"/>
+                                </svg>Step 3: Easily schedule appointments.
+                        </li>
+                        <li>
+                            <svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M20 35.9053C28.2843 35.9053 35 29.1895 35 20.9053C35 12.621 28.2843 5.90527 20 5.90527C11.7157 5.90527 5 12.621 5 20.9053C5 29.1895 11.7157 35.9053 20 35.9053ZM27.4349 16.5455C27.7885 16.1212 27.7311 15.4906 27.3069 15.1371C26.8826 14.7835 26.252 14.8408 25.8984 15.2651L18.9672 23.5826C18.6204 23.9987 18.4255 24.229 18.2699 24.3706L18.264 24.376L18.2576 24.3711C18.0898 24.2443 17.8748 24.0325 17.4918 23.6496L14.0404 20.1982C13.6499 19.8076 13.0167 19.8076 12.6262 20.1982C12.2357 20.5887 12.2357 21.2219 12.6262 21.6124L16.0776 25.0638L16.1185 25.1046L16.1185 25.1046C16.445 25.4312 16.759 25.7454 17.0513 25.9664C17.3786 26.214 17.8074 26.4467 18.3568 26.4218C18.9062 26.3969 19.3121 26.1263 19.6157 25.8501C19.8867 25.6036 20.1711 25.2622 20.4666 24.9074L20.5036 24.863L27.4349 16.5455Z" fill="#00A4E5"/>
+                                </svg>Step 4: Efficiently create invoices.
+                        </li>
+                        <li>
+                            <svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M20 35.9053C28.2843 35.9053 35 29.1895 35 20.9053C35 12.621 28.2843 5.90527 20 5.90527C11.7157 5.90527 5 12.621 5 20.9053C5 29.1895 11.7157 35.9053 20 35.9053ZM27.4349 16.5455C27.7885 16.1212 27.7311 15.4906 27.3069 15.1371C26.8826 14.7835 26.252 14.8408 25.8984 15.2651L18.9672 23.5826C18.6204 23.9987 18.4255 24.229 18.2699 24.3706L18.264 24.376L18.2576 24.3711C18.0898 24.2443 17.8748 24.0325 17.4918 23.6496L14.0404 20.1982C13.6499 19.8076 13.0167 19.8076 12.6262 20.1982C12.2357 20.5887 12.2357 21.2219 12.6262 21.6124L16.0776 25.0638L16.1185 25.1046L16.1185 25.1046C16.445 25.4312 16.759 25.7454 17.0513 25.9664C17.3786 26.214 17.8074 26.4467 18.3568 26.4218C18.9062 26.3969 19.3121 26.1263 19.6157 25.8501C19.8867 25.6036 20.1711 25.2622 20.4666 24.9074L20.5036 24.863L27.4349 16.5455Z" fill="#00A4E5"/>
+                                </svg>Step 5: Monitor performance and analyze data through reports.
+                        </li>
+                  
+                        </ul>
+                </div>
+                <div class="howItWord_image_wrapper rounded">
+                    <img src="../images/heroImage.svg" alt="DMS" >
+                   </div>
+            </div>
+        </div>
+    </section>
+    <section class="Features pt-5 pb-4">
+        <div class="container">
+            <h2 class="section_head py-3">Features</h2>
+            <div class="content row gap-3 gap-lg-0 align-items-center ">
+                <div class="col-12 col-lg-4">
+                    <div class="box gap-4 rounded pt-3 ps-3 d-flex justify-content-between align-items-start">
+                        <div class="info mt-3">
+                            <h2>Patient Management</h2>
+                        <p>Managing patient records, treatments, & appointments</p>
+    
+                        </div>
+                        <div class="image">
+                            <img src="../images/featureAddPatient.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+              <div class="col-12 col-lg-4">
+                <div class="box gap-4 rounded pt-3 ps-3  d-flex justify-content-between align-items-start">
+                    <div class="info mt-3"><h2>Invoice Preparation</h2>
+                    <p>Invoice Automation and Insurance Processing.</p>
+
+                    </div>
+                    <div class="image">
+                        <img src="../images/Invoice.svg" alt="">
+                    </div>
+                </div>
+              </div>
+            
+            <div class="col-12 col-lg-4">
+                <div class="box gap-4 rounded pt-3 ps-3  d-flex justify-content-between align-items-start">
+                    <div class="info mt-3"><h2>Management of doctors & staff</h2>
+                    <p>Track working hours and availability.</p>
+
+                    </div>
+                    <div class="image">
+                        <img src="../images/AddDoctor.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+    <section class="report pb-5">
+        <div class="container">
+            <div class="content row gap-5 gap-lg-0">
+               <div class="col-12  col-lg-8">
+                <div class="info">
+                    <h2>Reports and analyses</h2>
+                    <p>Providing financial and managerial insights.</p>
+                </div>
+                <img class="diagram" src="../images/analyse.svg" alt="analyse">
+               </div>
+               <div class="col-12 col-lg-4">
+                <div class="card h-100 px-3 py-2 py-lg-1 py-lg-0 align-items-center justify-content-center d-flex flex-column">
+                    <h2>
+                        We manage over a million doctors
+                    </h2>
+                    <p class="text">Our smart program accommodates an infinite number of doctors and manages them</p>
+                   <div class="box d-flex align-items-center gap-2">
+                    <div class="analyseUsers">
+                        <div class="avatar"><img src="../images/users.svg" alt="users"></div>
+                        <div class="avatar"><img src="../images/users.svg" alt="users"></div>
+                        <div class="avatar"><img src="../images/users.svg" alt="users"></div>
+                        <div class="avatar"><img src="../images/users.svg" alt="users"></div>
+                      
+                    </div>
+                    <p class="num p-0 m-0">
+                        +1,000 K Doctor
+                    </p>
+                   </div>
+                </div>
+               </div>
+            </div>
+            <div class="cards row gap-3 gap-lg-0 align-items-center py-4">
+                <div class="col-12 col-lg-4">
+                    <div class="box gap-4 rounded pt-3 ps-3 d-flex justify-content-between align-items-start">
+                        <div class="info mt-3">
+                            <h2>Scheduling appointments</h2>
+                        <p>Ease of booking and integration with the calendar.</p>
+    
+                        </div>
+                        <div class="image">
+                            <img src="../images/appoinmentCard.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+              <div class="col-12 col-lg-4">
+                <div class="box gap-4 rounded pt-3 ps-3  d-flex justify-content-between align-items-start">
+                    <div class="info mt-3"><h2>Scheduling appointments</h2>
+                    <p>Ease of booking and integration with the calendar.</p>
+
+                    </div>
+                    <div class="image">
+                        <img src="../images/DoctorDetailsCard.svg" alt="">
+                    </div>
+                </div>
+              </div>
+            
+            <div class="col-12 col-lg-4">
+                <div class="box gap-4 rounded pt-3 ps-3  d-flex justify-content-between align-items-start">
+                    <div class="info mt-3"><h2>Multi-branch support</h2>
+                    <p>for clinics with more than one branch</p>
+
+                    </div>
+                    <div class="image">
+                        <img src="../images/Edit Permission (1).svg" alt="">
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+    <section class="faq py-5" >
+        <div class="container">
+            <div class="info d-flex flex-column justify-content-center align-items-center">
+                <p class="asking p-1 rounded">Something's unclear?</p>
+                <h2 class="head">Frequently asked questions</h2>
+                <p class="text text-center">Take as many pixel-perfect UI elements as you want and style them the way you<br/> need in a fraction of the time.</p>
+            </div>
+            <div class="row">
+                <div class="col-12 col-lg-6 box">
+                    <h2>What is a FAQ?</h2>
+                    <p class="text">A frequently asked questions (FAQ) list is often used in articles, websites, email lists, and online forums where common questions tend to recur, for example through posts or queries by new users related to common knowledge gaps.</p>
+                </div>
+                <div class="col-12 col-lg-6 box">
+                    <h2>What is a FAQ?</h2>
+                    <p class="text">A frequently asked questions (FAQ) list is often used in articles, websites, email lists, and online forums where common questions tend to recur, for example through posts or queries by new users related to common knowledge gaps.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-lg-6 box">
+                    <h2>What is a FAQ?</h2>
+                    <p class="text">A frequently asked questions (FAQ) list is often used in articles, websites, email lists, and online forums where common questions tend to recur, for example through posts or queries by new users related to common knowledge gaps.</p>
+                </div>
+                <div class="col-12 col-lg-6 box">
+                    <h2>What is a FAQ?</h2>
+                    <p class="text">A frequently asked questions (FAQ) list is often used in articles, websites, email lists, and online forums where common questions tend to recur, for example through posts or queries by new users related to common knowledge gaps.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-lg-6 box">
+                    <h2>What is a FAQ?</h2>
+                    <p class="text">A frequently asked questions (FAQ) list is often used in articles, websites, email lists, and online forums where common questions tend to recur, for example through posts or queries by new users related to common knowledge gaps.</p>
+                </div>
+                <div class="col-12 col-lg-6 box">
+                    <h2>What is a FAQ?</h2>
+                    <p class="text">A frequently asked questions (FAQ) list is often used in articles, websites, email lists, and online forums where common questions tend to recur, for example through posts or queries by new users related to common knowledge gaps.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="feedback py-5">
+        <div class="container">
+            <div class="head d-flex justify-content-between align-items-center">
+               <div class="info">
+                <h2 class="section_head text-start">Our Customer Feedback</h2>
+                <p>Don’t take our word for it. Trust our customers</p>
+               </div>
+               <div class="btns d-flex align-items-center gap-2">
+                <button id="prevBtn" class="py-1 px-2 px-lg-0 rounded d-flex align-items-center justify-content-center gap-2">
+                    <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.41003 1.81527L2.83003 6.40527L7.41003 10.9953L6.00003 12.4053L3.38077e-05 6.40527L6.00003 0.405274L7.41003 1.81527Z" fill="#00A4E5"/>
+                        </svg>
+                        
+                        
+                    <span class="d-none d-lg-block">Previous</span>
+                </button>
+                <button id="nextBtn" class="py-1 px-2 px-lg-0 rounded d-flex align-items-center  justify-content-center gap-2">
+                 
+                    <span class="d-none d-lg-block">Next</span>
+                    <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.0899658 10.9953L4.66997 6.40527L0.0899658 1.81527L1.49997 0.405273L7.49997 6.40527L1.49997 12.4053L0.0899658 10.9953Z" fill="#00A4E5"/>
+                        </svg>
+                </button>
+               </div>
+            </div>
+          
+        </div>
+        <div class="slider-container">
+            <div class="slider-track " id="sliderTrack" style="height: 288px;">
+                <div class="card card-item h-100 gap-2 p-3">
+                    <div class="review d-flex justify-content-between align-items-start">
+                      <img src="../images/review.svg" alt="review">
+                      <div class="start d-flex align-items-center gap-1">
+                          <img src="../images/Star.svg" alt="Star">
+                          <img src="../images/Star.svg" alt="Star">
+                          <img src="../images/Star.svg" alt="Star">
+                          <img src="../images/Star Half.svg" alt="Star Half">
+                          <img src="../images/Star Outline.svg" alt="Star Outline">
+                      </div>
+                    </div>
+                    <h2 class="name m-0 p-0">Floyd Miles</h2>
+                    <p class="dusc">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. 
+                      Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. </p>
+                  </div>
+                  <div class="card card-item h-100 gap-2 p-3">
+                    <div class="review d-flex justify-content-between align-items-start">
+                      <img src="../images/review.svg" alt="review">
+                      <div class="start d-flex align-items-center gap-1">
+                          <img src="../images/Star.svg" alt="Star">
+                          <img src="../images/Star.svg" alt="Star">
+                          <img src="../images/Star.svg" alt="Star">
+                          <img src="../images/Star Half.svg" alt="Star Half">
+                          <img src="../images/Star Outline.svg" alt="Star Outline">
+                      </div>
+                    </div>
+                    <h2 class="name m-0 p-0">Darlene Robertson</h2>
+                    <p class="dusc">Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, sed consequat metus sapien.</p>
+                  </div>
+                  <div class="card card-item h-100 gap-2 p-3">
+                    <div class="review d-flex justify-content-between align-items-start">
+                      <img src="../images/review.svg" alt="review">
+                      <div class="start d-flex align-items-center gap-1">
+                          <img src="../images/Star.svg" alt="Star">
+                          <img src="../images/Star.svg" alt="Star">
+                          <img src="../images/Star.svg" alt="Star">
+                          <img src="../images/Star Half.svg" alt="Star Half">
+                          <img src="../images/Star Outline.svg" alt="Star Outline">
+                      </div>
+                    </div>
+                    <h2 class="name m-0 p-0">Cameron Williamson</h2>
+                    <p class="dusc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                  </div>
+                  <div class="card card-item h-100 gap-2 p-3">
+                    <div class="review d-flex justify-content-between align-items-start">
+                      <img src="../images/review.svg" alt="review">
+                      <div class="start d-flex align-items-center gap-1">
+                          <img src="../images/Star.svg" alt="Star">
+                          <img src="../images/Star.svg" alt="Star">
+                          <img src="../images/Star.svg" alt="Star">
+                          <img src="../images/Star Half.svg" alt="Star Half">
+                          <img src="../images/Star Outline.svg" alt="Star Outline">
+                      </div>
+                    </div>
+                    <h2 class="name m-0 p-0">Cameron Williamson</h2>
+                    <p class="dusc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                  </div>
+                <div class="card card-item h-100 gap-2 p-3">
+                    <div class="review d-flex justify-content-between align-items-start">
+                      <img src="../images/review.svg" alt="review">
+                      <div class="start d-flex align-items-center gap-1">
+                          <img src="../images/Star.svg" alt="Star">
+                          <img src="../images/Star.svg" alt="Star">
+                          <img src="../images/Star.svg" alt="Star">
+                          <img src="../images/Star Half.svg" alt="Star Half">
+                          <img src="../images/Star Outline.svg" alt="Star Outline">
+                      </div>
+                    </div>
+                    <h2 class="name m-0 p-0">Floyd Miles</h2>
+                    <p class="dusc">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. 
+                      Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. </p>
+                  </div>
+                  <div class="card card-item h-100 gap-2 p-3">
+                    <div class="review d-flex justify-content-between align-items-start">
+                      <img src="../images/review.svg" alt="review">
+                      <div class="start d-flex align-items-center gap-1">
+                          <img src="../images/Star.svg" alt="Star">
+                          <img src="../images/Star.svg" alt="Star">
+                          <img src="../images/Star.svg" alt="Star">
+                          <img src="../images/Star Half.svg" alt="Star Half">
+                          <img src="../images/Star Outline.svg" alt="Star Outline">
+                      </div>
+                    </div>
+                    <h2 class="name m-0 p-0">Darlene Robertson</h2>
+                    <p class="dusc">Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, sed consequat metus sapien.</p>
+                  </div>
+                  <div class="card card-item h-100 gap-2 p-3">
+                    <div class="review d-flex justify-content-between align-items-start">
+                      <img src="../images/review.svg" alt="review">
+                      <div class="start d-flex align-items-center gap-1">
+                          <img src="../images/Star.svg" alt="Star">
+                          <img src="../images/Star.svg" alt="Star">
+                          <img src="../images/Star.svg" alt="Star">
+                          <img src="../images/Star Half.svg" alt="Star Half">
+                          <img src="../images/Star Outline.svg" alt="Star Outline">
+                      </div>
+                    </div>
+                    <h2 class="name m-0 p-0">Cameron Williamson</h2>
+                    <p class="dusc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                  </div>
+                  <div class="card card-item h-100 gap-2 p-3">
+                    <div class="review d-flex justify-content-between align-items-start">
+                      <img src="../images/review.svg" alt="review">
+                      <div class="start d-flex align-items-center gap-1">
+                          <img src="../images/Star.svg" alt="Star">
+                          <img src="../images/Star.svg" alt="Star">
+                          <img src="../images/Star.svg" alt="Star">
+                          <img src="../images/Star Half.svg" alt="Star Half">
+                          <img src="../images/Star Outline.svg" alt="Star Outline">
+                      </div>
+                    </div>
+                    <h2 class="name m-0 p-0">Cameron Williamson</h2>
+                    <p class="dusc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                  </div>
+                  <div class="card card-item h-100 gap-2 p-3">
+                    <div class="review d-flex justify-content-between align-items-start">
+                      <img src="../images/review.svg" alt="review">
+                      <div class="start d-flex align-items-center gap-1">
+                          <img src="../images/Star.svg" alt="Star">
+                          <img src="../images/Star.svg" alt="Star">
+                          <img src="../images/Star.svg" alt="Star">
+                          <img src="../images/Star Half.svg" alt="Star Half">
+                          <img src="../images/Star Outline.svg" alt="Star Outline">
+                      </div>
+                    </div>
+                    <h2 class="name m-0 p-0">Cameron Williamson</h2>
+                    <p class="dusc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                  </div>
+                  <div class="card card-item h-100 gap-2 p-3">
+                    <div class="review d-flex justify-content-between align-items-start">
+                      <img src="../images/review.svg" alt="review">
+                      <div class="start d-flex align-items-center gap-1">
+                          <img src="../images/Star.svg" alt="Star">
+                          <img src="../images/Star.svg" alt="Star">
+                          <img src="../images/Star.svg" alt="Star">
+                          <img src="../images/Star Half.svg" alt="Star Half">
+                          <img src="../images/Star Outline.svg" alt="Star Outline">
+                      </div>
+                    </div>
+                    <h2 class="name m-0 p-0">Cameron Williamson</h2>
+                    <p class="dusc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                  </div>
+                  <div class="card card-item h-100 gap-2 p-3">
+                    <div class="review d-flex justify-content-between align-items-start">
+                      <img src="../images/review.svg" alt="review">
+                      <div class="start d-flex align-items-center gap-1">
+                          <img src="../images/Star.svg" alt="Star">
+                          <img src="../images/Star.svg" alt="Star">
+                          <img src="../images/Star.svg" alt="Star">
+                          <img src="../images/Star Half.svg" alt="Star Half">
+                          <img src="../images/Star Outline.svg" alt="Star Outline">
+                      </div>
+                    </div>
+                    <h2 class="name m-0 p-0">Cameron Williamson</h2>
+                    <p class="dusc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                  </div>
+                  <div class="card card-item h-100 gap-2 p-3">
+                    <div class="review d-flex justify-content-between align-items-start">
+                      <img src="../images/review.svg" alt="review">
+                      <div class="start d-flex align-items-center gap-1">
+                          <img src="../images/Star.svg" alt="Star">
+                          <img src="../images/Star.svg" alt="Star">
+                          <img src="../images/Star.svg" alt="Star">
+                          <img src="../images/Star Half.svg" alt="Star Half">
+                          <img src="../images/Star Outline.svg" alt="Star Outline">
+                      </div>
+                    </div>
+                    <h2 class="name m-0 p-0">Cameron Williamson</h2>
+                    <p class="dusc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                  </div>
+            </div>
+            <div class="d-flex justify-content-center mt-3 gap-2">
+                <button class="carousel-dot active" data-slide="0"></button>
+                <button class="carousel-dot" data-slide="1"></button>
+                <button class="carousel-dot" data-slide="2"></button>
+              </div>
+          </div>
+    </section>
+    <section class="manageDMS py-3 py-lg-2 mt-0 mt-lg-4">
+        <div class="container">
+            <div class="content gap-2 gap-lg-0 p-4 rounded d-flex flex-column flex-lg-row justify-content-between align-items-center">
+                <h2 >Manage your clinic with <span>DMS</span>!</h2>
+                <button class="rounded startnow rounded py-1 px-3">Start now</button>
+            </div>
+        </div>
+    </section>
+ 
+    <footer
+    class="text-center text-lg-start mt-4"
+  
+    >
+
+<div class="container p-4 pb-0">
+
+<section class="">
+
+  <div class="row">
+ 
+    <div class="text-start col-lg-3 col-md-6 mb-4 mb-md-0">
+     <img src="../images/Logo.svg" alt="">
+
+      <p class="footer_text my-3">
+        Lorem ipsum dolor sit amet consectetur. Fringilla
+      </p>
+      <div class="users d-flex align-items-center gap-2">
+        <img src="../images/userelements.svg" alt="userelements">
+        <img src="../images/userelements.svg" alt="userelements">
+        <img src="../images/userelements.svg" alt="userelements">
+        <img src="../images/userelements.svg" alt="userelements">
+     
+      </div>
+    </div>
+ 
+    <div class="text-start col-lg-3 col-md-6 mb-4 mb-md-0">
+      <h5 class="footerlinks">Usful Links</h5>
+
+      <ul class="footerlist list-unstyled mb-0 d-flex flex-column gap-3">
+        <li>
+          <a href="#!">Why DMS</a>
+        </li>
+        <li>
+          <a href="#!">How It Works</a>
+        </li>
+        <li>
+          <a href="#!" >Features</a>
+        </li>
+        <li>
+          <a href="#!" >Feedback</a>
+         
+        </li>
+        <li>
+            <a href="#!" >FAQ</a>
+         
+        </li>
+      </ul>
+    </div>
+  
+    <div class="text-start col-lg-3 col-md-6 mb-4 mb-md-0">
+      <h5 class="footerlinks">Contact Us</h5>
+
+      <ul class="footerlist list-unstyled mb-0 d-flex flex-column gap-3">
+        <li class="d-flex align-items-center gap-2">
+            <img src="../images/userelements.svg" alt="">
+          <a href="#!" >
+            +20 1006871558
+          </a>
+        </li>
+        <li class="d-flex align-items-center gap-2">
+            <img src="../images/userelements.svg" alt="">
+          <a href="#!" >Gaza, Palestine</a>
+        </li>
+        <li class="d-flex align-items-center gap-2">
+            <img src="../images/userelements.svg" alt="">
+          <a href="#!" >Ahmed.shzourob@gail.com</a>
+        </li>
+     
+      </ul>
+    </div>
+  
+    <div class="text-start col-lg-3 col-md-6 mb-4 mb-md-0">
+      <h5 class="footerlinks">Maps</h5>
+
+     <div class="map rounded"></div>
+    </div>
+   
+  </div>
+
+</section>
+
+
+
+
+
+</div>
+<hr/>
+<div
+   class="Copyright text-center p-3"
+   >
+   Copyright DMS 2025. All Rights Reserved.
+
+</div>
+<!-- Copyright -->
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+ <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,192 @@
+.appoint_filtering .form-label{
+    font-weight: 500;
+    font-size: 14px;
+    color: var( --dark-color);
+}
+.appoint_filtering .form-select{
+    font-weight: 400;
+    font-size: 13px;
+    color: var(--text-color);
+    height: 40px;
+}
+
+.filter{
+    background-color:var(--bg-color);
+   width: 140px;
+    height: 40px;
+}
+.filter button{
+all: unset;
+width: 84px;
+height: 34px;
+font-weight: 500;
+font-size: 14px;
+color: var(--gry_color);
+cursor: pointer;
+}
+.filter button.active{
+background-color: var(--bg_white);
+color: var(--blace-color);
+}
+.clear_btn{
+    border:none;
+    background-color: transparent;
+    color: var(--text-color);
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 2.5;
+}
+.appoint_status .status label{
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.appoint_status .status input:focus,.checkbox_status input:focus{
+  box-shadow: none;
+}
+
+.appoint_status .status .Confirm ,.checkbox_status .Confirm{
+    color: var(--confirm_color);
+
+}
+
+.appoint_status .status .Pending,.checkbox_status .Pending{
+    color: var(--blace-color);
+
+}
+
+.appoint_status .status .Arrive,.checkbox_status .Arrive{
+    color: var(--arrive_color);
+
+}
+
+.appoint_status .status .Canceled,.checkbox_status .Canceled{
+    color: var(--concel_color);
+
+}
+.appoint_btn{
+      
+    background-color: var( --primary-color) !important;
+    font-weight: 500 !important;
+font-size: 12px !important;
+}
+
+.fade-in-right {
+    animation: fadeInRight 1s forwards;
+  }
+
+  @keyframes fadeInRight {
+    0% {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  .modal.fade-in-right .modal-dialog {
+    position:absolute;
+    top:1rem;
+    right:10px;
+    margin:0;
+  }
+  .appoint_contain .modal-dialog{
+    width: 45%;
+}
+#AppointmentsLabel{
+    color:var(--blace-color);
+     font-weight: 500;
+ font-size: 16px;
+ }
+ .appoint_body label.form-label{
+     font-weight: 500;
+     font-size: 14px;
+     color: var(--dark-color);
+ }
+ .appoint_body input::placeholder,.appoint_body textarea::placeholder,
+ .appoint_body select,.appoint_body textarea::placeholder{
+     font-weight: 400;
+     font-size: 13px;
+     color: var( --text-color);
+ }
+ .appoint_body #input_StartTime,
+ .appoint_body #input_endTime
+ 
+ {
+    font-weight: 400;
+    font-size: 13px;
+    color: var( --text-color);
+ }
+.checkbox_status label{
+    font-size: 14px !important;
+    font-weight: 400 !important;
+}
+
+
+.checkbox_status .form-check-input:checked[type=radio] {
+
+    background-image: url(../images/checked.png) !important;
+    object-fit: cover !important;
+    
+}
+.checkbox_status .form-check-input:checked {
+    background-color: #03a9f45e !important;
+    border: none !important;
+}
+
+.appoint_contain select,.appoint_contain input[type = "date"]{
+    font-size: 13px;
+    font-weight: 400;
+    color: var( --text-color);
+}
+select{
+    background-image: url(../images/selected.svg) !important;
+  
+}
+input.selected{
+    color: var(--blace-color);
+}
+select.selected{
+    color: var(--blace-color);
+    background-image: url(../images/defual_selected.svg) !important;
+}
+#filters .clear_btn{
+    color: var(--delete-color);
+}
+
+#filters .appoint_btn,#Appointments .appoint_btn{
+    background-color: var(--disables-button-color) !important;
+}
+.clear_btn.selected{
+    color: var(--delete-color) !important;
+}
+#filters .appoint_btn.selected,#Appointments .appoint_btn.selected{
+    background-color: var(--primary-color) !important;
+}
+/* mobile  */
+@media (max-width: 320px){
+    .appoint_status .status label{
+        font-size: 10px !important;
+    }
+}
+@media (max-width: 767.98px) { 
+    .appoint_btn{
+        font-size: 10px !important;
+    }
+  
+    .appoint_status .status label{
+        font-size: 12px;
+    }
+    .appoint_contain .modal-dialog{
+        width: 100%;
+    }
+   #Appointments .modal-footer .appoint_btn{
+        width: 100% !important;
+        font-size: 12px !important;
+    }
+   #filters .modal-footer .appoint_btn{
+    
+        font-size: 13px !important;
+    }
+}

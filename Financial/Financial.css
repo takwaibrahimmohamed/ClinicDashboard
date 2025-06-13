@@ -1,0 +1,485 @@
+/* show and hide */
+.Financial_content {
+    display: none;
+  }
+  
+  .Financial_content.active {
+    display: block;
+  }
+  .Financial_nav .navigate_items a{
+    all: unset;
+  }
+  .Financial_nav .navigate_items a:hover{
+    all: unset;
+  }
+  .nav_content .nav-item{
+    all: unset;
+    font-weight: 500;
+    font-size: 15px;
+    cursor: pointer;
+color: var(--secondary-color);
+position: relative;
+}
+  .nav_content .nav-item.active::before{
+    content: "";
+    position: absolute;
+    background-color: var(--primary-color);
+    width: calc(100% + 20px);
+    height: 2px;
+    bottom: -2px;
+    left: -10px;
+    box-shadow: 0 3px 1px -2px var(--primary-color) ;
+  }
+/* show and hide */
+.Financial_nav .nav.border-bottom{
+    border-bottom: 1.5px solid var(--light_gray) !important;
+   
+}
+
+
+.Financial_Income_btn{
+    background-color: var( --bg_appintment) !important;
+    font-weight: 500;
+font-size: 12px;
+   
+}
+.Financial_filter label{
+    font-weight: 500;
+    font-size: 14px;
+}
+.Financial_filter input ,.Financial_filter select{
+    font-weight: 400;
+    font-size: 13px;
+    color: var( --text-color);
+}
+.price{
+    color: var(--blue-text-color);
+    font-weight: 500;
+    font-size: 13px;
+    display: none;
+}
+.price.selected{
+display: block;
+}
+select{
+    background-image: url(../images/selected.svg) !important;
+    color: var( --text-color);
+}
+
+select,input{
+    color: var( --text-color) !important;
+}
+input.selected{
+    color: var(--blace-color) !important;
+}
+select.selected{
+    color: var(--blace-color) !important;
+    background-image: url(../images/defual_selected.svg) !important;
+}
+
+.clear_btn{
+    border:none;
+    font-weight: 500;
+    background-color: transparent;
+    color: var(--text-color);
+    font-size: 13px;
+}
+.clear_btn.selected{
+    color: var(--delete-color) !important;
+}
+
+.filter{
+    background-color:var(--bg-color);
+   width: 140px;
+    height: 40px;
+}
+.filter button{
+all: unset;
+width: 84px;
+height: 34px;
+font-weight: 500;
+font-size: 14px;
+color: var(--gry_color);
+cursor: pointer;
+}
+.filter button.active{
+background-color: var(--bg_white);
+color: var(--blace-color);
+}
+.expence_btn{
+  
+    background-color: var( --primary-color);
+    font-weight: 500;
+font-size: 12px;
+display: none;
+   
+}
+.Financial_Income_wrapper{
+    /* border: 1px solid  var(--light_gray); */
+    padding: 0 .7rem;
+    background-color: var(--bg_white);
+    border-top-left-radius: 1.4rem !important;
+    border-top-right-radius: 1.4rem !important;
+}
+.head_row{
+    background-color: var( --bg-color);
+    border: 1px solid  var(--light_gray); 
+    border-top: 1px solid  var(--light_gray); 
+}
+
+.head_table,.title_table{
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--gray-color);
+    border-right: 1px solid var(--light_gray) !important;
+    border-left: 1px solid var(--light_gray) !important;
+   height: 100%;
+}
+.head_table:first-child,.head_table:last-child{
+    border-right: none !important;
+    border-left: none !important;
+}
+.Financial_Income_data:last-child{
+border-bottom-right-radius: .5rem;
+border-bottom-left-radius: .5rem;
+}
+
+.title_table{
+color: var(--blace-color);
+}
+.Financial_Income_names{
+    border-right:  1px solid var(--light_gray) !important;
+}
+.Financial_Income_names img{
+width: 24px;
+height: 24px;
+border-radius: 50%;
+object-fit: cover;
+}
+
+.Financial_Income_names h2{
+font-weight: 500;
+font-size: 14px;
+color: var(--blace-color);
+}
+
+.action .dropdown-item{
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--blace-color);
+}
+.action .dropdown-item:hover{
+    color: var(--blace-color);
+}
+.action .dropdown-item:focus{
+    color: var(--blace-color);
+    background-color: var(--text-color);
+}
+.cancel_btn,.delete_btn{
+    border: 1px solid var(--light_color);
+    font-weight: 500;
+    font-size: 16px;
+}
+.delete_btn{
+    background-color: var( --delete-color);
+    color: var(--bg_white);
+}
+.delete_btn:hover{
+    color: var(--bg_white);
+}
+.confurm_delete_Financial h2{
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--blace-color);
+}
+.confurm_delete_Financial p{
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--secondary-color);
+}
+.fade-in-right {
+    animation: fadeInRight 1s forwards;
+  }
+
+  @keyframes fadeInRight {
+    0% {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  .modal.fade-in-right .modal-dialog {
+    position:absolute;
+    top:1rem;
+    right:10px;
+    margin:0;
+  }
+  
+  .add_Financial .modal-dialog,.Edit_Financial .modal-dialog{
+    max-width:90%;
+    right:0% !important;
+    left:0% !important;
+    transform: translateX(0);
+    margin: 1% auto !important;
+}
+/* editing popup */
+#add_FinancialLabel,.Edit_FinancialLabel{
+    color:var(--blace-color);
+     font-weight: 500;
+ font-size: 16px;
+ }
+
+
+.Financial_btn{
+  
+    background-color: var( --primary-color);
+    font-weight: 500;
+font-size: 12px;
+   
+}
+
+.add_Financial_body label,.Edit_Financial_body label{
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--dark-color);
+}
+.add_Financial_body input::placeholder,
+.add_Financial_body input,
+.add_Financial_body select,
+.Edit_Financial_body input,
+.Edit_Financial_body select,.Edit_Financial_body textarea::placeholder,
+.Edit_Financial_body select,.Edit_Financial_body textarea::placeholder{
+    font-weight: 400;
+    font-size: 13px;
+    color: var( --text-color);
+}
+.add_other_payment{
+    all: unset;
+    color: var( --blue-text-color);
+    font-size: 13px;
+    font-weight: 500;
+}
+.Edit_Financial .Financial_btn,.add_Financial .Financial_btn,
+.mobile_filters  .Financial_btn{
+    font-size: 13px !important;
+    background: var( --disables-button-color) !important;
+}
+.Edit_Financial .Financial_btn:first-child{
+    background-color: transparent !important;
+    color: var( --text-color) !important;
+}
+.Edit_Financial .Financial_btn:last-child.selected,.add_Financial .Financial_btn.selected,
+.mobile_filters .Financial_btn.selected
+{
+    background-color: var( --primary-color) !important;
+}
+.Edit_Financial .Financial_btn.selected:first-child,
+.mobile_filters .Financial_btn.selected:first-child
+{
+    background-color: transparent;
+    color: var(--delete-color) !important;
+}
+
+.custom-file-input-wrapper {
+    display: flex;
+    align-items: center;
+    border: 1px solid var( --light_gray);
+    border-radius: 5px;
+    overflow: hidden;
+  
+}
+.custom-file-input {
+    flex-grow: 1;
+    border: none;
+    background: transparent;
+ 
+}
+.custom-file-input:focus{
+    border: none !important;
+    outline: none !important;
+}
+.custom-file-button {
+    background-color: var(--aque-color);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    white-space: nowrap;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+
+/* editing  popup*/
+@media (max-width: 359px){
+    .mobile_name_page{
+        flex-direction: column !important;
+        align-items: start !important;
+        
+    }
+    .mobile_name_page  #mobileNav,#mobileNav.custom_width{
+      width: 100% !important;
+        
+    }
+}
+@media (max-width: 1199.98px){
+
+    .Financial_Income_data{
+        height: auto !important;
+        border:  1px solid var(--light_gray) !important;
+        margin-bottom: 1rem;
+        border-radius: .5rem;
+    }
+    .title_table,.Financial_Income_names,.table_state{
+        border:none !important;
+     
+    }
+    
+    .table_state{
+        padding-top: 0 !important;
+    }
+    .Financial_Income_names .creat_info h2,.Financial_Income_names .creat_info p{
+        font-size: 12px;
+        margin: 0;
+    }
+   
+    .title_table{
+        font-size: 14px;
+      align-items: end !important;
+      /* padding-right: 1.5rem !important; */
+
+    }
+    .title_text{
+        font-size: 13px;
+        font-weight: 500;
+    }
+    
+    .title_table p:first-child,.Financial_Income_names:not(:nth-child(2)) h2:first-child{
+        color: var(--text-color);
+        font-weight: 500;
+        font-size: 12px;
+       
+     }
+     .Financial_Income_names:nth-child(1) h2:first-child{
+        color: var(--blace-color);
+    }
+    .state{
+        font-size: 10px;
+    }
+    .date_complete{
+        font-size: 12px;
+    }
+    .Financial_Income_contain .modal-dialog{
+        width: 98%;
+    }
+    .expence_btn{
+        font-size: 10px;
+        padding: 5px 3px !important;
+        width: 84px;
+    }
+    .Financial_Income_btn{
+        padding: 3px !important;
+    }
+    #mobileNav:focus{
+    outline: none !important;
+    border:none !important;
+    box-shadow: none !important;
+    }
+    #mobileNav{
+        width: 45%;
+    }
+    #mobileNav.custom_width{
+       width: 62% !important;
+       
+    }
+   
+    .custom-file-input-wrapper input{
+        width: 90%
+    }
+      @keyframes fadeInbottom {
+        0% {
+          opacity: 0;
+          transform: translatey(100%);
+        }
+        100% {
+          opacity: 1;
+          transform: translatey(0);
+        }
+      }
+    /* .add_Financial.fade-in-right,.Edit_Financial.fade-in-right{
+        animation: fadeInRight 1s forwards;
+    } */
+    .add_Financial .modal-dialog, .Edit_Financial .modal-dialog{
+        max-width: 100% !important;
+        margin: 0 auto !important;
+      
+      
+    }
+    .add_Financial.modal.fade-in-right,.Edit_Financial.modal.fade-in-right{
+        animation: fadeInbottom 1s forwards !important;
+    }
+    .add_Financial.modal.fade-in-right .modal-dialog,.Edit_Financial.modal.fade-in-right .modal-dialog{
+        top: 30% !important;
+       
+    }
+    .deleting_icon{
+        width: 20% !important;
+    }
+    .custom-file-button{
+font-size: 12px;
+    }
+}
+@media (min-width:769px) and (max-width: 1199.98px) {
+    .Financial_filter .form-label{
+        font-size: 12px;
+      
+    }
+    .title_text{
+        font-size: 12px;
+    }
+    .Financial_filter .filter_completDate, .Financial_filter .form-select{
+        font-size: 11px;
+        padding: .5rem !important;
+    }
+    .date_complete{
+        font-size: 11px;
+    }
+    .Financial_Income_names h2{
+        font-size: 12px;
+    }
+    .head_table, .title_table {
+        padding-left: .3rem !important;
+        font-size: 10px;
+    }
+   .income .Financial_filter{
+    width: 90% !important;
+   }
+  .debts .filter{
+    height: 35px;
+  }
+  .debts .filter button{
+    height: 32px;
+  }
+}
+@media  (max-width: 1350px){
+ 
+    #debts  .table_wrabber h3,#debts .table_wrabber td,#debts .table_wrabber h2,#debts .table_wrabber td
+    ,#debts .table_wrabber th{
+        font-size: 13px;
+    }
+}
+@media (min-width:769px){
+    .Financial_nav{
+        border-bottom-right-radius: 0 !important;
+        border-bottom-left-radius: 0 !important;
+        
+    }
+   .Financial_Income_contain{
+        border-top-right-radius: 0 !important;
+        border-top-left-radius: 0 !important;
+
+    }
+}

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+ 
+    <link rel="stylesheet" href="../Manage_Schedule/Manage_Schedule.css">
+    <link rel="stylesheet" href="../style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main_header">
+   
+    </div>
+    <div class="row gx-0">
+    <div class="sidebar_parent"></div>
+  
+    <div class="container-fluid" id="main-content">
+        <div class="bg-white rounded Manage_Schedule_contain p-3 mb-2">
+            <div class="d-block d-md-flex justify-content-end justify-content-md-between align-items-center ">
+             <div class="Manage_Schedule_filtering d-none d-md-flex w-50">
+               <form  class="row w-50">
+                   <div class="col-12">
+                       <label for="Manage_Schedule_doctor " class="form-label m-0 p-0">Doctor</label>
+                       <select id="Manage_Schedule_doctor" class="form-select py-2 px-3">
+                           <option selected>Select Doctor</option>
+                           <option>Dr. Ahmed Zourob</option>
+                       </select>
+                   
+                   </div>
+                  
+                
+                  
+               </form>
+     
+           </div>
+           <div class="Manage_Schedule d-flex justify-content-between align-items-center">
+            <a href="/Doctor/Doctor.html" class="d-block d-md-none mobile_name_page p-0 m-0">
+                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.8706 6.0031C12.7361 6.10467 12.3347 6.40793 12.1032 6.58853C11.6397 6.95026 11.0238 7.44452 10.4097 7.97769C9.79256 8.51356 9.19148 9.07648 8.74961 9.57658C8.52805 9.82734 8.35969 10.0476 8.25011 10.2294C8.14704 10.4004 8.12561 10.5013 8.12561 10.5013C8.12561 10.5013 8.14705 10.5994 8.2501 10.7703C8.35968 10.9521 8.52804 11.1724 8.74961 11.4231C9.19148 11.9232 9.79256 12.4861 10.4098 13.022C11.0238 13.5552 11.6398 14.0494 12.1033 14.4112C12.3347 14.5918 12.7356 14.8946 12.8701 14.9962C13.148 15.2009 13.2079 15.5925 13.0032 15.8705C12.7986 16.1484 12.4073 16.2078 12.1294 16.0031L12.1273 16.0015C11.9863 15.895 11.5704 15.5809 11.3342 15.3966C10.8602 15.0267 10.2262 14.518 9.59024 13.9659C8.95743 13.4165 8.30851 12.8117 7.81288 12.2508C7.5657 11.971 7.34344 11.6875 7.17958 11.4157C7.02607 11.161 6.875 10.8386 6.875 10.4998C6.875 10.1611 7.02607 9.83868 7.17959 9.58404C7.34344 9.31223 7.5657 9.02866 7.81288 8.74891C8.30851 8.18798 8.95742 7.58325 9.59023 7.03382C10.2261 6.48169 10.8602 5.973 11.3342 5.6031C11.5705 5.41867 11.9865 5.10449 12.1272 4.99823L12.1289 4.9969C12.4069 4.7922 12.7985 4.85128 13.0032 5.12922C13.2079 5.40714 13.1485 5.7984 12.8706 6.0031Z" fill="#00425C"/>
+                    </svg>
+                    
+                Manage Schedule</a >
+             
+            <div class="d-flex">
+              <button type="button" class="d-block d-md-none btn rounded  h-25 py-0 py-md-2 text-white px-2"
+              data-bs-toggle="modal" data-bs-target="#filters">
+              <svg width="26" height="27" viewBox="0 0 26 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="0.5" y="1" width="25" height="25" rx="3.5" fill="white"/>
+                <rect x="0.5" y="1" width="25" height="25" rx="3.5" stroke="#F6F6F6"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M15.7708 8.52906C15.7708 8.40408 15.7708 8.28923 15.7643 8.19279C15.7572 8.08917 15.7411 7.97522 15.6931 7.85943C15.5895 7.60929 15.3908 7.41056 15.1407 7.30696C15.0249 7.25899 14.9109 7.24288 14.8073 7.23581C14.7109 7.22924 14.596 7.22924 14.471 7.22925H14.4456C14.3207 7.22924 14.2058 7.22924 14.1094 7.23581C14.0058 7.24288 13.8918 7.25899 13.776 7.30696C13.5259 7.41056 13.3271 7.60929 13.2235 7.85943C13.1756 7.97522 13.1595 8.08917 13.1524 8.19279C13.1482 8.25383 13.1467 8.32223 13.1461 8.39592H7.75C7.50838 8.39592 7.3125 8.59179 7.3125 8.83342C7.3125 9.07504 7.50838 9.27092 7.75 9.27092H13.1461C13.1467 9.3446 13.1482 9.413 13.1524 9.47404C13.1595 9.57766 13.1756 9.69161 13.2235 9.80741C13.3271 10.0575 13.5259 10.2563 13.776 10.3599C13.8918 10.4078 14.0058 10.4239 14.1094 10.431C14.2058 10.4376 14.3206 10.4376 14.4456 10.4376H14.471C14.596 10.4376 14.7108 10.4376 14.8073 10.431C14.9109 10.4239 15.0249 10.4078 15.1407 10.3599C15.3908 10.2563 15.5895 10.0575 15.6931 9.80741C15.7411 9.69161 15.7572 9.57766 15.7643 9.47404C15.7708 9.37761 15.7708 9.26279 15.7708 9.13781V8.52906ZM14.0208 8.83441V9.12508C14.0208 9.26697 14.0211 9.35147 14.0254 9.41448C14.028 9.45346 14.0316 9.47003 14.0327 9.47432C14.0474 9.50864 14.0748 9.53599 14.1091 9.55074C14.1134 9.55183 14.13 9.55539 14.1689 9.55805C14.2319 9.56235 14.3164 9.56258 14.4583 9.56258C14.6002 9.56258 14.6847 9.56235 14.7477 9.55805C14.7867 9.55539 14.8033 9.55183 14.8076 9.55074C14.8419 9.53599 14.8692 9.50864 14.884 9.47432C14.8851 9.47003 14.8886 9.45346 14.8913 9.41448C14.8956 9.35147 14.8958 9.26697 14.8958 9.12508V8.54175C14.8958 8.39986 14.8956 8.31536 14.8913 8.25236C14.8886 8.21337 14.8851 8.1968 14.884 8.19251C14.8692 8.15819 14.8419 8.13084 14.8076 8.11609C14.8033 8.115 14.7867 8.11144 14.7477 8.10879C14.6847 8.10449 14.6002 8.10425 14.4583 8.10425C14.3164 8.10425 14.2319 8.10449 14.1689 8.10879C14.13 8.11144 14.1134 8.115 14.1091 8.11609C14.0748 8.13084 14.0474 8.15819 14.0327 8.19251C14.0316 8.19681 14.028 8.21337 14.0254 8.25236C14.0211 8.31536 14.0208 8.39986 14.0208 8.54175V8.83242L14.0208 8.83342L14.0208 8.83441Z" fill="#606060"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9795 18.0209H7.75C7.50838 18.0209 7.3125 17.825 7.3125 17.5834C7.3125 17.3418 7.50838 17.1459 7.75 17.1459H11.9795C11.98 17.0722 11.9816 17.0038 11.9857 16.9428C11.9928 16.8392 12.0089 16.7252 12.0569 16.6094C12.1605 16.3593 12.3592 16.1606 12.6093 16.057C12.7251 16.009 12.8391 15.9929 12.9427 15.9858C13.0392 15.9792 13.154 15.9792 13.279 15.9792H13.3044C13.4294 15.9792 13.5442 15.9792 13.6406 15.9858C13.7442 15.9929 13.8582 16.009 13.974 16.057C14.2241 16.1606 14.4229 16.3593 14.5265 16.6094C14.5744 16.7252 14.5905 16.8392 14.5976 16.9428C14.6042 17.0392 14.6042 17.154 14.6042 17.279V17.8878C14.6042 18.0128 14.6042 18.1276 14.5976 18.224C14.5905 18.3277 14.5744 18.4416 14.5265 18.5574C14.4229 18.8075 14.2241 19.0063 13.974 19.1099C13.8582 19.1578 13.7442 19.1739 13.6406 19.181C13.5442 19.1876 13.4294 19.1876 13.3044 19.1876H13.279C13.154 19.1876 13.0391 19.1876 12.9427 19.181C12.8391 19.1739 12.7251 19.1578 12.6093 19.1099C12.3592 19.0063 12.1605 18.8075 12.0569 18.5574C12.0089 18.4416 11.9928 18.3277 11.9857 18.224C11.9816 18.163 11.98 18.0946 11.9795 18.0209ZM12.8542 17.8751V17.5844L12.8542 17.5834L12.8542 17.5824V17.2917C12.8542 17.1499 12.8544 17.0654 12.8587 17.0024C12.8614 16.9634 12.8649 16.9468 12.866 16.9425C12.8808 16.9082 12.9081 16.8808 12.9424 16.8661C12.9467 16.865 12.9633 16.8614 13.0023 16.8588C13.0653 16.8545 13.1498 16.8542 13.2917 16.8542C13.4336 16.8542 13.5181 16.8545 13.5811 16.8588C13.62 16.8614 13.6366 16.865 13.6409 16.8661C13.6752 16.8808 13.7026 16.9082 13.7173 16.9425C13.7184 16.9468 13.722 16.9634 13.7246 17.0024C13.7289 17.0654 13.7292 17.1499 13.7292 17.2917V17.8751C13.7292 18.017 13.7289 18.1015 13.7246 18.1645C13.722 18.2035 13.7184 18.22 13.7173 18.2243C13.7026 18.2586 13.6752 18.286 13.6409 18.3007C13.6366 18.3018 13.62 18.3054 13.5811 18.308C13.5181 18.3123 13.4336 18.3126 13.2917 18.3126C13.1498 18.3126 13.0653 18.3123 13.0023 18.308C12.9633 18.3054 12.9467 18.3018 12.9424 18.3007C12.9081 18.286 12.8808 18.2586 12.866 18.2243C12.8649 18.22 12.8614 18.2035 12.8587 18.1645C12.8544 18.1015 12.8542 18.017 12.8542 17.8751Z" fill="#606060"/>
+                <path d="M18.25 18.0209C18.4916 18.0209 18.6875 17.825 18.6875 17.5834C18.6875 17.3418 18.4916 17.1459 18.25 17.1459H15.9167C15.675 17.1459 15.4792 17.3418 15.4792 17.5834C15.4792 17.825 15.675 18.0209 15.9167 18.0209H18.25Z" fill="#606060"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M18.6875 13.2084C18.6875 13.45 18.4916 13.6459 18.25 13.6459H12.8538C12.8533 13.7196 12.8518 13.788 12.8476 13.849C12.8405 13.9527 12.8244 14.0666 12.7765 14.1824C12.6729 14.4325 12.4741 14.6313 12.224 14.7349C12.1082 14.7828 11.9942 14.7989 11.8906 14.806C11.7942 14.8126 11.6794 14.8126 11.5544 14.8126H11.529C11.404 14.8126 11.2891 14.8126 11.1927 14.806C11.0891 14.7989 10.9751 14.7828 10.8593 14.7349C10.6092 14.6313 10.4105 14.4325 10.3069 14.1824C10.2589 14.0666 10.2428 13.9527 10.2357 13.849C10.2292 13.7526 10.2292 13.6378 10.2292 13.5128V12.9041C10.2292 12.7791 10.2292 12.6642 10.2357 12.5678C10.2428 12.4642 10.2589 12.3502 10.3069 12.2344C10.4105 11.9843 10.6092 11.7856 10.8593 11.682C10.9751 11.634 11.0891 11.6179 11.1927 11.6108C11.2891 11.6042 11.404 11.6042 11.529 11.6042H11.5544C11.6794 11.6042 11.7942 11.6042 11.8906 11.6108C11.9942 11.6179 12.1082 11.634 12.224 11.682C12.4741 11.7856 12.6729 11.9843 12.7765 12.2344C12.8244 12.3502 12.8405 12.4642 12.8476 12.5678C12.8518 12.6288 12.8533 12.6972 12.8538 12.7709H18.25C18.4916 12.7709 18.6875 12.9668 18.6875 13.2084ZM11.8909 12.4911C11.9252 12.5058 11.9526 12.5332 11.9673 12.5675C11.9684 12.5718 11.972 12.5884 11.9746 12.6274C11.9789 12.6904 11.9792 12.7749 11.9792 12.9167V13.5001C11.9792 13.642 11.9789 13.7265 11.9746 13.7895C11.972 13.8285 11.9684 13.845 11.9673 13.8493C11.9526 13.8836 11.9252 13.911 11.8909 13.9257C11.8866 13.9268 11.87 13.9304 11.8311 13.933C11.7681 13.9373 11.6836 13.9376 11.5417 13.9376C11.3998 13.9376 11.3153 13.9373 11.2523 13.933C11.2133 13.9304 11.1967 13.9268 11.1924 13.9257C11.1581 13.911 11.1308 13.8836 11.116 13.8493C11.1149 13.845 11.1114 13.8285 11.1087 13.7895C11.1044 13.7265 11.1042 13.642 11.1042 13.5001V12.9167C11.1042 12.7749 11.1044 12.6904 11.1087 12.6274C11.1114 12.5884 11.1149 12.5718 11.116 12.5675C11.1308 12.5332 11.1581 12.5058 11.1924 12.4911C11.1967 12.49 11.2133 12.4864 11.2523 12.4838C11.3153 12.4795 11.3998 12.4792 11.5417 12.4792C11.6836 12.4792 11.7681 12.4795 11.8311 12.4838C11.87 12.4864 11.8866 12.49 11.8909 12.4911Z" fill="#606060"/>
+                <path d="M18.25 9.27092C18.4916 9.27092 18.6875 9.07504 18.6875 8.83342C18.6875 8.59179 18.4916 8.39592 18.25 8.39592H17.0833C16.8417 8.39592 16.6458 8.59179 16.6458 8.83342C16.6458 9.07504 16.8417 9.27092 17.0833 9.27092H18.25Z" fill="#606060"/>
+                <path d="M9.35417 13.2084C9.35417 13.45 9.15829 13.6459 8.91667 13.6459H7.75C7.50838 13.6459 7.3125 13.45 7.3125 13.2084C7.3125 12.9668 7.50838 12.7709 7.75 12.7709H8.91667C9.15829 12.7709 9.35417 12.9668 9.35417 13.2084Z" fill="#606060"/>
+                </svg>
+               </button>
+            <button type="button"  data-bs-toggle="modal" 
+            data-bs-target="#DoctorHours" class="Manage_Schedule_btn btn rounded py-1 py-md-2 text-white px-2 px-md-3">
+             <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                 <path d="M9.5625 3C9.5625 2.68934 9.31066 2.4375 9 2.4375C8.68934 2.4375 8.4375 2.68934 8.4375 3V8.4375H3C2.68934 8.4375 2.4375 8.68934 2.4375 9C2.4375 9.31066 2.68934 9.5625 3 9.5625H8.4375V15C8.4375 15.3107 8.68934 15.5625 9 15.5625C9.31066 15.5625 9.5625 15.3107 9.5625 15V9.5625H15C15.3107 9.5625 15.5625 9.31066 15.5625 9C15.5625 8.68934 15.3107 8.4375 15 8.4375H9.5625V3Z" fill="white"/>
+                 </svg>
+                 Doctor’s Hours
+              </button>
+               <!-- doctors_hours -->
+        <div class="modal fade-in-right" id="DoctorHours" tabindex="-1" role="dialog"  aria-labelledby="DoctorHoursLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content" style="height: 95vh; overflow-y: auto;">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="DoctorHoursLabel">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.6257 3.3335C10.6257 2.98832 10.3458 2.7085 10.0007 2.7085C9.65547 2.7085 9.37565 2.98832 9.37565 3.3335V9.37516H3.33398C2.98881 9.37516 2.70898 9.65498 2.70898 10.0002C2.70898 10.3453 2.98881 10.6252 3.33398 10.6252H9.37565V16.6668C9.37565 17.012 9.65547 17.2918 10.0007 17.2918C10.3458 17.2918 10.6257 17.012 10.6257 16.6668V10.6252H16.6673C17.0125 10.6252 17.2923 10.3453 17.2923 10.0002C17.2923 9.65498 17.0125 9.37516 16.6673 9.37516H10.6257V3.3335Z" fill="#00212E"/>
+                        </svg>
+                        
+                      Add Doctor’s Hours                        
+                  </h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                 <form class="row g-3">
+                  <div class="box ">
+                    <div class="col-md-12">
+                      <label for="Gender" class="form-label">Doctor</label>
+                      <select id="Gender" class="form-select">
+                        <option selected>Dr.Rafat ND</option>
+                        <option>Dr.Rafat ND</option>
+                      </select>
+                  </div>
+                  </div>
+                  <p class="col-12">
+                    Doctor’s Hours
+                  </p>
+                    <!--each row represent day -->
+                    <div class="border-bottom row align-items-center justify-content-end g-2">
+                      <div class="col-6 ">
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
+                            <label class="form-check-label" for="flexSwitchCheckDefault">Satur</label>
+                          </div>
+                      </div>
+                      <div class="col-6 not_work">
+                        <p>Not working on this day</p>
+                      </div>
+                    </div>
+                    <div class="border-bottom row align-items-center justify-content-end g-2">
+                      <div class="col-6 ">
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
+                            <label class="form-check-label" for="flexSwitchCheckDefault">Satur</label>
+                          </div>
+                      </div>
+                      <div class="col-6 not_work">
+                        <p>Not working on this day</p>
+                      </div>
+                    </div>
+                    <div class="border-bottom row align-items-center justify-content-end g-2">
+                      <div class="col-6 ">
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
+                            <label class="form-check-label" for="flexSwitchCheckDefault">Satur</label>
+                          </div>
+                      </div>
+                      <div class="col-6 not_work">
+                        <p>Not working on this day</p>
+                      </div>
+                    </div>
+                    <div class="border-bottom row align-items-center justify-content-end g-2">
+                      <div class="col-6 ">
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
+                            <label class="form-check-label" for="flexSwitchCheckDefault">Satur</label>
+                          </div>
+                      </div>
+                      <div class="col-6 not_work">
+                        <p>Not working on this day</p>
+                      </div>
+                    </div>
+                    <div class="border-bottom row align-items-center justify-content-end g-2">
+                      <div class="col-6 ">
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
+                            <label class="form-check-label" for="flexSwitchCheckDefault">Satur</label>
+                          </div>
+                      </div>
+                      <div class="col-6 not_work">
+                        <p>Not working on this day</p>
+                      </div>
+                    </div>
+                    <div class="border-bottom row align-items-center justify-content-end g-2">
+                      <div class="col-6 ">
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
+                            <label class="form-check-label" for="flexSwitchCheckDefault">Satur</label>
+                          </div>
+                      </div>
+                      <div class="col-6 not_work">
+                        <p>Not working on this day</p>
+                      </div>
+                    </div>
+                  
+                   <div class="border-bottom row align-items-center justify-content-end g-2">
+                    <div class="col-6 ">
+                      <div class="form-check form-switch">
+                          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
+                          <label class="form-check-label" for="flexSwitchCheckDefault">Fri</label>
+                        </div>
+                    </div>
+                    <div class="col-6 not_work">
+                      <p>Not working on this day</p>
+                    </div>
+                  </div>
+                  <div class="col-12 modal-footer border-top-0">
+                    <button type="submit" class="DoctorHours btn text-white px-3">Add Hours</button>
+                  </div>
+                </form>
+                </div>
+               
+              </div>
+            </div>
+          </div>
+              </div>
+
+        </div>
+            </div>
+        </div>
+        <div class="bg-white rounded  p-2 ">
+           calender
+        </div>
+    </div>
+    </div>
+    <script src="../main.js"></script>
+    <script src="../Manage_Schedule/Manage_Schedule.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+ 
+</body>
+</html>

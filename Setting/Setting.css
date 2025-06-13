@@ -1,0 +1,699 @@
+/* show and hide */
+:root {
+    --modal-top: auto !important;
+    --modal-bottom: 0 !important;
+}
+.Setting_content {
+    display: none;
+  }
+  
+  .Setting_content.active {
+    display: block;
+  }
+  .Setting_nav .navigate_items a{
+    all: unset;
+  }
+  .Setting_nav .navigate_items a:hover{
+    all: unset;
+  }
+  .nav_content .nav-item{
+    all: unset;
+    font-weight: 500;
+    font-size: 15px;
+    cursor: pointer;
+color: var(--secondary-color);
+position: relative;
+}
+  .nav_content .nav-item.active::before{
+    content: "";
+    position: absolute;
+    background-color: var(--primary-color);
+    width: calc(100% + 20px);
+    height: 2px;
+    bottom: -2px;
+    left: -10px;
+    box-shadow: 0 3px 1px -2px var(--primary-color) ;
+  }
+/* show and hide */
+.Setting_nav .nav.border-bottom{
+    border-bottom: 1.5px solid var(--light_gray) !important;
+   
+}
+
+
+.Setting_Lab_btn{
+    background-color: var( --bg_appintment) !important;
+    font-weight: 500;
+font-size: 12px;
+   
+}
+.Setting_filter label{
+    font-weight: 500;
+    font-size: 14px;
+}
+.Setting_filter input ,.Setting_filter select{
+    font-weight: 400;
+    font-size: 13px;
+    color: var( --text-color);
+}
+.form-check-label{
+    font-weight: 400 !important;
+    font-size: 14px !important;
+
+}
+.price{
+    color: var(--blue-text-color);
+    font-weight: 500;
+    font-size: 13px;
+    display: none;
+}
+.price.selected{
+display: block;
+}
+select{
+    background-image: url(../images/selected.svg) !important;
+    color: var( --text-color);
+}
+
+select,input{
+    color: var( --text-color) !important;
+}
+input.selected{
+    color: var(--blace-color) !important;
+}
+select.selected{
+    color: var(--blace-color) !important;
+    background-image: url(../images/defual_selected.svg) !important;
+}
+
+.clear_btn{
+    border:none;
+    font-weight: 500;
+    background-color: transparent;
+    color: var(--text-color);
+    font-size: 13px;
+}
+.clear_btn.selected{
+    color: var(--delete-color) !important;
+}
+
+.filter{
+    background-color:var(--bg-color);
+   width: 140px;
+    height: 40px;
+}
+.filter button{
+all: unset;
+width: 84px;
+height: 34px;
+font-weight: 500;
+font-size: 14px;
+color: var(--gry_color);
+cursor: pointer;
+}
+.filter button.active{
+background-color: var(--bg_white);
+color: var(--blace-color);
+}
+.Adding_btn{
+  
+    background-color: var( --primary-color);
+    font-weight: 500;
+font-size: 12px;
+
+   
+}
+.custom_import{
+    color: var(--primary-color) !important;
+    border:1px solid var(--primary-color) !important;
+}
+table th:last-child,table td:last-child{
+    text-align: center;
+}
+.Setting_Lab_wrapper{
+    /* border: 1px solid  var(--light_gray); */
+    /* padding: 0 .7rem; */
+    background-color: var(--bg_white);
+    border-top-left-radius: 1.4rem !important;
+    border-top-right-radius: 1.4rem !important;
+}
+.head_row{
+    background-color: var( --bg-color);
+    border: 1px solid  var(--light_gray); 
+    border-top: 1px solid  var(--light_gray); 
+}
+
+.head_table,.title_table{
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--gray-color);
+    border-right: 1px solid var(--light_gray) !important;
+    border-left: 1px solid var(--light_gray) !important;
+   height: 100%;
+}
+.head_table:first-child,.head_table:last-child{
+    border-right: none !important;
+    border-left: none !important;
+}
+
+.Setting_Lab_data:last-child{
+border-bottom-right-radius: .5rem;
+border-bottom-left-radius: .5rem;
+}
+
+.title_table{
+color: var(--blace-color);
+}
+.Setting_Lab_names{
+    border-right:  1px solid var(--light_gray) !important;
+}
+.Setting_Lab_names img{
+width: 24px;
+height: 24px;
+border-radius: 50%;
+object-fit: cover;
+}
+
+.Setting_Lab_names h2{
+font-weight: 500;
+font-size: 14px;
+color: var(--blace-color);
+}
+
+.action .dropdown-item{
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--blace-color);
+}
+.action .dropdown-item:hover{
+    color: var(--blace-color);
+}
+.action .dropdown-item:focus{
+    color: var(--blace-color);
+    background-color: var(--text-color);
+}
+.cancel_btn,.delete_btn{
+    border: 1px solid var(--light_color);
+    font-weight: 500;
+    font-size: 16px;
+}
+.NewService_btn{
+    font-size: 12px;
+    font-weight: 500;
+    background-color: var( --bg_appintment) !important;
+    color: var(--primary-color) !important;
+}
+.delete_btn{
+    background-color: var( --delete-color);
+    color: var(--bg_white);
+}
+.delete_btn:hover{
+    color: var(--bg_white);
+}
+.confurm_delete_Setting h2{
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--blace-color);
+}
+.confurm_delete_Setting p{
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--secondary-color);
+}
+.fade-in-right {
+    animation: fadeInRight 1s forwards;
+  }
+
+  @keyframes fadeInRight {
+    0% {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  .modal.fade-in-right .modal-dialog {
+    position:absolute;
+    top:1rem;
+    right:10px;
+    margin:0;
+  }
+  
+
+/* editing popup */
+#add_SettingLabel,.Edit_SettingLabel{
+    color:var(--blace-color);
+     font-weight: 500;
+ font-size: 16px;
+ }
+
+
+.Setting_btn{
+  
+    background-color: var( --primary-color);
+    font-weight: 500;
+font-size: 12px;
+   
+}
+
+.add_Setting_body label,.Edit_Setting_body label,.Document label{
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--dark-color);
+}
+.add_Setting_body input::placeholder,
+.add_Setting_body input,
+.add_Setting_body select,
+.Edit_Setting_body input,
+.Edit_Setting_body select,.Edit_Setting_body textarea::placeholder,
+.Edit_Setting_body select,.Edit_Setting_body textarea::placeholder,.Document select,
+.Document input::placeholder,
+.Document textarea::placeholder
+{
+    font-weight: 400;
+    font-size: 13px;
+    color: var( --text-color);
+}
+.add_other_payment{
+    all: unset;
+    color: var( --blue-text-color);
+    font-size: 13px;
+    font-weight: 500;
+}
+.Document .Setting_btn{
+width: fit-content;
+}
+.Edit_Setting .Setting_btn,.add_Setting .Setting_btn,
+.mobile_filters  .Setting_btn,.Document .Setting_btn ,.modal .Setting_btn{
+    font-size: 13px !important;
+    background: var( --disables-button-color) !important;
+}
+.Edit_Setting .Setting_btn:first-child{
+    background-color: transparent !important;
+    color: var( --text-color) !important;
+}
+.Edit_Setting .Setting_btn:last-child.selected,.add_Setting .Setting_btn.selected,
+.mobile_filters .Setting_btn.selected,.Document .Setting_btn.selected,.modal .Setting_btn.selected
+{
+    background-color: var( --primary-color) !important;
+}
+.Edit_Setting .Setting_btn.selected:first-child,
+.mobile_filters .Setting_btn.selected:first-child
+{
+    background-color: transparent;
+    color: var(--delete-color) !important;
+}
+
+.custom-file-input-wrapper {
+    display: flex;
+    align-items: center;
+    border: 1px solid var( --light_gray);
+    border-radius: 5px;
+    overflow: hidden;
+  
+}
+.custom-file-input {
+    flex-grow: 1;
+    border: none;
+    background: transparent;
+ 
+}
+.custom-file-input:focus{
+    border: none !important;
+    outline: none !important;
+}
+.custom-file-button {
+    background-color: var(--aque-color);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    white-space: nowrap;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+
+.Setting_Lab_wrapper .table_wrabber table{
+    margin: 0;
+}
+.Setting_Lab_wrapper .opend_collabse {
+    background-color: var(--bg-color) !important;
+   
+}
+.Setting_Lab_wrapper .opend_collabse td.custom_td{
+    padding: 0 !important;
+}
+.Setting_Lab_wrapper .opend_collabse td{
+    color: var( --gray-color) !important;
+    
+}
+
+.Setting_Lab_wrapper tr.opend_collabse:last-child td:first-child{
+    border-top-right-radius:0 !important; 
+    
+}
+.collapse table{
+    margin: 0;
+}
+.input-group-text{
+    background-color: transparent !important;
+}
+/* filter_treatment */
+.treatment_content{
+    display: none;
+}
+.treatment_content.active{
+    display: block;
+}
+.filter_treatment button{
+font-size: 14px;
+font-weight: 500;
+background-color: var(--bg-color);
+color: var(--secondary-color);
+}
+.filter_treatment li.active button{
+    background-color: var(--aque-color);
+    color: var( --blue_color);
+}
+.duscription{
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x)* .5);
+    padding-left: calc(var(--bs-gutter-x)* .5);
+    margin-top: var(--bs-gutter-y);
+
+    border-radius: .25rem;
+}
+.duscription label{
+    background-color: var(--bg-color);
+    color: var(--gray-color);
+    width: 100%;
+}
+.duscription .editing_btns{
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.05);
+}
+.duscription .editor{
+    min-height: 300px;
+    display: block;
+    font-weight: 400;
+    font-size: 13px;
+    color: var(--text-color);
+}
+.duscription .editor.selected{
+    color: var(--dark-color);
+}
+
+.duscription .editor.seen{
+   display: none;
+}
+.duscription .editor:focus{
+border: none;
+outline: none;
+}
+.info_uploadImg button{
+    all: unset;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .info_uploadImg button:first-child{
+    color:var(--primary-color);
+ 
+    
+   }
+   .info_uploadImg p{
+    font-weight: 400;
+    font-size: 14px;
+   color:var(--gry_color);
+   
+  }
+ .Permission_modal .modal-dialog,#Add_Recall .modal-dialog,.bank_modal .modal-dialog{
+    width: 35%;
+ }
+  .Permission .accordion-button{
+    width:10%;
+    position: relative;
+  }
+  .Permission .accordion-button::before{
+    content: "";
+    width: 1px;
+    height: 100%;
+    background: var(--light_gray);
+    position: absolute;
+    padding-top: 1.66rem;
+    margin: 0;
+    padding-bottom: 1.6rem;
+    right: -10px;
+  }
+.Permission_card{
+    border-radius: 4px;
+}
+.Permission table{
+    margin-bottom: 1rem !important;
+    height: 100%;
+}
+  .Permission-text{
+    padding-left: .5rem;
+    border-left: 1px solid var(--light_color);
+    height: 100%;
+    line-height: 3;
+  }
+  .Permission-text,.Permission table td{
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--dark-color);
+    
+  }
+
+  .Permission .opend_collabse{
+    background-color: var(--bg-color);
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+  .Permission_card{
+    height: 50px;
+  }
+  .Permission_card button{
+    all: unset;
+    width: 5%;
+    height: 100%;
+    transition: .5s ease;
+  }
+  .Permission_card button.rotate{
+   transform: rotate(180deg);
+  }
+  .Permission_card button img{
+   
+    width: 100%;
+    height: 100%;
+  }
+
+.Permission tbody, td, tfoot, th, thead, tr{
+    border-color: var(--light_color) !important;
+}
+
+.Banks thead th{
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+}
+.Banks thead td{
+    padding-top: 1.2rem !important;
+    padding-bottom: 1.2rem !important;
+}
+.branch_row{
+    background-color: var(--light_gray);
+}
+.NewService_btn.branch{
+    background-color: var(--green_color) !important;
+    color: var(--bg_white) !important;
+}
+.branch_row td:last-child{
+    border-bottom-right-radius: 0 !important;
+    background-color: var(--light_gray);
+}
+/* 
+
+*/
+/* editing  popup*/
+@media (max-width: 362px){
+.mobile{
+    flex-wrap: wrap;
+}
+
+}
+@media (max-width: 1199.98px){
+    .Setting_Lab_wrapper{
+        /* border: 1px solid  var(--light_gray); */
+        padding: 0 .7rem;}
+    .Setting_Lab_data{
+        height: auto !important;
+        border:  1px solid var(--light_gray) !important;
+        margin-bottom: 1rem;
+        border-radius: .5rem;
+    }
+    .title_table,.Setting_Lab_names,.table_state{
+        border:none !important;
+     
+    }
+    
+    .table_state{
+        padding-top: 0 !important;
+    }
+    .Setting_Lab_names .creat_info h2,.Setting_Lab_names .creat_info p{
+        font-size: 12px;
+        margin: 0;
+    }
+   
+    .title_table{
+        font-size: 14px;
+      align-items: end !important;
+      /* padding-right: 1.5rem !important; */
+
+    }
+    .title_text{
+        font-size: 13px;
+        font-weight: 500;
+    }
+    
+    .title_table p:first-child,.Setting_Lab_names:not(:nth-child(2)) h2:first-child{
+        color: var(--text-color);
+        font-weight: 500;
+        font-size: 12px;
+       
+     }
+     .Setting_Lab_names:nth-child(1) h2:first-child{
+        color: var(--blace-color);
+    }
+    .state{
+        font-size: 10px;
+    }
+    .date_complete{
+        font-size: 12px;
+    }
+    .Setting_Lab_contain .modal-dialog,.bank_modal .modal-dialog{
+        width: 98%;
+    }
+    .Adding_btn{
+        font-size: 10px;
+        padding: 5px 3px !important;
+        width: fit-content;
+    }
+   
+    .Setting_Lab_btn{
+        padding: 3px !important;
+    }
+    #mobileNav:focus{
+    outline: none !important;
+    border:none !important;
+    box-shadow: none !important;
+    }
+    #mobileNav{
+        width: 45%;
+    }
+    #mobileNav.custom_width{
+       width: 62% !important;
+       
+    }
+   
+    .NewService_btn{
+        background-color:transparent !important;
+    }
+      @keyframes fadeInbottom {
+        0% {
+          opacity: 0;
+          transform: translatey(100%);
+        }
+        100% {
+          opacity: 1;
+          transform: translatey(0);
+        }
+      }
+    /* .add_Setting.fade-in-right,.Edit_Setting.fade-in-right{
+        animation: fadeInRight 1s forwards;
+    } */
+    .add_Setting .modal-dialog, .Edit_Setting .modal-dialog{
+        max-width: 100% !important;
+        margin: 0 auto !important;
+      
+      
+    }
+    .add_Setting.modal.fade-in-right,.Edit_Setting.modal.fade-in-right{
+        animation: fadeInbottom 1s forwards !important;
+    }
+    .add_Setting.modal.fade-in-right .modal-dialog,.Edit_Setting.modal.fade-in-right .modal-dialog{
+        top: 30% !important;
+        right: 0 !important;
+       
+    }
+    .deleting_icon{
+        width: 20% !important;
+    }
+    .add_Setting .Setting_btn{
+        width: 100% !important;
+    }
+    .filter_treatment button{
+        background-color: transparent !important;
+    }
+    .filter_treatment{
+        border-bottom: 1.5px solid var(--light_gray) !important;
+    }
+    .filter_treatment li{
+        position: relative;
+    }
+
+    .filter_treatment li.active::before{
+        content: "";
+        position: absolute;
+        background-color: var(--primary-color);
+        width: calc(100% + 20px);
+        height: 2px;
+        bottom: -2px;
+        left: -10px;
+        box-shadow: 0 3px 1px -2px var(--primary-color) ;
+    }
+    .duscription .editor{
+        min-height: 150px;
+    }
+    .Document .Setting_btn{
+        width: 100%;
+    }
+    .Permission_modal .modal-dialog,#Add_Recall .modal-dialog{
+        width: 100%;
+     }
+  .bank_modal .modal-dialog{
+    position: fixed !important;
+    width: 100%;
+    top: var(--modal-top);
+    bottom: var(--modal-bottom) !important;
+    left: 0;
+  }
+  .bank_modal .modal-content{
+height: auto !important;
+max-height: 90vh !important; 
+overflow-y: auto !important;
+  }
+}
+
+@media  (max-width: 1350px){
+    .head_table, .title_table {
+        
+        font-size: 12px;
+    }
+    .title_table h2,.title_table p{
+        
+        font-size: 12px;
+    }
+}
+@media (min-width:769px){
+    .Setting_nav{
+        border-bottom-right-radius: 0 !important;
+        border-bottom-left-radius: 0 !important;
+        
+    }
+   .Setting_Lab_contain{
+        border-top-right-radius: 0 !important;
+        border-top-left-radius: 0 !important;
+
+    }
+}

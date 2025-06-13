@@ -1,0 +1,362 @@
+.Orders_filter .form-label{
+    font-weight: 500;
+    font-size: 14px;
+    color: var( --dark-color);
+}
+.Orders_filter .filter_completDate,.Orders_filter .form-select{
+    font-weight: 400;
+    font-size: 13px;
+    color: var(--text-color);
+    height: 40px;
+}
+
+.filter{
+    background-color:var(--bg-color);
+   
+    height: 40px;
+}
+.filter button{
+all: unset;
+width: 84px;
+height: 34px;
+font-weight: 500;
+font-size: 14px;
+color: var(--gry_color);
+cursor: pointer;
+}
+.filter button.active{
+background-color: var(--bg_white);
+color: var(--blace-color);
+}
+.Orders_btn{
+  
+    background-color: var(--primary-color);
+    font-weight: 500;
+    font-size: 12px;
+   
+}
+.Appointment_btn{
+    background-color: var( --bg_appintment);
+    color: var(--primary-color) !important;
+}
+.clear_btn{
+    border:none;
+    background-color: transparent;
+    color: var(--text-color);
+    font-size: 13px;
+}
+.Orders_wrapper{
+    /* border: 1px solid  var(--light_gray); */
+    padding: 0 .7rem;
+    background-color: var(--bg_white);
+    border-top-left-radius: 1.4rem !important;
+    border-top-right-radius: 1.4rem !important;
+}
+.Orders_head_row{
+    background-color: var( --bg-color);
+    /* border-top-left-radius: 1rem !important;
+    border-top-right-radius: 1rem !important; */
+    border: 1px solid  var(--light_gray); 
+    border-top: 1px solid  var(--light_gray); 
+}
+.Orders_head_table{
+    display: flex;
+    align-items: center;
+}
+.Orders_title_table:not(:last-child){
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.Orders_head_table,.Orders_title_table{
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--gray-color);
+    border-right: 1px solid var(--light_gray) !important;
+    border-left: 1px solid var(--light_gray) !important;
+   height: 100%;
+}
+.Orders_head_table:first-child,.Orders_head_table:last-child{
+    border-right: none !important;
+    border-left: none !important;
+}
+.Orders_data:last-child{
+border-bottom-right-radius: .5rem;
+border-bottom-left-radius: .5rem;
+}
+.table_state{
+    width: 45%;
+    height: 100%;
+ 
+
+}
+.state{
+    background-color: var(--bg-green-color);
+    color: var( --green-color);
+    height: 22px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: 500;
+    gap: .4rem;
+    
+}
+
+.Orders_title_table{
+color: var(--blace-color);
+}
+
+
+.Orders_purch_date h3{
+font-weight: 500;
+font-size: 14px;
+color: var(--blace-color);
+}
+.Orders_purch_date p{
+    font-weight: 400;
+    font-size: 12px;
+    color: var(--neutral-color);
+}
+.action .dropdown-item{
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--blace-color);
+}
+.action .dropdown-item:hover{
+    color: var(--blace-color);
+}
+.action .dropdown-item:focus{
+    color: var(--blace-color);
+    background-color: var(--text-color);
+}
+.Orders_total{
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--dark-color);
+    display: none;
+}
+.Orders_total.selected{
+    display: inline-block;
+}
+.Orders_total span{
+    font-weight: 700;
+}
+.cancel_btn,.delete_btn{
+    border: 1px solid var(--light_color);
+    font-weight: 500;
+    font-size: 16px;
+}
+.delete_btn{
+    background-color: var( --delete-color);
+    color: var(--bg_white);
+}
+.delete_btn:hover{
+    color: var(--bg_white);
+}
+.confurm_delete_Orders h2{
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--blace-color);
+}
+.confurm_delete_Orders p{
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--secondary-color);
+}
+.fade-in-right {
+    animation: fadeInRight 1s forwards;
+  }
+
+  @keyframes fadeInRight {
+    0% {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  .modal.fade-in-right .modal-dialog {
+    position:absolute;
+    top:1rem;
+    right:10px;
+    margin:0;
+  }
+  #add_OrdersLabel{
+    color: var(--blace-color);
+    font-weight: 500;
+    font-size: 16px;
+      }
+      .info_uploadImg button{
+        all: unset;
+        font-size: 14px;
+        font-weight: 500;
+      }
+      .info_uploadImg button:first-child{
+       color:var(--primary-color);
+    
+       
+      }
+      #Edit_Orders .delete{
+       color:var(--text-color);
+       border: none;
+       background-color: transparent;
+       font-size: 14px;
+       font-weight: 500;
+      }
+      .delete.selected{
+        color:var(--danger-color);
+      }
+      .info_uploadImg p{
+        font-weight: 400;
+        font-size: 14px;
+       color:var(--gry_color);
+       
+      }
+      #add_Orders .modal-footer{
+       border-top: 0 !important;
+      }
+      .modal-footer .add_Orders{
+        background-color: var(--disables-button-color);
+      }
+      .add_Orders.selected{
+        background-color: var(--primary-color);
+      }
+      .Orders .modal-dialog input::placeholder,.Orders select,.Orders input[type = "date"], .doctor textarea::placeholder{
+        font-size: 13px;
+        font-weight: 400;
+        color: var( --blace-color);
+      }
+      select{
+        background-image: url(../images/selected.svg) !important;
+        color: var( --text-color);
+    }
+    select,input{
+        color: var( --text-color) !important;
+    }
+    input.selected{
+        color: var(--blace-color) !important;
+    }
+    select.selected{
+        color: var(--blace-color) !important;
+        background-image: url(../images/defual_selected.svg) !important;
+    }
+    
+    
+    #filters_Orders .Orders_btn,
+    #Edit_Orders .Orders_btn:last-child,
+    #add_Orders .add_Orders{
+        background-color: var(--disables-button-color) !important;
+    }
+    .clear_btn.selected{
+        color: var(--delete-color) !important;
+    }
+    #filters_Orders .Orders_btn.selected,
+    #Edit_Orders .Orders_btn.selected:last-child,
+    #add_Orders .add_Orders.selected{
+        background-color: var(--primary-color) !important;
+    }
+    @media (max-width: 1199.98px){
+
+    .Orders_data{
+        height: auto !important;
+        border:  1px solid var(--light_gray) !important;
+        margin-bottom: 1rem;
+        border-radius: .5rem;
+    }
+    .Orders_title_table,.Orderss_Name,.table_state{
+        border:none !important;
+     
+    }
+  
+    .table_state{
+        padding-top: 0 !important;
+    }
+    .Orderss_Name .creat_info h2,.Orderss_Name .creat_info p{
+        font-size: 12px;
+        margin: 0;
+    }
+    .Orders_title_table{
+        font-size: 14px;
+      align-items: end !important;
+      /* padding-right: 1.5rem !important; */
+    }
+    .Orders_title_table{
+        font-size: 13px;
+        font-weight: 500;
+    }
+    .Orders_title_table p:first-child,.Orders_names:not(:first-child) h2:first-child{
+       color: var(--text-color);
+      
+    }
+    .Orders_purch_date{
+        
+        align-items: start !important; 
+    }
+    .order_purch_date_text{
+        font-size: 14px !important;
+        /* color: var(--blace-color) !important; */
+        font-weight: 500 !important;
+    }
+    .state{
+        font-size: 11px;
+    }
+    .date_complete{
+        font-size: 12px;
+    }
+   .Appointment_btn{
+    background-color: transparent
+   }
+   .Orders_btn{
+    font-size: 10px;
+}
+}
+@media (min-width:769px) and (max-width: 1199.98px)  {
+    .Orders_data{
+        padding: 0 .5rem !important;
+    }
+    .Orders_filter .form-label{
+        font-size: 12px;
+    }
+    .title_text{
+        font-size: 12px;
+    }
+    .Orders_filter .filter_completDate, .Orders_filter .form-select{
+        font-size: 11px;
+        padding: .5rem !important;
+    }
+    .date_complete{
+        font-size: 11px;
+    }
+    .Orderss_Name .creat_info h2{
+        font-size: 12px;
+    }
+    .Orders_purch_date h3 {
+font-size: 12px;
+
+}
+    .Orders_head_table, .Orders_title_table {
+        /* padding-left: 0rem !important; */
+        font-size: 10px;
+    }
+    .Appointment_btn{
+        font-size: 9px;
+    }
+  
+}
+@media (min-width:769px){
+    .Orders_filter{
+        border-bottom-right-radius: 0 !important;
+        border-bottom-left-radius: 0 !important;
+        
+    }
+   .Orders{
+        border-top-right-radius: 0 !important;
+        border-top-left-radius: 0 !important;
+
+    }
+}
